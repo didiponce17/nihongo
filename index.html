@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#0F0F14">
+    <title>漢字マスター — Kanji Master</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <!-- ===== NAVEGACIÓN INFERIOR (MOBILE-FIRST) ===== -->
+    <nav class="bottom-nav" id="bottomNav">
+        <button class="nav-btn active" data-section="dashboard" aria-label="Inicio">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Inicio</span>
+        </button>
+        <button class="nav-btn" data-section="library" aria-label="Biblioteca">
+            <span class="nav-icon">📚</span>
+            <span class="nav-label">Kanji</span>
+        </button>
+        <button class="nav-btn" data-section="flashcards" aria-label="Flashcards">
+            <span class="nav-icon">🃏</span>
+            <span class="nav-label">Tarjetas</span>
+        </button>
+        <button class="nav-btn" data-section="quiz" aria-label="Quiz">
+            <span class="nav-icon">✏️</span>
+            <span class="nav-label">Quiz</span>
+        </button>
+        <button class="nav-btn" data-section="strokes" aria-label="Trazos">
+            <span class="nav-icon">🖊️</span>
+            <span class="nav-label">Trazos</span>
+        </button>
+        <button class="nav-btn" data-section="materia" aria-label="Materia">
+            <span class="nav-icon">📝</span>
+            <span class="nav-label">Materia</span>
+        </button>
+    </nav>
+
+    <!-- ===== PANTALLA: DASHBOARD ===== -->
+    <section class="screen active" id="screen-dashboard">
+        <header class="screen-header">
+            <h1 class="app-title">漢字<span class="title-accent">マスター</span></h1>
+            <p class="app-subtitle">Tu guía de kanji</p>
+        </header>
+
+        <div class="dashboard-cards">
+            <!-- Progreso general -->
+            <div class="dash-card dash-card--progress">
+                <div class="dash-card__header">
+                    <span class="dash-card__icon">📊</span>
+                    <span class="dash-card__title">Tu progreso</span>
+                </div>
+                <div class="progress-ring-container">
+                    <svg class="progress-ring" viewBox="0 0 120 120">
+                        <circle class="progress-ring__bg" cx="60" cy="60" r="52"/>
+                        <circle class="progress-ring__fill" cx="60" cy="60" r="52" id="progressRing"/>
+                    </svg>
+                    <div class="progress-ring__text" id="progressText">0%</div>
+                </div>
+                <p class="progress-detail" id="progressDetail">0 / 0 kanji estudiados</p>
+            </div>
+
+            <!-- Unidad actual -->
+            <div class="dash-card dash-card--unit">
+                <div class="dash-card__header">
+                    <span class="dash-card__icon">📖</span>
+                    <span class="dash-card__title">Unidad actual</span>
+                </div>
+                <div class="unit-info">
+                    <span class="unit-badge">Unidad 4</span>
+                    <span class="unit-week">Semana 4</span>
+                </div>
+                <p class="unit-topic">Direcciones, verbos, adjetivos</p>
+            </div>
+
+            <!-- Kanji totales -->
+            <div class="dash-card dash-card--total">
+                <div class="dash-card__header">
+                    <span class="dash-card__icon">🔢</span>
+                    <span class="dash-card__title">Kanji cargados</span>
+                </div>
+                <div class="stat-number" id="totalKanji">0</div>
+                <div class="stat-breakdown">
+                    <span class="stat-item"><span class="dot dot--n1"></span> Nivel 1: <strong id="countN1">0</strong></span>
+                    <span class="stat-item"><span class="dot dot--n2"></span> Nivel 2: <strong id="countN2">0</strong></span>
+                </div>
+            </div>
+
+            <!-- Quiz priority -->
+            <div class="dash-card dash-card--quiz">
+                <div class="dash-card__header">
+                    <span class="dash-card__icon">🔥</span>
+                    <span class="dash-card__title">Para el quiz</span>
+                </div>
+                <div class="stat-number accent" id="quizCount">0</div>
+                <p class="quiz-hint">Kanji prioritarios</p>
+                <button class="btn btn--accent btn--sm start-quiz-btn" onclick="startQuizFromDash()">
+                    Practicar ahora
+                </button>
+            </div>
+        </div>
+
+        <!-- Tip del día -->
+        <div class="tip-card" id="tipCard">
+            <span class="tip-icon">💡</span>
+            <p class="tip-text" id="tipText">Cargando tip...</p>
+        </div>
+    </section>
+
+    <!-- ===== PANTALLA: BIBLIOTECA ===== -->
+    <section class="screen" id="screen-library">
+        <header class="screen-header">
+            <h2 class="screen-title">📚 Biblioteca de Kanji</h2>
+            <p class="screen-subtitle" id="librarySubtitle">49 Kanji del Quiz + 34 Extra</p>
+            <div class="reading-legend"><span class="leg-on">On'yomi (カタカナ)</span><span class="leg-kun">Kun'yomi (ひらがな)</span></div>
+        </header>
+
+        <!-- Filtros por Lesson -->
+        <div class="filter-bar">
+            <button class="filter-chip active" data-filter="all">Todos</button>
+            <button class="filter-chip" data-filter="quiz">🔥 Quiz</button>
+            <button class="filter-chip" data-filter="lesson-1">L1</button>
+            <button class="filter-chip" data-filter="lesson-2">L2</button>
+            <button class="filter-chip" data-filter="lesson-3">L3</button>
+            <button class="filter-chip" data-filter="lesson-4">L4</button>
+            <button class="filter-chip" data-filter="lesson-5">L5</button>
+            <button class="filter-chip" data-filter="lesson-6">L6</button>
+            <button class="filter-chip" data-filter="lesson-7">パーツ</button>
+        </div>
+
+        <!-- Búsqueda -->
+        <div class="search-bar">
+            <input type="text" class="search-input" id="searchInput" placeholder="Buscar kanji, significado o romaji..." autocomplete="off">
+        </div>
+
+        <!-- Vista toggle -->
+        <div class="view-toggle">
+            <button class="view-btn active" data-view="detail" title="Vista detallada">📋</button>
+            <button class="view-btn" data-view="grid" title="Vista cuadrícula">🔲</button>
+        </div>
+
+        <!-- Lesson header (aparece en vista detallada) -->
+        <div id="libraryContent">
+            <!-- Se llena dinámicamente -->
+        </div>
+
+        <!-- Modal de detalle -->
+        <div class="modal-overlay" id="kanjiModal">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose" aria-label="Cerrar">&times;</button>
+                <div class="modal-kanji" id="modalKanji">漢</div>
+                <div class="modal-badges" id="modalBadges"></div>
+                <h3 class="modal-meaning" id="modalMeaning">Significado</h3>
+
+                <div class="modal-section">
+                    <h4>📖 Lecturas</h4>
+                    <div class="reading-legend"><span class="leg-on">On'yomi (カタカナ)</span><span class="leg-kun">Kun'yomi (ひらがな)</span></div>
+                    <div class="reading-grid" id="modalReadings"></div>
+                </div>
+
+                <div class="modal-section">
+                    <h4>💬 Palabras</h4>
+                    <div class="examples-list" id="modalExamples"></div>
+                </div>
+
+                <div class="modal-section" id="modalSentenceSection">
+                    <h4>📝 Oración de ejemplo</h4>
+                    <div class="sentence-block" id="modalSentence"></div>
+                </div>
+
+                <div class="modal-section">
+                    <h4>🧠 Mnemónico</h4>
+                    <p class="mnemo-text" id="modalMnemo"></p>
+                </div>
+
+                <div class="modal-section" id="modalStrokesSection">
+                    <h4>✍️ Trazos</h4>
+                    <p class="strokes-info" id="modalStrokes"></p>
+                </div>
+
+                <div class="modal-section" id="modalNotesSection">
+                    <h4>📝 Notas</h4>
+                    <p class="notes-text" id="modalNotes"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PANTALLA: FLASHCARDS ===== -->
+    <section class="screen" id="screen-flashcards">
+        <header class="screen-header">
+            <h2 class="screen-title">🃏 Tarjetas de Estudio</h2>
+        </header>
+
+        <!-- Configuración flashcards -->
+        <div class="fc-config" id="fcConfig">
+            <h3 class="fc-config__title">Configurar sesión</h3>
+
+            <div class="fc-option">
+                <label>Mostrar</label>
+                <div class="fc-radio-group">
+                    <label class="fc-radio"><input type="radio" name="fcFront" value="kanji" checked> Kanji</label>
+                    <label class="fc-radio"><input type="radio" name="fcFront" value="significado"> Significado</label>
+                    <label class="fc-radio"><input type="radio" name="fcFront" value="romaji"> Romaji</label>
+                </div>
+            </div>
+
+            <div class="fc-option">
+                <label>Filtro</label>
+                <div class="fc-radio-group">
+                    <label class="fc-radio"><input type="radio" name="fcFilter" value="quiz" checked> 🔥 Solo quiz</label>
+                    <label class="fc-radio"><input type="radio" name="fcFilter" value="nivel-1"> Nivel 1</label>
+                    <label class="fc-radio"><input type="radio" name="fcFilter" value="nivel-2"> Nivel 2</label>
+                    <label class="fc-radio"><input type="radio" name="fcFilter" value="all"> Todos</label>
+                </div>
+            </div>
+
+            <label class="fc-check">
+                <input type="checkbox" id="fcShuffle" checked> Orden aleatorio
+            </label>
+
+            <button class="btn btn--accent btn--lg" id="fcStartBtn">
+                Comenzar sesión ▶
+            </button>
+        </div>
+
+        <!-- Zona de flashcard activa -->
+        <div class="fc-arena hidden" id="fcArena">
+            <div class="fc-progress-bar">
+                <div class="fc-progress-fill" id="fcProgressFill"></div>
+            </div>
+            <p class="fc-counter" id="fcCounter">1 / 10</p>
+
+            <div class="fc-card-wrapper">
+                <div class="fc-card" id="fcCard">
+                    <div class="fc-card__front" id="fcFront">
+                        <span class="fc-card__text">漢</span>
+                    </div>
+                    <div class="fc-card__back" id="fcBack">
+                        <div class="fc-card__back-content" id="fcBackContent"></div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="fc-hint">Toca la tarjeta para voltear</p>
+
+            <div class="fc-actions">
+                <button class="btn btn--error fc-btn" id="fcWrong" title="No lo sé">✗ No sé</button>
+                <button class="btn btn--success fc-btn" id="fcCorrect" title="Lo sé">✓ Lo sé</button>
+            </div>
+
+            <button class="btn btn--ghost fc-exit" id="fcExit">← Salir</button>
+        </div>
+
+        <!-- Resumen flashcards -->
+        <div class="fc-summary hidden" id="fcSummary">
+            <div class="fc-summary__icon">🎉</div>
+            <h3>¡Sesión completada!</h3>
+            <div class="fc-summary__stats">
+                <div class="fc-stat fc-stat--correct">
+                    <span class="fc-stat__num" id="fcStatCorrect">0</span>
+                    <span class="fc-stat__label">Correctos</span>
+                </div>
+                <div class="fc-stat fc-stat--wrong">
+                    <span class="fc-stat__num" id="fcStatWrong">0</span>
+                    <span class="fc-stat__label">A repasar</span>
+                </div>
+            </div>
+            <div class="fc-summary__actions">
+                <button class="btn btn--accent" id="fcRetry">🔄 Repasar errores</button>
+                <button class="btn btn--ghost" id="fcNewSession">Nueva sesión</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PANTALLA: QUIZ ===== -->
+    <section class="screen" id="screen-quiz">
+        <header class="screen-header">
+            <h2 class="screen-title">✏️ Quiz</h2>
+        </header>
+
+        <!-- Config quiz -->
+        <div class="quiz-config" id="quizConfig">
+            <h3 class="fc-config__title">Tipo de ejercicio</h3>
+
+            <div class="quiz-type-grid">
+                <button class="quiz-type-btn" data-type="kanji-significado">
+                    <span class="qt-icon">🏷️</span>
+                    <span class="qt-label">Kanji → Significado</span>
+                </button>
+                <button class="quiz-type-btn" data-type="significado-kanji">
+                    <span class="qt-icon">🔤</span>
+                    <span class="qt-label">Significado → Kanji</span>
+                </button>
+                <button class="quiz-type-btn" data-type="kanji-romaji">
+                    <span class="qt-icon">🔊</span>
+                    <span class="qt-label">Kanji → Romaji</span>
+                </button>
+                <button class="quiz-type-btn" data-type="kanji-hiragana">
+                    <span class="qt-icon">あ</span>
+                    <span class="qt-label">Kanji → Hiragana</span>
+                </button>
+            </div>
+
+            <div class="fc-option">
+                <label>Filtro</label>
+                <div class="fc-radio-group">
+                    <label class="fc-radio"><input type="radio" name="quizFilter" value="quiz" checked> 🔥 Solo quiz</label>
+                    <label class="fc-radio"><input type="radio" name="quizFilter" value="nivel-1"> Nivel 1</label>
+                    <label class="fc-radio"><input type="radio" name="quizFilter" value="nivel-2"> Nivel 2</label>
+                    <label class="fc-radio"><input type="radio" name="quizFilter" value="all"> Todos</label>
+                </div>
+            </div>
+
+            <div class="fc-option">
+                <label>Preguntas</label>
+                <div class="fc-radio-group">
+                    <label class="fc-radio"><input type="radio" name="quizCount" value="5"> 5</label>
+                    <label class="fc-radio"><input type="radio" name="quizCount" value="10" checked> 10</label>
+                    <label class="fc-radio"><input type="radio" name="quizCount" value="15"> 15</label>
+                    <label class="fc-radio"><input type="radio" name="quizCount" value="all"> Todos</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz activo -->
+        <div class="quiz-arena hidden" id="quizArena">
+            <div class="fc-progress-bar">
+                <div class="fc-progress-fill" id="quizProgressFill"></div>
+            </div>
+            <p class="fc-counter" id="quizCounter">1 / 10</p>
+
+            <div class="quiz-question">
+                <div class="quiz-prompt" id="quizPrompt">漢</div>
+                <p class="quiz-instruction" id="quizInstruction">¿Cuál es el significado?</p>
+            </div>
+
+            <div class="quiz-options" id="quizOptions">
+                <!-- Se llena dinámicamente -->
+            </div>
+
+            <div class="quiz-feedback hidden" id="quizFeedback">
+                <p class="quiz-feedback__text" id="quizFeedbackText"></p>
+                <button class="btn btn--accent quiz-next" id="quizNext">Siguiente →</button>
+            </div>
+
+            <button class="btn btn--ghost fc-exit" id="quizExit">← Salir</button>
+        </div>
+
+        <!-- Resultados quiz -->
+        <div class="quiz-results hidden" id="quizResults">
+            <div class="fc-summary__icon" id="quizResultIcon">🎉</div>
+            <h3 id="quizResultTitle">¡Quiz completado!</h3>
+            <div class="quiz-score-ring">
+                <svg class="progress-ring" viewBox="0 0 120 120">
+                    <circle class="progress-ring__bg" cx="60" cy="60" r="52"/>
+                    <circle class="progress-ring__fill quiz-score-fill" cx="60" cy="60" r="52" id="quizScoreRing"/>
+                </svg>
+                <div class="progress-ring__text" id="quizScoreText">0%</div>
+            </div>
+            <p class="quiz-score-detail" id="quizScoreDetail">0 / 0 correctas</p>
+
+            <div class="quiz-wrong-list" id="quizWrongList">
+                <!-- Kanji incorrectos para repasar -->
+            </div>
+
+            <div class="fc-summary__actions">
+                <button class="btn btn--accent" id="quizRetry">🔄 Intentar de nuevo</button>
+                <button class="btn btn--ghost" id="quizNewQuiz">Nuevo quiz</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PANTALLA: TRAZOS ===== -->
+    <section class="screen" id="screen-strokes">
+        <header class="screen-header">
+            <h2 class="screen-title">🖊️ Escritura y Trazos</h2>
+        </header>
+
+        <div class="strokes-info-card">
+            <p>Selecciona un kanji para ver su información de trazos y practicar.</p>
+        </div>
+
+        <!-- Selector de kanji para trazos -->
+        <div class="strokes-grid" id="strokesGrid">
+            <!-- Se llena dinámicamente -->
+        </div>
+
+        <!-- Área de práctica -->
+        <div class="stroke-practice hidden" id="strokePractice">
+            <div class="stroke-kanji-display" id="strokeKanjiDisplay">漢</div>
+            <div class="stroke-info">
+                <p><strong>Significado:</strong> <span id="strokeMeaning">-</span></p>
+                <p><strong>Trazos:</strong> <span id="strokeCount">-</span></p>
+                <p><strong>Lectura:</strong> <span id="strokeReading">-</span></p>
+            </div>
+
+            <!-- Orden de trazos animado -->
+            <div class="stroke-order-section">
+                <h4 class="stroke-order-title">📋 Orden de trazos</h4>
+                <div class="stroke-order-container">
+                    <img id="strokeOrderImg" class="stroke-order-img" alt="Orden de trazos" src="">
+                    <p class="stroke-order-hint" id="strokeOrderHint">Cargando animación...</p>
+                </div>
+            </div>
+
+            <div class="practice-canvas-container">
+                <h4 class="stroke-order-title">✍️ Practica aquí</h4>
+                <canvas id="practiceCanvas" width="300" height="300"></canvas>
+                <button class="btn btn--ghost btn--sm" id="clearCanvas">🗑️ Borrar</button>
+            </div>
+
+            <p class="stroke-note">📝 Observa la animación de arriba y reproduce los trazos en el orden correcto.</p>
+
+            <button class="btn btn--ghost" id="strokeBack">← Volver</button>
+        </div>
+    </section>
+
+    <!-- ===== PANTALLA: MATERIA ===== -->
+    <section class="screen" id="screen-materia">
+        <header class="screen-header">
+            <h2 class="screen-title">📝 Materia — Unidad 4</h2>
+        </header>
+
+        <!-- Sub-tabs: Gramática / Vocabulario -->
+        <div class="materia-tabs">
+            <button class="materia-tab active" onclick="switchMateriaTab('gramatica', this)">📖 Gramática</button>
+            <button class="materia-tab" onclick="switchMateriaTab('vocabulario', this)">🗂️ Vocabulario</button>
+        </div>
+
+        <!-- SUB-TAB: GRAMÁTICA -->
+        <div class="materia-subtab active" id="subtab-gramatica">
+
+        <div class="materia-container">
+
+            <!-- Tema 0: Estructura de la oración japonesa -->
+            <div class="materia-card">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">📐 Estructura de la oración japonesa</span>
+                </button>
+                <div class="materia-body">
+                    <p class="materia-intro">En japonés las oraciones siguen un orden diferente al español. La estructura básica es <strong>SOV</strong> (Sujeto → Objeto → Verbo). El verbo siempre va al final.</p>
+
+                    <h5 class="materia-subtitle">🔤 Partes de la oración (品詞 <span class="romaji-hint">hinshi</span>)</h5>
+
+                    <table class="materia-table">
+                        <thead><tr><th>Parte</th><th>Japonés</th><th>Función</th><th>Ejemplo</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Sustantivo</strong> (名詞)</td><td>めいし <span class="romaji-hint">[meishi]</span></td><td>Persona, cosa, lugar, idea</td><td>学生 <span class="romaji-hint">[gakusei]</span> = estudiante</td></tr>
+                            <tr><td><strong>Verbo</strong> (動詞)</td><td>どうし <span class="romaji-hint">[doushi]</span></td><td>Acción o estado</td><td>食べます <span class="romaji-hint">[tabemasu]</span> = comer</td></tr>
+                            <tr><td><strong>Adjetivo-い</strong> (い形容詞)</td><td>いけいようし <span class="romaji-hint">[i-keiyoushi]</span></td><td>Describe cualidad (terminan en い)</td><td>大きい <span class="romaji-hint">[ookii]</span> = grande</td></tr>
+                            <tr><td><strong>Adjetivo-な</strong> (な形容詞)</td><td>なけいようし <span class="romaji-hint">[na-keiyoushi]</span></td><td>Describe cualidad (usan な antes de sustantivo)</td><td>静か(な) <span class="romaji-hint">[shizuka(na)]</span> = tranquilo</td></tr>
+                            <tr><td><strong>Adverbio</strong> (副詞)</td><td>ふくし <span class="romaji-hint">[fukushi]</span></td><td>Modifica verbo/adjetivo (cómo, cuándo, cuánto)</td><td>とても <span class="romaji-hint">[totemo]</span> = muy</td></tr>
+                            <tr><td><strong>Partícula</strong> (助詞)</td><td>じょし <span class="romaji-hint">[joshi]</span></td><td>Marca la función de cada palabra</td><td>は、が、を、に、で、へ</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h5 class="materia-subtitle">🧩 Orden básico: SOV</h5>
+                    <div class="materia-structure">
+                        <span class="structure-part"><strong>Sujeto</strong> は</span>
+                        <span class="structure-arrow">→</span>
+                        <span class="structure-part"><strong>Objeto</strong> を</span>
+                        <span class="structure-arrow">→</span>
+                        <span class="structure-part"><strong>Verbo</strong></span>
+                    </div>
+
+                    <div class="materia-example">
+                        <div class="materia-jp">私は　本を　読みます。</div>
+                        <div class="materia-romaji">Watashi wa &nbsp; hon wo &nbsp; yomimasu.</div>
+                        <div class="materia-es">Yo leo un libro. (Lit: Yo [tema] libro [objeto] leer)</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">🏷️ Partículas principales (助詞)</h5>
+                    <table class="materia-table">
+                        <thead><tr><th>Partícula</th><th>Romaji</th><th>Función</th><th>Ejemplo</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>は</strong></td><td>wa</td><td>Tema de la oración ("en cuanto a...")</td><td>私<strong>は</strong>学生です = Yo soy estudiante</td></tr>
+                            <tr><td><strong>が</strong></td><td>ga</td><td>Sujeto (énfasis, existencia)</td><td>猫<strong>が</strong>います = Hay un gato</td></tr>
+                            <tr><td><strong>を</strong></td><td>wo/o</td><td>Objeto directo (recibe la acción)</td><td>水<strong>を</strong>飲みます = Bebo agua</td></tr>
+                            <tr><td><strong>に</strong></td><td>ni</td><td>Destino, hora, ubicación</td><td>学校<strong>に</strong>行きます = Voy a la escuela</td></tr>
+                            <tr><td><strong>で</strong></td><td>de</td><td>Lugar de acción, medio</td><td>図書館<strong>で</strong>勉強します = Estudio en la biblioteca</td></tr>
+                            <tr><td><strong>へ</strong></td><td>e</td><td>Dirección ("hacia")</td><td>日本<strong>へ</strong>行きます = Voy hacia Japón</td></tr>
+                            <tr><td><strong>の</strong></td><td>no</td><td>Posesión, conexión ("de")</td><td>私<strong>の</strong>本 = Mi libro</td></tr>
+                            <tr><td><strong>も</strong></td><td>mo</td><td>"También"</td><td>私<strong>も</strong>学生です = Yo también soy estudiante</td></tr>
+                            <tr><td><strong>から</strong></td><td>kara</td><td>"Desde" (lugar/tiempo)</td><td>9時<strong>から</strong> = Desde las 9</td></tr>
+                            <tr><td><strong>まで</strong></td><td>made</td><td>"Hasta" (lugar/tiempo)</td><td>5時<strong>まで</strong> = Hasta las 5</td></tr>
+                            <tr><td><strong>と</strong></td><td>to</td><td>"Y" / "con"</td><td>友達<strong>と</strong>行きます = Voy con un amigo</td></tr>
+                            <tr><td><strong>か</strong></td><td>ka</td><td>Pregunta (va al final)</td><td>学生です<strong>か</strong>。= ¿Es estudiante?</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h5 class="materia-subtitle">📏 Patrones comunes de oración</h5>
+
+                    <p class="materia-explain"><strong>① Sust. es Sust.</strong> — Identidad / Profesión</p>
+                    <div class="materia-structure">
+                        <span class="structure-part">A は</span>
+                        <span class="structure-arrow">→</span>
+                        <span class="structure-part">B です</span>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">田中さんは　先生です。</div>
+                        <div class="materia-romaji">Tanaka-san wa sensei desu.</div>
+                        <div class="materia-es">Tanaka es maestro.</div>
+                    </div>
+
+                    <p class="materia-explain"><strong>② Adjetivo-い + Sust.</strong></p>
+                    <div class="materia-structure">
+                        <span class="structure-part">Adj-い</span>
+                        <span class="structure-arrow">→</span>
+                        <span class="structure-part">Sustantivo</span>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">大きい　学校</div>
+                        <div class="materia-romaji">Ookii gakkō</div>
+                        <div class="materia-es">Escuela grande</div>
+                    </div>
+
+                    <p class="materia-explain"><strong>③ Adjetivo-な + Sust.</strong></p>
+                    <div class="materia-structure">
+                        <span class="structure-part">Adj-な<strong>な</strong></span>
+                        <span class="structure-arrow">→</span>
+                        <span class="structure-part">Sustantivo</span>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">静かな　町</div>
+                        <div class="materia-romaji">Shizuka na machi</div>
+                        <div class="materia-es">Ciudad tranquila</div>
+                    </div>
+
+                    <p class="materia-explain"><strong>④ Verbo con lugar</strong> — Ir / Venir</p>
+                    <div class="materia-structure">
+                        <span class="structure-part">Lugar <strong>に/へ</strong></span>
+                        <span class="structure-arrow">→</span>
+                        <span class="structure-part">行きます / 来ます / 帰ります</span>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">学校に　行きます。</div>
+                        <div class="materia-romaji">Gakkō ni ikimasu.</div>
+                        <div class="materia-es">Voy a la escuela.</div>
+                    </div>
+
+                    <p class="materia-explain"><strong>⑤ Verbo con objeto</strong> — Comer / Beber / Leer...</p>
+                    <div class="materia-structure">
+                        <span class="structure-part">Objeto <strong>を</strong></span>
+                        <span class="structure-arrow">→</span>
+                        <span class="structure-part">Verbo</span>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">新聞を　読みます。</div>
+                        <div class="materia-romaji">Shinbun wo yomimasu.</div>
+                        <div class="materia-es">Leo el periódico.</div>
+                    </div>
+
+                    <p class="materia-explain"><strong>⑥ Adverbio + Verbo/Adjetivo</strong></p>
+                    <div class="materia-example">
+                        <div class="materia-jp">とても　大きいです。</div>
+                        <div class="materia-romaji">Totemo ookii desu.</div>
+                        <div class="materia-es">Es muy grande.</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">毎日　勉強します。</div>
+                        <div class="materia-romaji">Mainichi benkyō shimasu.</div>
+                        <div class="materia-es">Estudio todos los días.</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">📋 Adverbios comunes</h5>
+                    <table class="materia-table">
+                        <thead><tr><th>Japonés</th><th>Romaji</th><th>Significado</th></tr></thead>
+                        <tbody>
+                            <tr><td>とても</td><td>totemo</td><td>Muy</td></tr>
+                            <tr><td>あまり (+neg.)</td><td>amari</td><td>No mucho</td></tr>
+                            <tr><td>よく</td><td>yoku</td><td>Bien / A menudo</td></tr>
+                            <tr><td>いつも</td><td>itsumo</td><td>Siempre</td></tr>
+                            <tr><td>ときどき</td><td>tokidoki</td><td>A veces</td></tr>
+                            <tr><td>たいてい</td><td>taitei</td><td>Generalmente</td></tr>
+                            <tr><td>まっすぐ</td><td>massugu</td><td>Derecho / Recto</td></tr>
+                            <tr><td>一緒に</td><td>issho ni</td><td>Juntos</td></tr>
+                            <tr><td>毎日</td><td>mainichi</td><td>Todos los días</td></tr>
+                            <tr><td>もう</td><td>mō</td><td>Ya</td></tr>
+                            <tr><td>まだ</td><td>mada</td><td>Todavía</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h5 class="materia-subtitle">⚠️ Diferencia は vs が</h5>
+                    <p class="materia-explain">
+                        <strong>は</strong> <span class="romaji-hint">(wa)</span> marca el <em>tema</em> — algo ya conocido: "hablando de X..."<br>
+                        <strong>が</strong> <span class="romaji-hint">(ga)</span> marca el <em>sujeto</em> — identifica algo nuevo o específico.
+                    </p>
+                    <div class="materia-example">
+                        <div class="materia-jp">私<strong>は</strong>学生です。</div>
+                        <div class="materia-romaji">Watashi wa gakusei desu.</div>
+                        <div class="materia-es">(En cuanto a mí) soy estudiante. → Tema conocido</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">誰<strong>が</strong>先生ですか。</div>
+                        <div class="materia-romaji">Dare ga sensei desu ka.</div>
+                        <div class="materia-es">¿Quién es el maestro? → Identificar sujeto nuevo</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Tema 0b: Adjetivos い vs な y Partículas explicados fácil -->
+            <div class="materia-card">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">🎨 Adjetivos い vs な — Explicado fácil</span>
+                </button>
+                <div class="materia-body">
+                    <p class="materia-intro">En español, todos los adjetivos funcionan igual: "bonito", "tranquilo". En japonés hay <strong>dos familias</strong> de adjetivos que se comportan diferente. Piensa en ellos como dos "equipos":</p>
+
+                    <h5 class="materia-subtitle">🟡 Equipo い — Los adjetivos "completos"</h5>
+                    <p class="materia-explain">
+                        Estos adjetivos ya vienen con su terminación <strong>い</strong> incluida. Son como palabras completas que no necesitan ayuda.
+                    </p>
+                    <div class="materia-highlight">
+                        <div class="materia-jp" style="font-size:1.1rem;">大き<strong style="color:#FFD54F">い</strong>　→　grande</div>
+                        <div class="materia-jp" style="font-size:1.1rem;">小さ<strong style="color:#FFD54F">い</strong>　→　pequeño</div>
+                        <div class="materia-jp" style="font-size:1.1rem;">新し<strong style="color:#FFD54F">い</strong>　→　nuevo</div>
+                        <div class="materia-jp" style="font-size:1.1rem;">高<strong style="color:#FFD54F">い</strong>　→　alto / caro</div>
+                    </div>
+                    <p class="materia-explain">📌 <strong>Se pegan directamente</strong> al sustantivo:</p>
+                    <div class="materia-example">
+                        <div class="materia-jp">大き<strong style="color:#FFD54F">い</strong>　学校</div>
+                        <div class="materia-romaji">Ookii gakkō</div>
+                        <div class="materia-es">Escuela grande ← el い se queda</div>
+                    </div>
+                    <p class="materia-explain">📌 Para decir "<em>es</em> grande", solo agrega <strong>です</strong>:</p>
+                    <div class="materia-example">
+                        <div class="materia-jp">この学校は　大き<strong style="color:#FFD54F">い</strong>です。</div>
+                        <div class="materia-romaji">Kono gakkō wa ookii desu.</div>
+                        <div class="materia-es">Esta escuela es grande.</div>
+                    </div>
+                    <p class="materia-explain">📌 Para <strong>negativo</strong>, cambias い → <strong>くない</strong>:</p>
+                    <div class="materia-example">
+                        <div class="materia-jp">大き<strong style="color:#EF5350">くない</strong>です。</div>
+                        <div class="materia-romaji">Ookikunai desu.</div>
+                        <div class="materia-es">No es grande.</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">🟣 Equipo な — Los adjetivos que necesitan "pegamento"</h5>
+                    <p class="materia-explain">
+                        Estos adjetivos NO terminan en い. Son como sustantivos que describen, y necesitan la partícula <strong>な</strong> como pegamento para unirse a un sustantivo.
+                    </p>
+                    <div class="materia-highlight">
+                        <div class="materia-jp" style="font-size:1.1rem;">静か　→　tranquilo</div>
+                        <div class="materia-jp" style="font-size:1.1rem;">きれい　→　bonito / limpio</div>
+                        <div class="materia-jp" style="font-size:1.1rem;">有名　→　famoso</div>
+                        <div class="materia-jp" style="font-size:1.1rem;">元気　→　animado / sano</div>
+                    </div>
+                    <p class="materia-explain">📌 Necesitan <strong>な</strong> antes del sustantivo (como pegamento):</p>
+                    <div class="materia-example">
+                        <div class="materia-jp">静か<strong style="color:#CE93D8">な</strong>　町</div>
+                        <div class="materia-romaji">Shizuka na machi</div>
+                        <div class="materia-es">Ciudad tranquila ← な pega el adjetivo</div>
+                    </div>
+                    <p class="materia-explain">📌 Para decir "<em>es</em> tranquilo", solo agrega <strong>です</strong> (sin な):</p>
+                    <div class="materia-example">
+                        <div class="materia-jp">この町は　静かです。</div>
+                        <div class="materia-romaji">Kono machi wa shizuka desu.</div>
+                        <div class="materia-es">Esta ciudad es tranquila.</div>
+                    </div>
+                    <p class="materia-explain">📌 Para <strong>negativo</strong>, cambias です → <strong>じゃないです</strong>:</p>
+                    <div class="materia-example">
+                        <div class="materia-jp">静か<strong style="color:#EF5350">じゃないです</strong>。</div>
+                        <div class="materia-romaji">Shizuka ja nai desu.</div>
+                        <div class="materia-es">No es tranquilo.</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">⚡ Resumen rápido</h5>
+                    <table class="materia-table">
+                        <thead><tr><th></th><th>Adj-い 🟡</th><th>Adj-な 🟣</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>+ Sustantivo</strong></td><td>大きい 学校</td><td>静か<strong>な</strong> 町</td></tr>
+                            <tr><td><strong>Es ~</strong></td><td>大きいです</td><td>静かです</td></tr>
+                            <tr><td><strong>No es ~</strong></td><td>大きくないです</td><td>静かじゃないです</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="materia-explain" style="margin-top:8px;">
+                        ⚠️ <strong>Truco:</strong> きれい <span class="romaji-hint">(kirei)</span> parece que termina en い, pero es adjetivo な. ¡No te dejes engañar!<br>
+                        La regla: si la い NO es parte de una raíz japonesa reconocible, probablemente es な.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tema 0c: Partículas explicadas con analogías -->
+            <div class="materia-card">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">🧩 Partículas — Guía fácil con analogías</span>
+                </button>
+                <div class="materia-body">
+                    <p class="materia-intro">Las partículas son como <strong>etiquetas</strong> que pegas después de cada palabra para decirle al verbo qué papel juega. Imagina que cada palabra lleva un gafete que dice su función.</p>
+
+                    <h5 class="materia-subtitle">🏷️ は (wa) — "Hablando de..."</h5>
+                    <p class="materia-explain">
+                        Marca el <strong>tema</strong> de la conversación. Es como decir "en cuanto a X..." o "hablando de X..."<br>
+                        <em>Piénsalo como el título de un mensaje.</em>
+                    </p>
+                    <div class="materia-example">
+                        <div class="materia-jp">私<strong>は</strong>　学生です。</div>
+                        <div class="materia-romaji">Watashi wa gakusei desu.</div>
+                        <div class="materia-es">[Hablando de mí] soy estudiante.</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">🎯 を (wo) — "El que recibe la acción"</h5>
+                    <p class="materia-explain">
+                        Marca el <strong>objeto directo</strong> — la cosa que recibe la acción del verbo.<br>
+                        <em>Piénsalo como una flecha que apunta a lo que "sufre" la acción.</em>
+                    </p>
+                    <div class="materia-example">
+                        <div class="materia-jp">水<strong>を</strong>　飲みます。</div>
+                        <div class="materia-romaji">Mizu wo nomimasu.</div>
+                        <div class="materia-es">Bebo agua. ← el agua es lo que se bebe</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">📍 に (ni) — "Destino / Punto exacto"</h5>
+                    <p class="materia-explain">
+                        Marca el <strong>destino</strong>, la <strong>hora exacta</strong>, o <strong>dónde existe algo</strong>.<br>
+                        <em>Piénsalo como poner un alfiler en el mapa: un punto exacto.</em>
+                    </p>
+                    <div class="materia-example">
+                        <div class="materia-jp">学校<strong>に</strong>　行きます。</div>
+                        <div class="materia-romaji">Gakkō ni ikimasu.</div>
+                        <div class="materia-es">Voy a la escuela. ← destino</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">7時<strong>に</strong>　起きます。</div>
+                        <div class="materia-romaji">Shichiji ni okimasu.</div>
+                        <div class="materia-es">Me levanto a las 7. ← hora exacta</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">🎭 で (de) — "El escenario de la acción"</h5>
+                    <p class="materia-explain">
+                        Marca <strong>dónde ocurre</strong> una acción o <strong>con qué medio/herramienta</strong>.<br>
+                        <em>Piénsalo como el escenario de una obra de teatro: la acción pasa AQUÍ.</em>
+                    </p>
+                    <div class="materia-example">
+                        <div class="materia-jp">図書館<strong>で</strong>　勉強します。</div>
+                        <div class="materia-romaji">Toshokan de benkyō shimasu.</div>
+                        <div class="materia-es">Estudio en la biblioteca. ← lugar de acción</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">バス<strong>で</strong>　行きます。</div>
+                        <div class="materia-romaji">Basu de ikimasu.</div>
+                        <div class="materia-es">Voy en bus. ← medio de transporte</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">📍 に vs 🎭 で — ¿Cuándo uso cuál?</h5>
+                    <table class="materia-table">
+                        <thead><tr><th>Situación</th><th>Partícula</th><th>Ejemplo</th></tr></thead>
+                        <tbody>
+                            <tr><td>Algo <strong>existe</strong> en un lugar</td><td>に</td><td>猫が部屋<strong>に</strong>います = El gato está en la habitación</td></tr>
+                            <tr><td>Algo <strong>pasa/haces</strong> en un lugar</td><td>で</td><td>部屋<strong>で</strong>勉強します = Estudio en la habitación</td></tr>
+                            <tr><td><strong>Ir hacia</strong> un lugar</td><td>に/へ</td><td>学校<strong>に</strong>行きます = Voy a la escuela</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h5 class="materia-subtitle">➡️ へ (e) — "Hacia / En dirección a"</h5>
+                    <p class="materia-explain">
+                        Similar a に para dirección, pero más vago — indica la <strong>dirección general</strong> sin enfocarse en el destino exacto.<br>
+                        <em>に = llegar al punto. へ = ir en esa dirección.</em>
+                    </p>
+                    <div class="materia-example">
+                        <div class="materia-jp">日本<strong>へ</strong>　行きます。</div>
+                        <div class="materia-romaji">Nihon e ikimasu.</div>
+                        <div class="materia-es">Voy (hacia) Japón.</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">🔗 の (no) — "De" (posesión / conexión)</h5>
+                    <p class="materia-explain">
+                        Conecta dos cosas mostrando relación. Como la preposición "de" en español.<br>
+                        <em>Piénsalo como un cable que conecta dos palabras.</em>
+                    </p>
+                    <div class="materia-example">
+                        <div class="materia-jp">私<strong>の</strong>　本</div>
+                        <div class="materia-romaji">Watashi no hon</div>
+                        <div class="materia-es">Mi libro (= libro DE mí)</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">日本語<strong>の</strong>　先生</div>
+                        <div class="materia-romaji">Nihongo no sensei</div>
+                        <div class="materia-es">Maestro de japonés</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">❓ か (ka) — Signo de pregunta hablado</h5>
+                    <p class="materia-explain">
+                        Va al final de la oración para convertirla en pregunta. Es como poner "¿?" pero con sonido.<br>
+                    </p>
+                    <div class="materia-example">
+                        <div class="materia-jp">学生です。→ 学生です<strong>か</strong>。</div>
+                        <div class="materia-romaji">Gakusei desu. → Gakusei desu ka.</div>
+                        <div class="materia-es">Es estudiante. → ¿Es estudiante?</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">👥 も (mo) — "También"</h5>
+                    <p class="materia-explain">Reemplaza は cuando quieres decir "también". No se usan juntos.</p>
+                    <div class="materia-example">
+                        <div class="materia-jp">田中さん<strong>も</strong>　学生です。</div>
+                        <div class="materia-romaji">Tanaka-san mo gakusei desu.</div>
+                        <div class="materia-es">Tanaka también es estudiante.</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">🔄 から / まで — "Desde / Hasta"</h5>
+                    <p class="materia-explain">Siempre van en pareja para marcar inicio y fin (de tiempo o lugar).</p>
+                    <div class="materia-example">
+                        <div class="materia-jp">9時<strong>から</strong>　5時<strong>まで</strong>　働きます。</div>
+                        <div class="materia-romaji">Kuji kara goji made hatarakimasu.</div>
+                        <div class="materia-es">Trabajo desde las 9 hasta las 5.</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">👫 と (to) — "Y" / "Con"</h5>
+                    <p class="materia-explain">Une cosas (como "y") o indica compañía (como "con").</p>
+                    <div class="materia-example">
+                        <div class="materia-jp">友達<strong>と</strong>　映画を見ます。</div>
+                        <div class="materia-romaji">Tomodachi to eiga wo mimasu.</div>
+                        <div class="materia-es">Veo una película con un amigo.</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">💡 Truco para recordar</h5>
+                    <div class="materia-highlight">
+                        <div class="materia-es" style="font-size:0.95rem; line-height:1.8;">
+                            <strong>は</strong> = Tema (título del mensaje)<br>
+                            <strong>を</strong> = Objeto (lo que recibe la acción)<br>
+                            <strong>に</strong> = Punto exacto (alfiler en el mapa)<br>
+                            <strong>で</strong> = Escenario (donde pasa la acción)<br>
+                            <strong>へ</strong> = Dirección (flecha hacia allá)<br>
+                            <strong>の</strong> = "De" (cable que conecta)<br>
+                            <strong>か</strong> = ¿? (signo de pregunta hablado)<br>
+                            <strong>も</strong> = También (reemplaza は)<br>
+                            <strong>と</strong> = Y / Con (compañía)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tema 1: Duración de tiempo -->
+            <div class="materia-card">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">⏱️ Duración de tiempo</span>
+                </button>
+                <div class="materia-body">
+                    <p class="materia-intro">Cuando quieres preguntar cuánto tiempo toma llegar a algún lugar o hacer algo, usas la pregunta:</p>
+
+                    <div class="materia-highlight">
+                        <div class="materia-jp" style="font-size:1.2rem;">どのくらいですか。</div>
+                        <div class="materia-romaji">Dono kurai desu ka.</div>
+                        <div class="materia-es">= ¿Cuánto (tiempo) se tarda?</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">🧩 Estructura de la pregunta:</h5>
+                    <div class="materia-structure">
+                        <span class="structure-part"><strong>lugar A</strong> から</span>
+                        <span class="structure-arrow">→</span>
+                        <span class="structure-part"><strong>lugar B</strong> まで</span>
+                        <span class="structure-arrow">→</span>
+                        <span class="structure-part">どのくらいですか</span>
+                    </div>
+                    <p class="materia-explain">
+                        <strong>から</strong> <span class="romaji-hint">(kara)</span> = desde / de<br>
+                        <strong>まで</strong> <span class="romaji-hint">(made)</span> = hasta / a
+                    </p>
+
+                    <h5 class="materia-subtitle">💬 Ejemplo de conversación:</h5>
+                    <div class="materia-conversation">
+                        <div class="materia-example conv-a">
+                            <div class="conv-label">Pregunta:</div>
+                            <div class="materia-jp">えきから だいがくまで どのくらいですか。</div>
+                            <div class="materia-romaji">Eki kara daigaku made dono kurai desu ka.</div>
+                            <div class="materia-es">¿Cuánto se tarda de la estación a la universidad?</div>
+                        </div>
+                        <div class="materia-example conv-b">
+                            <div class="conv-label">Respuesta:</div>
+                            <div class="materia-jp">バスで ３０ぷんぐらいです。</div>
+                            <div class="materia-romaji">Basu de 30-pun gurai desu.</div>
+                            <div class="materia-es">En bus, unos 30 minutos.</div>
+                        </div>
+                    </div>
+
+                    <h5 class="materia-subtitle">🧩 Estructura de la respuesta:</h5>
+                    <div class="materia-structure">
+                        <span class="structure-part"><strong>transporte</strong> で</span>
+                        <span class="structure-arrow">→</span>
+                        <span class="structure-part"><strong>tiempo</strong> ぐらいです</span>
+                    </div>
+                    <p class="materia-explain">
+                        <strong>で</strong> <span class="romaji-hint">(de)</span> = en / por medio de (indica el medio de transporte)<br>
+                        <strong>ぐらい</strong> <span class="romaji-hint">(gurai)</span> = aproximadamente (va después del número)
+                    </p>
+
+                    <h5 class="materia-subtitle">📝 Más ejemplos:</h5>
+                    <div class="materia-example">
+                        <div class="materia-jp">うちから かいしゃまで どのくらいですか。</div>
+                        <div class="materia-romaji">Uchi kara kaisha made dono kurai desu ka.</div>
+                        <div class="materia-es">¿Cuánto se tarda de la casa a la empresa?</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">でんしゃで いちじかんぐらいです。</div>
+                        <div class="materia-romaji">Densha de ichi-jikan gurai desu.</div>
+                        <div class="materia-es">En tren, aproximadamente 1 hora.</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">あるいて １０ぷんぐらいです。</div>
+                        <div class="materia-romaji">Aruite 10-pun gurai desu.</div>
+                        <div class="materia-es">Caminando, unos 10 minutos.</div>
+                    </div>
+
+                    <p class="materia-note">💡 <strong>あるいて</strong> <span class="romaji-hint">(aruite)</span> = caminando. Se usa SIN la partícula で porque no es un vehículo.</p>
+
+                    <h5 class="materia-subtitle">🚗 Vocabulario de transporte:</h5>
+                    <div class="materia-chips">
+                        <span class="materia-chip">バス <span class="romaji-hint">basu</span> — bus</span>
+                        <span class="materia-chip">でんしゃ <span class="romaji-hint">densha</span> — tren</span>
+                        <span class="materia-chip">ちかてつ <span class="romaji-hint">chikatetsu</span> — metro</span>
+                        <span class="materia-chip">タクシー <span class="romaji-hint">takushii</span> — taxi</span>
+                        <span class="materia-chip">じてんしゃ <span class="romaji-hint">jitensha</span> — bicicleta</span>
+                        <span class="materia-chip">くるま <span class="romaji-hint">kuruma</span> — carro</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tema 2: Adjetivos い -->
+            <div class="materia-card">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">🟡 Adjetivos い</span>
+                </button>
+                <div class="materia-body">
+                    <p class="materia-intro">En japonés hay <strong>dos tipos de adjetivos</strong>. Los adjetivos い son el primer tipo. Se llaman así porque <strong>siempre terminan en い</strong>.</p>
+
+                    <p class="materia-explain">Funcionan parecido a los adjetivos en español, pero en japonés van ANTES del sustantivo (como en inglés: "big house" → おおきい いえ).</p>
+
+                    <h5 class="materia-subtitle">✅ Forma afirmativa (es ~):</h5>
+                    <p class="materia-explain">Solo agregas <strong>です</strong> al final del adjetivo. No cambias nada del adjetivo.</p>
+                    <div class="materia-highlight">
+                        <div class="materia-jp">adjetivo-い + です = Es ~</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">この ほんは <strong>たかい</strong>です。</div>
+                        <div class="materia-romaji">Kono hon wa <strong>takai</strong> desu.</div>
+                        <div class="materia-es">Este libro es caro.</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">とうきょうは <strong>おおきい</strong>です。</div>
+                        <div class="materia-romaji">Tōkyō wa <strong>ookii</strong> desu.</div>
+                        <div class="materia-es">Tokio es grande.</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">❌ Forma negativa (no es ~):</h5>
+                    <p class="materia-explain">Quitas la い final y la reemplazas por <strong>くない</strong>.</p>
+                    <div class="materia-highlight">
+                        <div class="materia-jp">adjetivo (sin い) + <strong>くない</strong>です = No es ~</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">この ほんは たか<strong>くない</strong>です。</div>
+                        <div class="materia-romaji">Kono hon wa taka<strong>kunai</strong> desu.</div>
+                        <div class="materia-es">Este libro no es caro.</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">きょうは さむ<strong>くない</strong>です。</div>
+                        <div class="materia-romaji">Kyō wa samu<strong>kunai</strong> desu.</div>
+                        <div class="materia-es">Hoy no hace frío.</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">📋 Tabla resumen:</h5>
+                    <table class="materia-table">
+                        <thead>
+                            <tr><th></th><th>Regla</th><th>Ejemplo: たかい <span class="romaji-hint">takai</span></th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>✅ Es ~</td><td>～い です</td><td>たか<strong>い</strong> です <span class="romaji-hint">takai desu</span></td></tr>
+                            <tr><td>❌ No es ~</td><td>～<strong>くない</strong> です</td><td>たか<strong>くない</strong> です <span class="romaji-hint">takakunai desu</span></td></tr>
+                        </tbody>
+                    </table>
+
+                    <div class="materia-note">⚠️ <strong>¡OJO! Excepción importante:</strong><br>
+                        El adjetivo <strong>いい</strong> <span class="romaji-hint">(ii)</span> = bueno, es irregular.<br>
+                        ✅ Afirmativo: いいです <span class="romaji-hint">(ii desu)</span> — Es bueno<br>
+                        ❌ Negativo: <strong>よくない</strong>です <span class="romaji-hint">(yokunai desu)</span> — No es bueno<br>
+                        (No se dice "いくない". Se cambia a よ.)</div>
+
+                    <h5 class="materia-subtitle">🏷️ Modificar un sustantivo:</h5>
+                    <p class="materia-explain">Cuando quieres decir "un libro caro" o "una casa grande", el adjetivo い va <strong>directamente</strong> antes del sustantivo (sin な).</p>
+                    <div class="materia-example">
+                        <div class="materia-jp"><strong>たかい</strong> ほん</div>
+                        <div class="materia-romaji"><strong>takai</strong> hon</div>
+                        <div class="materia-es">un libro caro</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp"><strong>おおきい</strong> いえ</div>
+                        <div class="materia-romaji"><strong>ookii</strong> ie</div>
+                        <div class="materia-es">una casa grande</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">📖 Lista de adjetivos い comunes:</h5>
+                    <div class="materia-chips">
+                        <span class="materia-chip">たかい <span class="romaji-hint">takai</span> — caro / alto</span>
+                        <span class="materia-chip">やすい <span class="romaji-hint">yasui</span> — barato</span>
+                        <span class="materia-chip">おおきい <span class="romaji-hint">ookii</span> — grande</span>
+                        <span class="materia-chip">ちいさい <span class="romaji-hint">chiisai</span> — pequeño</span>
+                        <span class="materia-chip">あたらしい <span class="romaji-hint">atarashii</span> — nuevo</span>
+                        <span class="materia-chip">ふるい <span class="romaji-hint">furui</span> — viejo</span>
+                        <span class="materia-chip">あつい <span class="romaji-hint">atsui</span> — caliente</span>
+                        <span class="materia-chip">さむい <span class="romaji-hint">samui</span> — frío</span>
+                        <span class="materia-chip">おもしろい <span class="romaji-hint">omoshiroi</span> — interesante</span>
+                        <span class="materia-chip">おいしい <span class="romaji-hint">oishii</span> — delicioso</span>
+                        <span class="materia-chip">いそがしい <span class="romaji-hint">isogashii</span> — ocupado</span>
+                        <span class="materia-chip">ながい <span class="romaji-hint">nagai</span> — largo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tema 3: Adjetivos な -->
+            <div class="materia-card">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">🟣 Adjetivos な</span>
+                </button>
+                <div class="materia-body">
+                    <p class="materia-intro">Los adjetivos な son el <strong>segundo tipo</strong> de adjetivos en japonés. Se llaman así porque necesitan agregar <strong>な</strong> cuando van antes de un sustantivo.</p>
+
+                    <p class="materia-explain">A diferencia de los adjetivos い, estos <strong>NO terminan en い</strong> (salvo excepciones como きれい y ゆうめい, que PARECEN adjetivos い pero son な).</p>
+
+                    <h5 class="materia-subtitle">✅ Forma afirmativa (es ~):</h5>
+                    <p class="materia-explain">Igual que los adjetivos い: solo agregas <strong>です</strong>.</p>
+                    <div class="materia-example">
+                        <div class="materia-jp">この まちは <strong>しずか</strong>です。</div>
+                        <div class="materia-romaji">Kono machi wa <strong>shizuka</strong> desu.</div>
+                        <div class="materia-es">Esta ciudad es tranquila.</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">この レストランは <strong>ゆうめい</strong>です。</div>
+                        <div class="materia-romaji">Kono resutoran wa <strong>yūmei</strong> desu.</div>
+                        <div class="materia-es">Este restaurante es famoso.</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">❌ Forma negativa (no es ~):</h5>
+                    <p class="materia-explain">Agregas <strong>じゃないです</strong> en vez de です. El adjetivo NO cambia.</p>
+                    <div class="materia-highlight">
+                        <div class="materia-jp">adjetivo-な + <strong>じゃないです</strong> = No es ~</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">この まちは しずか<strong>じゃないです</strong>。</div>
+                        <div class="materia-romaji">Kono machi wa shizuka <strong>ja nai desu</strong>.</div>
+                        <div class="materia-es">Esta ciudad no es tranquila.</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">あの えきは べんり<strong>じゃないです</strong>。</div>
+                        <div class="materia-romaji">Ano eki wa benri <strong>ja nai desu</strong>.</div>
+                        <div class="materia-es">Esa estación no es conveniente.</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">🏷️ Modificar un sustantivo:</h5>
+                    <p class="materia-explain">Cuando va antes de un sustantivo, <strong>DEBES agregar な</strong> entre el adjetivo y el sustantivo. Esto es lo que los hace diferentes de los adjetivos い.</p>
+                    <div class="materia-example">
+                        <div class="materia-jp">しずか<strong>な</strong> まち</div>
+                        <div class="materia-romaji">shizuka <strong>na</strong> machi</div>
+                        <div class="materia-es">una ciudad tranquila</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">ゆうめい<strong>な</strong> レストラン</div>
+                        <div class="materia-romaji">yūmei <strong>na</strong> resutoran</div>
+                        <div class="materia-es">un restaurante famoso</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">📋 Comparación い vs な:</h5>
+                    <table class="materia-table">
+                        <thead>
+                            <tr><th></th><th>Adj-い (ej: たかい)</th><th>Adj-な (ej: しずか)</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>✅ Es ~</td><td>たかい です</td><td>しずか です</td></tr>
+                            <tr><td>❌ No es ~</td><td>たか<strong>くない</strong> です</td><td>しずか <strong>じゃないです</strong></td></tr>
+                            <tr><td>+ sustantivo</td><td>たかい ほん</td><td>しずか<strong>な</strong> まち</td></tr>
+                        </tbody>
+                    </table>
+
+                    <div class="materia-note">⚠️ <strong>¡Trampas!</strong> Estas palabras PARECEN adjetivos い pero son adjetivos な:<br>
+                        • <strong>きれい</strong> <span class="romaji-hint">(kirei)</span> — bonito/limpio → きれい<strong>な</strong> まち<br>
+                        • <strong>ゆうめい</strong> <span class="romaji-hint">(yūmei)</span> — famoso → ゆうめい<strong>な</strong> ひと<br>
+                        Terminan en い pero se conjugan como な. ¡Memorízalos!</div>
+
+                    <h5 class="materia-subtitle">📖 Lista de adjetivos な comunes:</h5>
+                    <div class="materia-chips">
+                        <span class="materia-chip">しずか <span class="romaji-hint">shizuka</span> — tranquilo</span>
+                        <span class="materia-chip">にぎやか <span class="romaji-hint">nigiyaka</span> — animado</span>
+                        <span class="materia-chip">べんり <span class="romaji-hint">benri</span> — conveniente</span>
+                        <span class="materia-chip">ゆうめい <span class="romaji-hint">yūmei</span> — famoso</span>
+                        <span class="materia-chip">きれい <span class="romaji-hint">kirei</span> — bonito/limpio</span>
+                        <span class="materia-chip">げんき <span class="romaji-hint">genki</span> — energético/sano</span>
+                        <span class="materia-chip">ひま <span class="romaji-hint">hima</span> — libre/desocupado</span>
+                        <span class="materia-chip">すき <span class="romaji-hint">suki</span> — que gusta</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tema 4: どんな -->
+            <div class="materia-card">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">❓ Patrón どんな</span>
+                </button>
+                <div class="materia-body">
+                    <p class="materia-intro">Cuando quieres preguntar <strong>"¿Qué tipo de ~?"</strong> o <strong>"¿Cómo es ~?"</strong>, usas <strong>どんな</strong> <span class="romaji-hint">(donna)</span> antes del sustantivo.</p>
+
+                    <p class="materia-explain">Es como preguntar por las características de algo. La respuesta usa un adjetivo (い o な).</p>
+
+                    <h5 class="materia-subtitle">🧩 Estructura:</h5>
+                    <div class="materia-highlight">
+                        <div class="materia-jp"><strong>どんな</strong> + sustantivo + ですか。</div>
+                        <div class="materia-romaji"><strong>Donna</strong> + sustantivo + desu ka.</div>
+                        <div class="materia-es">= ¿Qué tipo de [sustantivo] es?</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">💬 Ejemplo de conversación 1:</h5>
+                    <div class="materia-conversation">
+                        <div class="materia-example conv-a">
+                            <div class="conv-label">Pregunta:</div>
+                            <div class="materia-jp"><strong>どんな</strong> まちですか。</div>
+                            <div class="materia-romaji"><strong>Donna</strong> machi desu ka.</div>
+                            <div class="materia-es">¿Qué tipo de ciudad es? (= ¿Cómo es la ciudad?)</div>
+                        </div>
+                        <div class="materia-example conv-b">
+                            <div class="conv-label">Respuesta con adj-な:</div>
+                            <div class="materia-jp">しずか<strong>な</strong> まちです。</div>
+                            <div class="materia-romaji">Shizuka <strong>na</strong> machi desu.</div>
+                            <div class="materia-es">Es una ciudad tranquila.</div>
+                        </div>
+                    </div>
+
+                    <h5 class="materia-subtitle">💬 Ejemplo de conversación 2:</h5>
+                    <div class="materia-conversation">
+                        <div class="materia-example conv-a">
+                            <div class="conv-label">Pregunta:</div>
+                            <div class="materia-jp"><strong>どんな</strong> えいがですか。</div>
+                            <div class="materia-romaji"><strong>Donna</strong> eiga desu ka.</div>
+                            <div class="materia-es">¿Qué tipo de película es?</div>
+                        </div>
+                        <div class="materia-example conv-b">
+                            <div class="conv-label">Respuesta con adj-い:</div>
+                            <div class="materia-jp">おもしろい えいがです。</div>
+                            <div class="materia-romaji">Omoshiroi eiga desu.</div>
+                            <div class="materia-es">Es una película interesante.</div>
+                        </div>
+                    </div>
+
+                    <h5 class="materia-subtitle">💬 Ejemplo de conversación 3:</h5>
+                    <div class="materia-conversation">
+                        <div class="materia-example conv-a">
+                            <div class="conv-label">Pregunta:</div>
+                            <div class="materia-jp"><strong>どんな</strong> りょうりが すきですか。</div>
+                            <div class="materia-romaji"><strong>Donna</strong> ryōri ga suki desu ka.</div>
+                            <div class="materia-es">¿Qué tipo de comida te gusta?</div>
+                        </div>
+                        <div class="materia-example conv-b">
+                            <div class="conv-label">Respuesta:</div>
+                            <div class="materia-jp">にほんりょうりが すきです。</div>
+                            <div class="materia-romaji">Nihon ryōri ga suki desu.</div>
+                            <div class="materia-es">Me gusta la comida japonesa.</div>
+                        </div>
+                    </div>
+
+                    <p class="materia-note">💡 <strong>どんな</strong> siempre va seguido de un sustantivo. No se usa solo. Piénsalo como "¿Qué tipo de ___?"</p>
+                </div>
+            </div>
+
+            <!-- Tema 5: Adverbios de grado -->
+            <div class="materia-card">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">📊 Adverbios de grado</span>
+                </button>
+                <div class="materia-body">
+                    <p class="materia-intro">Los adverbios de grado indican <strong>qué tan fuerte</strong> es una cualidad. Son como decir "muy", "un poco", "no muy" o "para nada" en español.</p>
+
+                    <p class="materia-explain">Van <strong>antes del adjetivo</strong>. Pero ojo: algunos SOLO se usan con oraciones afirmativas y otros SOLO con negativas.</p>
+
+                    <h5 class="materia-subtitle">✅ Con oraciones AFIRMATIVAS:</h5>
+                    <table class="materia-table">
+                        <thead>
+                            <tr><th>Adverbio</th><th>Romaji</th><th>Significado</th><th>Nivel</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>とても</td><td><span class="romaji-hint">totemo</span></td><td>Muy</td><td>🔥🔥🔥 Alto</td></tr>
+                            <tr><td>すこし</td><td><span class="romaji-hint">sukoshi</span></td><td>Un poco</td><td>🔥 Bajo</td></tr>
+                        </tbody>
+                    </table>
+
+                    <div class="materia-example">
+                        <div class="materia-jp">この レストランは <strong>とても</strong> おいしいです。</div>
+                        <div class="materia-romaji">Kono resutoran wa <strong>totemo</strong> oishii desu.</div>
+                        <div class="materia-es">Este restaurante es <strong>muy</strong> delicioso.</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">きょうは <strong>すこし</strong> さむいです。</div>
+                        <div class="materia-romaji">Kyō wa <strong>sukoshi</strong> samui desu.</div>
+                        <div class="materia-es">Hoy hace <strong>un poco</strong> de frío.</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">❌ Con oraciones NEGATIVAS:</h5>
+                    <table class="materia-table">
+                        <thead>
+                            <tr><th>Adverbio</th><th>Romaji</th><th>Significado</th><th>Nivel</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>あまり</td><td><span class="romaji-hint">amari</span></td><td>No muy / No tanto</td><td>Negación suave</td></tr>
+                            <tr><td>ぜんぜん</td><td><span class="romaji-hint">zenzen</span></td><td>Para nada / Nada de</td><td>Negación total</td></tr>
+                        </tbody>
+                    </table>
+
+                    <div class="materia-example">
+                        <div class="materia-jp">あの えいがは <strong>あまり</strong> おもしろ<strong>くないです</strong>。</div>
+                        <div class="materia-romaji">Ano eiga wa <strong>amari</strong> omoshiroku <strong>nai desu</strong>.</div>
+                        <div class="materia-es">Esa película <strong>no es muy</strong> interesante.</div>
+                    </div>
+                    <div class="materia-example">
+                        <div class="materia-jp">この りょうりは <strong>ぜんぜん</strong> おいしく<strong>ないです</strong>。</div>
+                        <div class="materia-romaji">Kono ryōri wa <strong>zenzen</strong> oishiku <strong>nai desu</strong>.</div>
+                        <div class="materia-es">Esta comida <strong>no es nada</strong> deliciosa.</div>
+                    </div>
+
+                    <div class="materia-note">⚠️ <strong>Regla importante:</strong><br>
+                        • <strong>とても</strong> y <strong>すこし</strong> → SIEMPRE con oración afirmativa (～です)<br>
+                        • <strong>あまり</strong> y <strong>ぜんぜん</strong> → SIEMPRE con oración negativa (～くないです / ～じゃないです)<br><br>
+                        ❌ No digas: "とても おいしくないです" (suena raro en japonés)<br>
+                        ❌ No digas: "あまり おいしいです" (gramaticalmente incorrecto)</div>
+
+                    <h5 class="materia-subtitle">📊 Escala visual de intensidad:</h5>
+                    <div class="materia-scale">
+                        <div class="scale-item scale-high">とても ＋ adj = MUY ~</div>
+                        <div class="scale-item scale-mid">adj solo = Es ~</div>
+                        <div class="scale-item scale-low">すこし ＋ adj = Un poco ~</div>
+                        <div class="scale-item scale-neg-low">あまり ＋ neg = No muy ~</div>
+                        <div class="scale-item scale-neg-high">ぜんぜん ＋ neg = Para nada ~</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tema 6: Partícula ね -->
+            <div class="materia-card">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">💬 Partícula ね</span>
+                </button>
+                <div class="materia-body">
+                    <p class="materia-intro">La partícula <strong>ね</strong> <span class="romaji-hint">(ne)</span> se pone al <strong>final de la oración</strong>, después de です. Es como decir "¿verdad?", "¿no?" o "¿cierto?" en español.</p>
+
+                    <p class="materia-explain">Se usa cuando <strong>crees que la otra persona está de acuerdo</strong> con lo que dices, o cuando quieres que confirme. Es muy común y hace que suenes más natural y amigable.</p>
+
+                    <h5 class="materia-subtitle">🧩 Estructura:</h5>
+                    <div class="materia-highlight">
+                        <div class="materia-jp">oración + です<strong>ね</strong>。</div>
+                        <div class="materia-es">= [oración], ¿verdad? / ¿no?</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">💬 Ejemplos en conversación:</h5>
+                    <div class="materia-conversation">
+                        <div class="materia-example conv-a">
+                            <div class="conv-label">Persona A:</div>
+                            <div class="materia-jp">いい てんきです<strong>ね</strong>。</div>
+                            <div class="materia-romaji">Ii tenki desu <strong>ne</strong>.</div>
+                            <div class="materia-es">Buen clima, ¿verdad?</div>
+                        </div>
+                        <div class="materia-example conv-b">
+                            <div class="conv-label">Persona B:</div>
+                            <div class="materia-jp">そうです<strong>ね</strong>。</div>
+                            <div class="materia-romaji">Sō desu <strong>ne</strong>.</div>
+                            <div class="materia-es">Sí, así es.</div>
+                        </div>
+                    </div>
+
+                    <div class="materia-conversation">
+                        <div class="materia-example conv-a">
+                            <div class="conv-label">Persona A:</div>
+                            <div class="materia-jp">この ケーキは おいしいです<strong>ね</strong>。</div>
+                            <div class="materia-romaji">Kono kēki wa oishii desu <strong>ne</strong>.</div>
+                            <div class="materia-es">Este pastel es delicioso, ¿no?</div>
+                        </div>
+                        <div class="materia-example conv-b">
+                            <div class="conv-label">Persona B:</div>
+                            <div class="materia-jp">ほんとうですね。とても おいしいです。</div>
+                            <div class="materia-romaji">Hontō desu ne. Totemo oishii desu.</div>
+                            <div class="materia-es">Es verdad. Está muy delicioso.</div>
+                        </div>
+                    </div>
+
+                    <div class="materia-example">
+                        <div class="materia-jp">にほんごは おもしろいです<strong>ね</strong>。</div>
+                        <div class="materia-romaji">Nihongo wa omoshiroi desu <strong>ne</strong>.</div>
+                        <div class="materia-es">El japonés es interesante, ¿no?</div>
+                    </div>
+
+                    <div class="materia-example">
+                        <div class="materia-jp">この まちは しずかです<strong>ね</strong>。</div>
+                        <div class="materia-romaji">Kono machi wa shizuka desu <strong>ne</strong>.</div>
+                        <div class="materia-es">Esta ciudad es tranquila, ¿verdad?</div>
+                    </div>
+
+                    <h5 class="materia-subtitle">🆚 ¿Cuándo usar ね?</h5>
+                    <table class="materia-table">
+                        <thead>
+                            <tr><th>Situación</th><th>Ejemplo</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Buscas acuerdo</td><td>いい てんきですね。 <span class="romaji-hint">(Buen clima, ¿no?)</span></td></tr>
+                            <tr><td>Comentas algo obvio</td><td>おおきいですね。 <span class="romaji-hint">(Es grande, ¿eh?)</span></td></tr>
+                            <tr><td>Confirmas información</td><td>３じですね。 <span class="romaji-hint">(Son las 3, ¿verdad?)</span></td></tr>
+                            <tr><td>Muestras empatía</td><td>たいへんですね。 <span class="romaji-hint">(Qué difícil, ¿no?)</span></td></tr>
+                        </tbody>
+                    </table>
+
+                    <p class="materia-note">💡 <strong>そうですね</strong> <span class="romaji-hint">(sō desu ne)</span> = "Sí, así es" / "Tienes razón". Es la respuesta más común cuando alguien usa ね. ¡Úsala mucho en conversación!</p>
+                </div>
+            </div>
+
+        </div>
+        </div><!-- end subtab-gramatica -->
+
+        <!-- SUB-TAB: VOCABULARIO -->
+        <div class="materia-subtab" id="subtab-vocabulario">
+
+        <!-- Buscador de vocabulario -->
+        <div class="vocab-search-bar">
+            <input type="text" class="search-input" id="vocabSearchInput" placeholder="Buscar palabra en español, japonés o romaji..." autocomplete="off" oninput="filterVocab()">
+        </div>
+
+        <div class="materia-container" id="vocabContainer">
+
+            <!-- Categoría: Sustantivos - Lugares -->
+            <div class="materia-card open">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">🏙️ Lugares</span>
+                </button>
+                <div class="materia-body">
+                    <div class="vocab-list">
+                        <div class="vocab-item"><span class="vocab-jp">まち（町）</span><span class="vocab-romaji">machi</span><span class="vocab-es">ciudad / pueblo</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">ところ（所）</span><span class="vocab-romaji">tokoro</span><span class="vocab-es">lugar / sitio</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">えき（駅）</span><span class="vocab-romaji">eki</span><span class="vocab-es">estación (de tren)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">だいがく（大学）</span><span class="vocab-romaji">daigaku</span><span class="vocab-es">universidad</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">がっこう（学校）</span><span class="vocab-romaji">gakkō</span><span class="vocab-es">escuela</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">かいしゃ（会社）</span><span class="vocab-romaji">kaisha</span><span class="vocab-es">empresa / compañía</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">うち（家）</span><span class="vocab-romaji">uchi</span><span class="vocab-es">casa (propia)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">レストラン</span><span class="vocab-romaji">resutoran</span><span class="vocab-es">restaurante</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">みせ（店）</span><span class="vocab-romaji">mise</span><span class="vocab-es">tienda</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">やま（山）</span><span class="vocab-romaji">yama</span><span class="vocab-es">montaña</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">とうきょう（東京）</span><span class="vocab-romaji">Tōkyō</span><span class="vocab-es">Tokio</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">きょうと（京都）</span><span class="vocab-romaji">Kyōto</span><span class="vocab-es">Kioto</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría: Transporte -->
+            <div class="materia-card open">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">🚗 Transporte</span>
+                </button>
+                <div class="materia-body">
+                    <div class="vocab-list">
+                        <div class="vocab-item"><span class="vocab-jp">バス</span><span class="vocab-romaji">basu</span><span class="vocab-es">bus / autobús</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">でんしゃ（電車）</span><span class="vocab-romaji">densha</span><span class="vocab-es">tren</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">ちかてつ（地下鉄）</span><span class="vocab-romaji">chikatetsu</span><span class="vocab-es">metro / subterráneo</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">しんかんせん（新幹線）</span><span class="vocab-romaji">shinkansen</span><span class="vocab-es">tren bala</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">タクシー</span><span class="vocab-romaji">takushii</span><span class="vocab-es">taxi</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">じてんしゃ（自転車）</span><span class="vocab-romaji">jitensha</span><span class="vocab-es">bicicleta</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">くるま（車）</span><span class="vocab-romaji">kuruma</span><span class="vocab-es">carro / auto</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">ひこうき（飛行機）</span><span class="vocab-romaji">hikōki</span><span class="vocab-es">avión</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría: Objetos y cosas -->
+            <div class="materia-card open">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">📦 Objetos y cosas</span>
+                </button>
+                <div class="materia-body">
+                    <div class="vocab-list">
+                        <div class="vocab-item"><span class="vocab-jp">ほん（本）</span><span class="vocab-romaji">hon</span><span class="vocab-es">libro</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">えいが（映画）</span><span class="vocab-romaji">eiga</span><span class="vocab-es">película</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">りょうり（料理）</span><span class="vocab-romaji">ryōri</span><span class="vocab-es">comida / cocina</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">りんご</span><span class="vocab-romaji">ringo</span><span class="vocab-es">manzana</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">ケーキ</span><span class="vocab-romaji">kēki</span><span class="vocab-es">pastel</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">え（絵）</span><span class="vocab-romaji">e</span><span class="vocab-es">pintura / dibujo</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">はな（花）</span><span class="vocab-romaji">hana</span><span class="vocab-es">flor</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">いえ（家）</span><span class="vocab-romaji">ie</span><span class="vocab-es">casa (edificio)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">てんき（天気）</span><span class="vocab-romaji">tenki</span><span class="vocab-es">clima / tiempo</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría: Personas -->
+            <div class="materia-card open">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">👤 Personas y pronombres</span>
+                </button>
+                <div class="materia-body">
+                    <div class="vocab-list">
+                        <div class="vocab-item"><span class="vocab-jp">ひと（人）</span><span class="vocab-romaji">hito</span><span class="vocab-es">persona</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">～さん</span><span class="vocab-romaji">~san</span><span class="vocab-es">señor/a (sufijo de respeto)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">この</span><span class="vocab-romaji">kono</span><span class="vocab-es">este / esta (+ sustantivo)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">その</span><span class="vocab-romaji">sono</span><span class="vocab-es">ese / esa (+ sustantivo)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">あの</span><span class="vocab-romaji">ano</span><span class="vocab-es">aquel / aquella (+ sustantivo)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">それ</span><span class="vocab-romaji">sore</span><span class="vocab-es">eso</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría: Adjetivos い -->
+            <div class="materia-card open">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">🟡 Adjetivos い</span>
+                </button>
+                <div class="materia-body">
+                    <div class="vocab-list">
+                        <div class="vocab-item"><span class="vocab-jp">たかい（高い）</span><span class="vocab-romaji">takai</span><span class="vocab-es">caro / alto</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">やすい（安い）</span><span class="vocab-romaji">yasui</span><span class="vocab-es">barato</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">おおきい（大きい）</span><span class="vocab-romaji">ookii</span><span class="vocab-es">grande</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">ちいさい（小さい）</span><span class="vocab-romaji">chiisai</span><span class="vocab-es">pequeño</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">あたらしい（新しい）</span><span class="vocab-romaji">atarashii</span><span class="vocab-es">nuevo</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">ふるい（古い）</span><span class="vocab-romaji">furui</span><span class="vocab-es">viejo (objetos)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">いい</span><span class="vocab-romaji">ii</span><span class="vocab-es">bueno (⚠️ negativo: よくない)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">あつい（暑い）</span><span class="vocab-romaji">atsui</span><span class="vocab-es">caliente / caluroso</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">さむい（寒い）</span><span class="vocab-romaji">samui</span><span class="vocab-es">frío (clima)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">おもしろい（面白い）</span><span class="vocab-romaji">omoshiroi</span><span class="vocab-es">interesante / divertido</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">おいしい</span><span class="vocab-romaji">oishii</span><span class="vocab-es">delicioso / rico</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">いそがしい（忙しい）</span><span class="vocab-romaji">isogashii</span><span class="vocab-es">ocupado</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">ながい（長い）</span><span class="vocab-romaji">nagai</span><span class="vocab-es">largo</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">あかるい（明るい）</span><span class="vocab-romaji">akarui</span><span class="vocab-es">alegre / brillante</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">たいへん（な）</span><span class="vocab-romaji">taihen (na)</span><span class="vocab-es">difícil / terrible</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría: Adjetivos な -->
+            <div class="materia-card open">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">🟣 Adjetivos な</span>
+                </button>
+                <div class="materia-body">
+                    <div class="vocab-list">
+                        <div class="vocab-item"><span class="vocab-jp">しずか（な）</span><span class="vocab-romaji">shizuka (na)</span><span class="vocab-es">tranquilo / silencioso</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">にぎやか（な）</span><span class="vocab-romaji">nigiyaka (na)</span><span class="vocab-es">animado / bullicioso</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">べんり（な）</span><span class="vocab-romaji">benri (na)</span><span class="vocab-es">conveniente / práctico</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">ふべん（な）</span><span class="vocab-romaji">fuben (na)</span><span class="vocab-es">inconveniente</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">ゆうめい（有名）（な）</span><span class="vocab-romaji">yūmei (na)</span><span class="vocab-es">famoso ⚠️ parece adj-い pero es な</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">きれい（な）</span><span class="vocab-romaji">kirei (na)</span><span class="vocab-es">bonito / limpio ⚠️ parece adj-い pero es な</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">げんき（元気）（な）</span><span class="vocab-romaji">genki (na)</span><span class="vocab-es">energético / saludable</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">ひま（な）</span><span class="vocab-romaji">hima (na)</span><span class="vocab-es">libre / desocupado</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">すき（な）</span><span class="vocab-romaji">suki (na)</span><span class="vocab-es">que gusta / favorito</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">かんたん（簡単）（な）</span><span class="vocab-romaji">kantan (na)</span><span class="vocab-es">fácil / sencillo</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría: Adverbios -->
+            <div class="materia-card open">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">📊 Adverbios</span>
+                </button>
+                <div class="materia-body">
+                    <div class="vocab-list">
+                        <div class="vocab-item"><span class="vocab-jp">とても</span><span class="vocab-romaji">totemo</span><span class="vocab-es">muy (✅ afirmativo)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">すこし</span><span class="vocab-romaji">sukoshi</span><span class="vocab-es">un poco (✅ afirmativo)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">あまり</span><span class="vocab-romaji">amari</span><span class="vocab-es">no muy (❌ solo negativo)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">ぜんぜん</span><span class="vocab-romaji">zenzen</span><span class="vocab-es">para nada (❌ solo negativo)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">ぐらい</span><span class="vocab-romaji">gurai</span><span class="vocab-es">aproximadamente</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría: Partículas -->
+            <div class="materia-card open">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">🔗 Partículas</span>
+                </button>
+                <div class="materia-body">
+                    <div class="vocab-list">
+                        <div class="vocab-item"><span class="vocab-jp">は</span><span class="vocab-romaji">wa</span><span class="vocab-es">marca el tema de la oración</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">が</span><span class="vocab-romaji">ga</span><span class="vocab-es">marca el sujeto</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">の</span><span class="vocab-romaji">no</span><span class="vocab-es">posesión (de)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">で</span><span class="vocab-romaji">de</span><span class="vocab-es">en / por medio de (transporte)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">から</span><span class="vocab-romaji">kara</span><span class="vocab-es">desde / de (origen)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">まで</span><span class="vocab-romaji">made</span><span class="vocab-es">hasta / a (destino)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">ね</span><span class="vocab-romaji">ne</span><span class="vocab-es">¿verdad? ¿no? (confirmación)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">か</span><span class="vocab-romaji">ka</span><span class="vocab-es">marca pregunta (al final)</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría: Expresiones útiles -->
+            <div class="materia-card open">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">💬 Expresiones útiles</span>
+                </button>
+                <div class="materia-body">
+                    <div class="vocab-list">
+                        <div class="vocab-item"><span class="vocab-jp">どのくらいですか</span><span class="vocab-romaji">dono kurai desu ka</span><span class="vocab-es">¿Cuánto (tiempo) se tarda?</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">どんな</span><span class="vocab-romaji">donna</span><span class="vocab-es">¿Qué tipo de ~?</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">そうですね</span><span class="vocab-romaji">sō desu ne</span><span class="vocab-es">Sí, así es / Tienes razón</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">ほんとうですね</span><span class="vocab-romaji">hontō desu ne</span><span class="vocab-es">Es verdad, ¿no?</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">～です</span><span class="vocab-romaji">~desu</span><span class="vocab-es">es ~ (afirmación cortés)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">～じゃないです</span><span class="vocab-romaji">~ja nai desu</span><span class="vocab-es">no es ~ (negación cortés)</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">あるいて</span><span class="vocab-romaji">aruite</span><span class="vocab-es">caminando / a pie</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría: Tiempo y duración -->
+            <div class="materia-card open">
+                <button class="materia-toggle" onclick="toggleMateria(this)">
+                    <span class="materia-toggle__icon">▶</span>
+                    <span class="materia-toggle__title">⏰ Tiempo y duración</span>
+                </button>
+                <div class="materia-body">
+                    <div class="vocab-list">
+                        <div class="vocab-item"><span class="vocab-jp">～ふん / ～ぷん（～分）</span><span class="vocab-romaji">~fun / ~pun</span><span class="vocab-es">~ minutos</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">～じかん（～時間）</span><span class="vocab-romaji">~jikan</span><span class="vocab-es">~ horas</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">きょう（今日）</span><span class="vocab-romaji">kyō</span><span class="vocab-es">hoy</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">いま（今）</span><span class="vocab-romaji">ima</span><span class="vocab-es">ahora</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">にほんご（日本語）</span><span class="vocab-romaji">nihongo</span><span class="vocab-es">idioma japonés</span></div>
+                        <div class="vocab-item"><span class="vocab-jp">にほんりょうり（日本料理）</span><span class="vocab-romaji">nihon ryōri</span><span class="vocab-es">comida japonesa</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div><!-- end subtab-vocabulario -->
+
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+</html>
