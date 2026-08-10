@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "appVersion": "1.0.1",
+  "contentVersion": "0.4.0",
+  "progressVersion": "1.0.0",
+  "generatedAt": "2026-08-10T00:00:00Z",
+  "sourceCount": 677,
+  "levels": ["Nivel introductorio", "Nivel 1", "Nivel 2"],
+  "validationStatus": "needs-review",
+  "unresolvedIssues": [
+    "La extracción automática de PDF requiere revisión visual antes de promover contenido a verified.",
+    "Las composiciones de Semanas 9 y 11 no tienen capa de texto extraíble.",
+    "El inventario completo aún no ha sido clasificado y revisado manualmente.",
+    "WorkIQ localizó páginas de OneNote, pero no recuperó de forma confiable todo su contenido.",
+    "Los requisitos exclusivos de los roles A/B del examen oral requieren revisión visual de la rúbrica."
+  ],
+  "publicationPolicy": {
+    "publishedStatuses": ["verified"],
+    "reviewOnlyStatuses": ["needs-review", "incomplete", "conflicting", "inaccessible"]
+  }
+}

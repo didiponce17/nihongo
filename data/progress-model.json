@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0.0",
+  "progressVersion": "1.0.0",
+  "storageKey": "nihonStudy.progress.v1",
+  "initialState": {
+    "currentQuarter": null,
+    "priorityLessonId": null,
+    "newItemGoal": 5,
+    "reviewGoal": 10,
+    "lessonProgress": {},
+    "itemProgress": {},
+    "reviewHistory": [],
+    "errorEvents": [],
+    "favorites": [],
+    "suspendedItemIds": [],
+    "lastSession": null
+  },
+  "itemState": {
+    "statusValues": ["locked", "available", "started", "practicing", "review-due", "mastered"],
+    "srsDefaults": {
+      "repetitions": 0,
+      "intervalDays": 0,
+      "easeFactor": 2.5,
+      "dueDate": null,
+      "lastReviewedAt": null,
+      "lastGrade": null,
+      "lapses": 0,
+      "masteryScore": 0,
+      "suspended": false,
+      "reviewHistory": []
+    }
+  },
+  "privacyNotice": "Los datos de progreso se almacenan en este navegador y pueden perderse si se eliminan los datos del sitio."
+}

@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "1.0.0",
+  "media": [
+    {"id": "MEDIA-N2-ORAL-MEMO", "type": "image", "sourceIds": ["SRC-0156"], "purpose": "Planificar persona, actividad, día, hora y lugar", "validationStatus": "verified"},
+    {"id": "MEDIA-N2-ORAL-SCHEDULE", "type": "image", "sourceIds": ["SRC-0157"], "purpose": "Registrar disponibilidad semanal", "validationStatus": "verified"},
+    {"id": "MEDIA-N2-ORAL-EXAMPLE", "type": "image", "sourceIds": ["SRC-0159"], "purpose": "Apoyo visual del flujo de conversación", "validationStatus": "verified"}
+  ]
+}

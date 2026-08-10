@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0.0",
+  "progressVersion": "1.0.0",
+  "publication": {
+    "publishedStatuses": ["verified"],
+    "reviewOnlyStatuses": ["needs-review", "incomplete", "conflicting", "inaccessible"],
+    "allowUnverifiedInStudyModes": false,
+    "allowUnverifiedInLocalAdmin": true
+  },
+  "imports": {
+    "maxJsonOrCsvBytes": 10485760,
+    "maxPdfBytes": 26214400,
+    "maxImageBytes": 10485760,
+    "automaticPublication": false,
+    "pdfValidationStatus": "needs-review"
+  },
+  "storage": {
+    "namespace": "nihonStudy",
+    "warnOnQuotaExceeded": true,
+    "allowProgressExport": true,
+    "allowProgressImport": true,
+    "requireConfirmationBeforeReset": true
+  },
+  "mastery": {
+    "minimumAttempts": 4,
+    "minimumCorrectAnswers": 3,
+    "minimumDistinctReviewDays": 2,
+    "minimumAccuracy": 0.8,
+    "criticalFailureLookbackDays": 3
+  },
+  "versions": {
+    "schemaVersionPurpose": "Estructura de los archivos académicos.",
+    "contentVersionPurpose": "Contenido académico publicado.",
+    "progressVersionPurpose": "Estructura del progreso almacenado localmente."
+  }
+}

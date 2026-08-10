@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0.0",
+  "lessons": [
+    {
+      "id": "LESSON-N2-ORAL-001",
+      "level": "Nivel 2",
+      "quarter": null,
+      "weeks": [12],
+      "title": "Invitar a una persona a ver una película",
+      "learningObjective": "Sostener una invitación breve acordando película, día, hora y lugar.",
+      "prerequisites": [],
+      "centralIdea": "Invitar, proponer opciones, responder y acordar los detalles de una película.",
+      "summary": "La evaluación se realiza en parejas o grupos de tres y valora gramática, pronunciación y dinámica natural.",
+      "keyPoints": ["Elegir con quién", "Proponer una película", "Acordar cuándo", "Acordar hora y lugar", "Aceptar o rechazar naturalmente"],
+      "vocabularyIds": [],
+      "grammarIds": ["GRAM-N2-001", "GRAM-N2-002", "GRAM-N2-003", "GRAM-N2-004", "GRAM-N2-005", "GRAM-N2-006", "GRAM-N2-007"],
+      "kanaIds": [],
+      "kanjiIds": [],
+      "examples": [
+        {"japanese": "だれとしますか。", "romaji": "Dare to shimasu ka?", "translation": null, "sourceIds": ["SRC-0156"], "location": "imagen"},
+        {"japanese": "何をしますか。", "romaji": "Nani o shimasu ka?", "translation": null, "sourceIds": ["SRC-0156"], "location": "imagen"},
+        {"japanese": "いつしますか。", "romaji": "Itsu shimasu ka?", "translation": null, "sourceIds": ["SRC-0156"], "location": "imagen"},
+        {"japanese": "何時に会いますか。", "romaji": "Nanji ni aimasu ka?", "translation": null, "sourceIds": ["SRC-0156"], "location": "imagen"},
+        {"japanese": "どこで会いますか。", "romaji": "Doko de aimasu ka?", "translation": null, "sourceIds": ["SRC-0156"], "location": "imagen"}
+      ],
+      "guidedPractice": ["Completar las cinco decisiones del memo", "Ensayar una invitación con ayudas visibles", "Repetir reduciendo las ayudas"],
+      "independentPractice": ["Realizar la conversación sin leer un guion completo"],
+      "masteryCriterion": "Incluye los elementos de la rúbrica asignada y mantiene una conversación comprensible y natural.",
+      "reviewLater": ["Partículas de lugar y tiempo", "Comparaciones", "Aceptación y rechazo"],
+      "sourceIds": ["SRC-0156", "SRC-0157", "SRC-0159", "SRC-0675"],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "LESSON-N2-ORAL-002",
+      "level": "Nivel 2",
+      "quarter": null,
+      "weeks": [9, 11, 12],
+      "title": "Presentar oralmente la composición",
+      "learningObjective": "Explicar con palabras propias las ideas principales de las dos partes de la composición.",
+      "prerequisites": ["LESSON-N2-ORAL-001"],
+      "centralIdea": "Resumir la ciudad o barrio y una experiencia sin memorizar ni leer la composición.",
+      "summary": "La primera parte presenta el lugar y una recomendación; la segunda relata una actividad, la experiencia y qué gustó o no.",
+      "keyPoints": ["Resumen de la primera parte", "Resumen de la segunda parte", "Organización clara", "Pronunciación y fluidez", "Palabras propias"],
+      "vocabularyIds": [],
+      "grammarIds": [],
+      "kanaIds": [],
+      "kanjiIds": [],
+      "examples": [],
+      "guidedPractice": ["Convertir cada parte en palabras clave", "Explicar cada bloque sin leer oraciones completas"],
+      "independentPractice": ["Presentar ambas partes en orden flexible conservando el contenido principal"],
+      "masteryCriterion": "Obtiene evidencia en los seis criterios de la rúbrica: contenido, gramática, vocabulario, inteligibilidad, fluidez y palabras propias.",
+      "reviewLater": ["Errores señalados en las correcciones de la composición cuando puedan revisarse visualmente"],
+      "sourceIds": ["SRC-0145", "SRC-0337", "SRC-0676", "SRC-0677"],
+      "validationStatus": "incomplete"
+    }
+  ]
+}

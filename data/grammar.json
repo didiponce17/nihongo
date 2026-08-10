@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0.0",
+  "grammar": [
+    {"id": "GRAM-N2-001", "name": "Expresar gusto", "pattern": "N が すき", "romaji": "N ga suki", "meaning": "Expresar qué gusta", "formation": null, "examples": [], "sourceIds": ["SRC-0675"], "validationStatus": "verified"},
+    {"id": "GRAM-N2-002", "name": "Comparación con のほうが y より", "pattern": "N1 のほうが N2 より Adj", "romaji": "N1 no hou ga N2 yori Adj", "meaning": "Comparar dos opciones", "formation": null, "examples": [], "sourceIds": ["SRC-0151", "SRC-0152", "SRC-0675"], "validationStatus": "verified"},
+    {"id": "GRAM-N2-003", "name": "Propuesta conjunta", "pattern": "V ましょう", "romaji": "V mashou", "meaning": "Proponer realizar una acción", "formation": null, "examples": [], "sourceIds": ["SRC-0150", "SRC-0154", "SRC-0675"], "validationStatus": "verified"},
+    {"id": "GRAM-N2-004", "name": "Invitación", "pattern": "V ませんか", "romaji": "V masen ka", "meaning": "Invitar a realizar una acción", "formation": null, "examples": [], "sourceIds": ["SRC-0150", "SRC-0154", "SRC-0675"], "validationStatus": "verified"},
+    {"id": "GRAM-N2-005", "name": "Proponer una opción", "pattern": "N は どうですか", "romaji": "N wa dou desu ka", "meaning": "Proponer o consultar una opción", "formation": null, "examples": [], "sourceIds": ["SRC-0154", "SRC-0675"], "validationStatus": "verified"},
+    {"id": "GRAM-N2-006", "name": "Rechazo indirecto", "pattern": "ちょっと…", "romaji": "chotto...", "meaning": "Dar una excusa o rechazar de forma indirecta", "formation": null, "examples": [], "sourceIds": ["SRC-0155", "SRC-0675"], "validationStatus": "verified"},
+    {"id": "GRAM-N2-007", "name": "Acción completada o pendiente", "pattern": "もう / まだ", "romaji": "mou / mada", "meaning": "Contrastar una acción ya realizada con una pendiente", "formation": null, "examples": [], "sourceIds": ["SRC-0149", "SRC-0155", "SRC-0675"], "validationStatus": "verified"},
+    {"id": "GRAM-N2-008", "name": "Razón con から", "pattern": "Razón から", "romaji": "Razón kara", "meaning": "Indicar una razón", "formation": null, "examples": [], "sourceIds": ["SRC-0152", "SRC-0162"], "validationStatus": "needs-review"},
+    {"id": "GRAM-N2-009", "name": "Superlativo interrogativo", "pattern": "Grupo で interrogativo が いちばん Adj ですか", "romaji": "Grupo de interrogativo ga ichiban Adj desu ka", "meaning": "Preguntar cuál elemento destaca dentro de un grupo", "formation": null, "examples": [], "sourceIds": ["SRC-0151", "SRC-0162"], "validationStatus": "needs-review"}
+  ]
+}

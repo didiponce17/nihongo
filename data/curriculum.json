@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "units": [
+    {
+      "id": "UNIT-N2-ORAL-001",
+      "level": "Nivel 2",
+      "quarter": null,
+      "weeks": [9, 11, 12],
+      "title": "Composición y producción oral",
+      "topics": ["Invitar a ver una película", "Presentar una composición con palabras propias"],
+      "lessonIds": ["LESSON-N2-ORAL-001", "LESSON-N2-ORAL-002"],
+      "prerequisites": [],
+      "relationships": [
+        {"type": "seUtilizaEn", "fromId": "LESSON-N2-ORAL-001", "toId": "EXAM-N2-ORAL-INVITATION"},
+        {"type": "seUtilizaEn", "fromId": "LESSON-N2-ORAL-002", "toId": "EXAM-N2-ORAL-COMPOSITION"}
+      ],
+      "sourceIds": ["SRC-0145", "SRC-0156", "SRC-0157", "SRC-0159", "SRC-0160", "SRC-0162", "SRC-0337", "SRC-0675", "SRC-0676", "SRC-0677"],
+      "validationStatus": "needs-review"
+    }
+  ]
+}

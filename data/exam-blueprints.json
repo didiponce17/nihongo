@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "examBlueprints": [
+    {
+      "id": "EXAM-N2-ORAL-INVITATION",
+      "lessonIds": ["LESSON-N2-ORAL-001"],
+      "mode": "simulación de examen",
+      "format": "parejas o grupos de tres",
+      "task": "Invitar a una persona a ver una película y acordar los detalles.",
+      "verifiedRequirements": ["がすき", "のほうが", "N1 は N2 より Adj", "Vましょう", "Vませんか", "どうですか", "ちょっと…", "もう／まだ", "naturalidad de la conversación"],
+      "verifiedRequirementRomaji": ["ga suki", "no hou ga", "N1 wa N2 yori Adj", "V mashou", "V masen ka", "dou desu ka", "chotto...", "mou / mada", null],
+      "roleRequirements": {
+        "validationStatus": "needs-review",
+        "sourceIds": ["SRC-0162"],
+        "A": ["がすき", "○○で何がいちばんすきですか", "○が○あります", "Vませんか", "もう／まだ", "どうですか", "proponer opciones", "pronunciación", "dinámica"],
+        "B": ["のほうが", "より", "いつ", "Vましょう", "もう／まだ", "どうですか", "ちょっと…", "razón から", "pronunciación", "dinámica"]
+      },
+      "passingCriterion": null,
+      "feedbackRules": ["Evaluar naturalidad además de presencia de patrones", "No exigir un guion memorizado"],
+      "sourceIds": ["SRC-0159", "SRC-0675"],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "EXAM-N2-ORAL-COMPOSITION",
+      "lessonIds": ["LESSON-N2-ORAL-002"],
+      "mode": "presentación oral",
+      "format": "individual",
+      "task": "Resumir con palabras propias las dos partes de la composición.",
+      "criteria": [
+        {"name": "Resumen del contenido", "maxPoints": 4},
+        {"name": "Uso de la gramática", "maxPoints": 4},
+        {"name": "Vocabulario", "maxPoints": 4},
+        {"name": "Pronunciación e inteligibilidad", "maxPoints": 4},
+        {"name": "Fluidez", "maxPoints": 4},
+        {"name": "Presentación con sus propias palabras", "maxPoints": 4}
+      ],
+      "maxPoints": 24,
+      "passingCriterion": null,
+      "feedbackRules": ["No calificar memorización palabra por palabra", "Valorar comunicación de ideas principales"],
+      "sourceIds": ["SRC-0676", "SRC-0677"],
+      "validationStatus": "verified"
+    }
+  ]
+}

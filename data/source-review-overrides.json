@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviews": [
+    {"sourceId": "SRC-0149", "readable": true, "extractableText": true, "relevantImages": true, "validationStatus": "verified", "contentIdentified": "Ejercicio visual de もう／まだ con respuestas marcadas.", "observations": ["Revisión visual manual; las respuestas marcadas no se tratan como clave docente."]},
+    {"sourceId": "SRC-0150", "readable": true, "extractableText": true, "relevantImages": true, "validationStatus": "verified", "contentIdentified": "Ejercicios visuales de Vませんか y Vましょう.", "observations": ["Revisión visual manual; las respuestas marcadas no se tratan como clave docente."]},
+    {"sourceId": "SRC-0151", "readable": true, "extractableText": true, "relevantImages": true, "validationStatus": "verified", "contentIdentified": "Ejercicios visuales de comparación y superlativo interrogativo.", "observations": ["Revisión visual manual; las respuestas marcadas no se tratan como clave docente."]},
+    {"sourceId": "SRC-0152", "readable": true, "extractableText": true, "relevantImages": true, "validationStatus": "verified", "contentIdentified": "Ejercicios visuales de comparación con のほうが y より.", "observations": ["Revisión visual manual; las respuestas marcadas no se tratan como clave docente."]},
+    {"sourceId": "SRC-0153", "readable": true, "extractableText": true, "relevantImages": true, "validationStatus": "verified", "contentIdentified": "Ejercicios visuales de partículas.", "observations": ["Revisión visual manual; las respuestas marcadas no se tratan como clave docente."]},
+    {"sourceId": "SRC-0154", "readable": true, "extractableText": true, "relevantImages": true, "validationStatus": "verified", "contentIdentified": "Diálogos visuales de invitación, propuesta y どうですか.", "observations": ["Revisión visual manual; las respuestas marcadas no se tratan como clave docente."]},
+    {"sourceId": "SRC-0155", "readable": true, "extractableText": true, "relevantImages": true, "validationStatus": "verified", "contentIdentified": "Diálogos visuales de invitación, rechazo con ちょっと y もう／まだ.", "observations": ["Revisión visual manual; las respuestas marcadas no se tratan como clave docente."]},
+    {"sourceId": "SRC-0156", "readable": true, "extractableText": true, "relevantImages": true, "validationStatus": "verified", "contentIdentified": "Memo de planificación: persona, actividad, día, hora y lugar.", "observations": ["Revisión visual manual."]},
+    {"sourceId": "SRC-0157", "readable": true, "extractableText": true, "relevantImages": true, "validationStatus": "verified", "contentIdentified": "Horario semanal para acordar disponibilidad.", "observations": ["Revisión visual manual."]},
+    {"sourceId": "SRC-0159", "readable": true, "extractableText": true, "relevantImages": true, "validationStatus": "verified", "contentIdentified": "Ejemplo visual para conversación de invitación a ver una película.", "observations": ["Revisión visual manual."]}
+  ]
+}
