@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#18453b">
+  <meta name="description" content="Aplicación local de estudio de japonés con contenido trazable.">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Nihon Study</title>
+</head>
+<body>
+  <a class="skip-link" href="#app-content">Saltar al contenido</a>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Centro Cultural Japonés</p>
+      <h1>Nihon Study</h1>
+    </div>
+    <div class="header-actions">
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Cambiar tema" title="Cambiar tema">
+        <i data-lucide="sun" aria-hidden="true"></i>
+      </button>
+      <button class="icon-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#more-menu" aria-controls="more-menu" aria-label="Abrir más opciones" title="Más opciones">
+        <i data-lucide="menu" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <aside class="offcanvas offcanvas-end" tabindex="-1" id="more-menu" aria-labelledby="more-menu-title">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title" id="more-menu-title">Más opciones</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <nav class="offcanvas-body secondary-nav" aria-label="Navegación secundaria">
+      <a href="#/flashcards" data-bs-dismiss="offcanvas"><i data-lucide="gallery-horizontal-end" aria-hidden="true"></i>Flashcards</a>
+      <a href="#/kana" data-bs-dismiss="offcanvas"><i data-lucide="languages" aria-hidden="true"></i>Kana</a>
+      <a href="#/kanji" data-bs-dismiss="offcanvas"><i data-lucide="square-kanban" aria-hidden="true"></i>Kanji</a>
+      <a href="#/grammar" data-bs-dismiss="offcanvas"><i data-lucide="braces" aria-hidden="true"></i>Gramática</a>
+      <a href="#/quiz" data-bs-dismiss="offcanvas"><i data-lucide="circle-help" aria-hidden="true"></i>Quiz</a>
+      <a href="#/errors" data-bs-dismiss="offcanvas"><i data-lucide="scan-search" aria-hidden="true"></i>Errores</a>
+      <a href="#/import" data-bs-dismiss="offcanvas"><i data-lucide="file-up" aria-hidden="true"></i>Importar contenido</a>
+      <a href="#/settings" data-bs-dismiss="offcanvas"><i data-lucide="settings" aria-hidden="true"></i>Configuración</a>
+    </nav>
+  </aside>
+
+  <main id="app-content" class="app-content" tabindex="-1">
+    <div class="loading-state" role="status">Cargando contenido validado…</div>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navegación principal">
+    <a href="#/home" data-route="home"><i data-lucide="house" aria-hidden="true"></i><span>Inicio</span></a>
+    <a href="#/review" data-route="review"><i data-lucide="rotate-ccw" aria-hidden="true"></i><span>Repaso</span></a>
+    <a href="#/exam" data-route="exam"><i data-lucide="messages-square" aria-hidden="true"></i><span>Oral</span></a>
+    <a href="#/writing" data-route="writing"><i data-lucide="pen-line" aria-hidden="true"></i><span>Escritura</span></a>
+    <a href="#/progress" data-route="progress"><i data-lucide="chart-no-axes-column" aria-hidden="true"></i><span>Progreso</span></a>
+  </nav>
+
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./vendor/lucide/lucide.min.js"></script>
+  <script type="module" src="./app.js?v=1.0.1"></script>
+</body>
+</html>
