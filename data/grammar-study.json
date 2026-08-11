@@ -1,0 +1,718 @@
+{
+  "schemaVersion": "1.0.0",
+  "levels": [
+    {
+      "id": "intro",
+      "name": "Nivel introductorio",
+      "description": "Saludos, lenguaje de clase, familia, presentación personal y hábitos culturales para desenvolverte desde la primera clase.",
+      "units": [
+        {
+          "title": "Unidad 1 · Saludos según el momento",
+          "points": [
+            "おはようございます · ohayou gozaimasu · Buenos días",
+            "こんにちは · konnichiwa · Hola / buenas tardes",
+            "こんばんは · konbanwa · Buenas noches",
+            "さようなら・またね · sayounara / mata ne · Despedidas"
+          ],
+          "example": {
+            "japanese": "おはようございます。先生。",
+            "romaji": "Ohayou gozaimasu. Sensei.",
+            "spanish": "Buenos días, profesor/a.",
+            "explanation": "おはようございます es la forma cortés de saludar por la mañana. Con amistades cercanas puede abreviarse como おはよう."
+          }
+        },
+        {
+          "title": "Unidad 2 · Presentarse con cortesía",
+          "points": [
+            "はじめまして · hajimemashite · Mucho gusto",
+            "〜です · desu · Soy / es",
+            "〜から来ました · kara kimashita · Vengo de",
+            "よろしくお願いします · yoroshiku onegai shimasu · Encantado/a"
+          ],
+          "example": {
+            "japanese": "はじめまして。マリアです。コスタリカから来ました。よろしくお願いします。",
+            "romaji": "Hajimemashite. Maria desu. Kosutarika kara kimashita. Yoroshiku onegai shimasu.",
+            "spanish": "Mucho gusto. Soy María. Vengo de Costa Rica. Encantada de conocerle.",
+            "explanation": "La secuencia はじめまして → nombre → origen → よろしくお願いします forma una presentación breve y natural."
+          }
+        },
+        {
+          "title": "Unidad 3 · Palabras esenciales de clase",
+          "points": [
+            "分かりました・分かりません · wakarimashita / wakarimasen · Entendí / no entiendo",
+            "もう一度お願いします · mou ichido onegai shimasu · Otra vez, por favor",
+            "ゆっくりお願いします · yukkuri onegai shimasu · Más despacio, por favor",
+            "質問があります · shitsumon ga arimasu · Tengo una pregunta"
+          ],
+          "example": {
+            "japanese": "すみません。分かりません。もう一度お願いします。",
+            "romaji": "Sumimasen. Wakarimasen. Mou ichido onegai shimasu.",
+            "spanish": "Disculpe. No entiendo. Repítalo una vez más, por favor.",
+            "explanation": "すみません llama la atención con cortesía. もう一度お願いします permite pedir una repetición sin interrumpir bruscamente."
+          }
+        },
+        {
+          "title": "Unidad 4 · Familia y relaciones",
+          "points": [
+            "私の家族 · watashi no kazoku · Mi familia",
+            "〜の · no · De / pertenencia",
+            "こちらは〜です · kochira wa ... desu · Esta persona es",
+            "〜も · mo · También"
+          ],
+          "example": {
+            "japanese": "こちらは私の母です。父も会社員です。",
+            "romaji": "Kochira wa watashi no haha desu. Chichi mo kaishain desu.",
+            "spanish": "Esta es mi madre. Mi padre también es empleado de empresa.",
+            "explanation": "Al hablar de tu propia familia se usan 母 (haha) y 父 (chichi). も significa también y sustituye a は."
+          }
+        },
+        {
+          "title": "Unidad 5 · Edad, país e información básica",
+          "points": [
+            "〜歳です · sai desu · Tener ... años",
+            "〜人 · jin · Nacionalidad",
+            "〜ですか · desu ka · Pregunta cortés",
+            "〜は · wa · Tema de la oración"
+          ],
+          "example": {
+            "japanese": "妹は十歳です。コスタリカ人です。",
+            "romaji": "Imouto wa jussai desu. Kosutarika-jin desu.",
+            "spanish": "Mi hermana menor tiene diez años. Es costarricense.",
+            "explanation": "歳 cuenta años de edad y 人, leído じん después de un país, expresa nacionalidad."
+          }
+        },
+        {
+          "title": "Unidad 6 · Objetos y preguntas del aula",
+          "points": [
+            "これ・それ・あれ · kore / sore / are · Esto / eso / aquello",
+            "何 · nani / nan · Qué",
+            "〜の · no · De / pertenencia",
+            "そうです · sou desu · Así es"
+          ],
+          "example": {
+            "japanese": "これは何ですか。日本語の辞書です。",
+            "romaji": "Kore wa nan desu ka. Nihongo no jisho desu.",
+            "spanish": "¿Qué es esto? Es un diccionario de japonés.",
+            "explanation": "これ señala algo cerca de quien habla; それ, cerca de quien escucha; あれ, lejos de ambos. の indica el tipo o pertenencia."
+          }
+        },
+        {
+          "title": "Unidad 7 · Cultura y cortesía cotidiana",
+          "points": [
+            "おじぎ · ojigi · Reverencia",
+            "靴を脱ぎます · kutsu o nugimasu · Quitarse los zapatos",
+            "いただきます · itadakimasu · Antes de comer",
+            "ごちそうさまでした · gochisousama deshita · Al terminar de comer",
+            "ありがとう・すみません · arigatou / sumimasen · Gracias / disculpe"
+          ],
+          "example": {
+            "japanese": "いただきます。ごちそうさまでした。",
+            "romaji": "Itadakimasu. Gochisousama deshita.",
+            "spanish": "Buen provecho / recibo esta comida. Gracias por la comida.",
+            "explanation": "いただきます se dice antes de comer y agradece lo recibido; ごちそうさまでした se usa al terminar para agradecer la comida y a quien la preparó."
+          }
+        }
+      ]
+    },
+    {
+      "id": "n1",
+      "name": "Nivel 1",
+      "description": "Oraciones corteses sobre identidad, existencia, ubicación, tiempo y actividades habituales.",
+      "units": [
+        {
+          "title": "Unidad 1 · Identidad y relaciones",
+          "points": [
+            "Tema con は",
+            "También con も",
+            "Relación con の"
+          ],
+          "example": {
+            "japanese": "私は学生です。妹も学生です。",
+            "romaji": "Watashi wa gakusei desu. Imouto mo gakusei desu.",
+            "spanish": "Soy estudiante. Mi hermana menor también es estudiante.",
+            "explanation": "は presenta el tema; も reemplaza は para añadir que lo mismo se aplica a otra persona."
+          }
+        },
+        {
+          "title": "Unidad 2 · Objetos, lugares y existencia",
+          "points": [
+            "ここ・そこ・あそこ",
+            "あります・います",
+            "Lugar に sujeto が"
+          ],
+          "example": {
+            "japanese": "教室に先生がいます。",
+            "romaji": "Kyoushitsu ni sensei ga imasu.",
+            "spanish": "Hay un profesor en el aula.",
+            "explanation": "に marca el lugar de existencia, が lo que existe e います se usa para personas o animales."
+          }
+        },
+        {
+          "title": "Unidad 3 · Hora y rutina",
+          "points": [
+            "Hora + に",
+            "Presente afirmativo ます",
+            "Presente negativo ません"
+          ],
+          "example": {
+            "japanese": "七時に起きます。日曜日は働きません。",
+            "romaji": "Shichiji ni okimasu. Nichiyoubi wa hatarakimasen.",
+            "spanish": "Me levanto a las siete. Los domingos no trabajo.",
+            "explanation": "に indica la hora exacta. ます afirma una rutina y ません la niega cortésmente."
+          }
+        },
+        {
+          "title": "Unidad 4 · Movimiento y actividades",
+          "points": [
+            "Destino con へ・に",
+            "Lugar de acción con で",
+            "Objeto con を"
+          ],
+          "example": {
+            "japanese": "図書館へ行きます。図書館で本を読みます。",
+            "romaji": "Toshokan e ikimasu. Toshokan de hon o yomimasu.",
+            "spanish": "Voy a la biblioteca. Leo un libro en la biblioteca.",
+            "explanation": "へ marca dirección; で marca dónde se hace leer y を señala el libro como objeto de la acción."
+          }
+        },
+        {
+          "title": "Unidad 5 · Adjetivos y preferencias",
+          "points": [
+            "Adjetivos い y な",
+            "Gusto con N が好き",
+            "Grado con とても・あまり"
+          ],
+          "example": {
+            "japanese": "この町は静かです。私は賑やかな町も好きです。",
+            "romaji": "Kono machi wa shizuka desu. Watashi wa nigiyaka na machi mo suki desu.",
+            "spanish": "Esta ciudad es tranquila. También me gustan las ciudades animadas.",
+            "explanation": "静か es adjetivo な pero no lleva な al final de la oración; 賑やか lleva な porque modifica directamente a 町."
+          }
+        }
+      ]
+    },
+    {
+      "id": "n2",
+      "name": "Nivel 2",
+      "description": "Experiencias pasadas, descripciones, deseos, comparaciones, razones e invitaciones.",
+      "units": [
+        {
+          "title": "Lección 1 · Información personal",
+          "grammarIds": [
+            "GRAM-N2-001",
+            "GRAM-N2-010"
+          ],
+          "points": [
+            "Gustos y aficiones",
+            "Reacciones que mantienen la conversación"
+          ]
+        },
+        {
+          "title": "Lección 2 · Compras y restaurante",
+          "grammarIds": [
+            "GRAM-N2-002",
+            "GRAM-N2-015",
+            "GRAM-N2-017"
+          ],
+          "points": [
+            "Comparar opciones",
+            "Describir comida",
+            "Grado e intensidad"
+          ]
+        },
+        {
+          "title": "Lección 3 · Horarios y rutina",
+          "grammarIds": [
+            "GRAM-N2-013",
+            "GRAM-N2-017"
+          ],
+          "points": [
+            "Ordenar acciones",
+            "Frecuencia e intensidad"
+          ]
+        },
+        {
+          "title": "Lección 4 · Ciudad, clima y trayectos",
+          "grammarIds": [
+            "GRAM-N2-015",
+            "GRAM-N2-016",
+            "GRAM-N2-018"
+          ],
+          "points": [
+            "Describir lugares",
+            "Unir características",
+            "Duración y transporte"
+          ]
+        },
+        {
+          "title": "Lección 5 · Experiencias y deseos",
+          "grammarIds": [
+            "GRAM-N2-011",
+            "GRAM-N2-012",
+            "GRAM-N2-013",
+            "GRAM-N2-014"
+          ],
+          "points": [
+            "Pasado de adjetivos y verbos",
+            "Secuencia",
+            "Deseos"
+          ]
+        },
+        {
+          "title": "Lección 6 · Invitaciones",
+          "grammarIds": [
+            "GRAM-N2-002",
+            "GRAM-N2-003",
+            "GRAM-N2-004",
+            "GRAM-N2-005",
+            "GRAM-N2-006"
+          ],
+          "points": [
+            "Invitar y proponer",
+            "Comparar",
+            "Rechazar y explicar una razón"
+          ]
+        }
+      ]
+    }
+  ],
+  "words": {
+    "verbs": [
+      {
+        "japanese": "食べます",
+        "reading": "たべます",
+        "romaji": "tabemasu",
+        "spanish": "comer",
+        "subtype": "Grupo II"
+      },
+      {
+        "japanese": "見ます",
+        "reading": "みます",
+        "romaji": "mimasu",
+        "spanish": "ver",
+        "subtype": "Grupo II"
+      },
+      {
+        "japanese": "起きます",
+        "reading": "おきます",
+        "romaji": "okimasu",
+        "spanish": "levantarse",
+        "subtype": "Grupo II"
+      },
+      {
+        "japanese": "行きます",
+        "reading": "いきます",
+        "romaji": "ikimasu",
+        "spanish": "ir",
+        "subtype": "Grupo I"
+      },
+      {
+        "japanese": "読みます",
+        "reading": "よみます",
+        "romaji": "yomimasu",
+        "spanish": "leer",
+        "subtype": "Grupo I"
+      },
+      {
+        "japanese": "飲みます",
+        "reading": "のみます",
+        "romaji": "nomimasu",
+        "spanish": "beber",
+        "subtype": "Grupo I"
+      },
+      {
+        "japanese": "話します",
+        "reading": "はなします",
+        "romaji": "hanashimasu",
+        "spanish": "hablar",
+        "subtype": "Grupo I"
+      },
+      {
+        "japanese": "働きます",
+        "reading": "はたらきます",
+        "romaji": "hatarakimasu",
+        "spanish": "trabajar",
+        "subtype": "Grupo I"
+      },
+      {
+        "japanese": "します",
+        "reading": "します",
+        "romaji": "shimasu",
+        "spanish": "hacer",
+        "subtype": "Grupo III"
+      },
+      {
+        "japanese": "来ます",
+        "reading": "きます",
+        "romaji": "kimasu",
+        "spanish": "venir",
+        "subtype": "Grupo III"
+      }
+    ],
+    "nouns": [
+      {
+        "japanese": "学生",
+        "reading": "がくせい",
+        "romaji": "gakusei",
+        "spanish": "estudiante",
+        "subtype": "Sustantivo"
+      },
+      {
+        "japanese": "先生",
+        "reading": "せんせい",
+        "romaji": "sensei",
+        "spanish": "profesor/a",
+        "subtype": "Sustantivo"
+      },
+      {
+        "japanese": "学校",
+        "reading": "がっこう",
+        "romaji": "gakkou",
+        "spanish": "escuela",
+        "subtype": "Sustantivo"
+      },
+      {
+        "japanese": "図書館",
+        "reading": "としょかん",
+        "romaji": "toshokan",
+        "spanish": "biblioteca",
+        "subtype": "Sustantivo"
+      },
+      {
+        "japanese": "映画",
+        "reading": "えいが",
+        "romaji": "eiga",
+        "spanish": "película",
+        "subtype": "Sustantivo"
+      },
+      {
+        "japanese": "料理",
+        "reading": "りょうり",
+        "romaji": "ryouri",
+        "spanish": "cocina / plato",
+        "subtype": "Sustantivo"
+      },
+      {
+        "japanese": "天気",
+        "reading": "てんき",
+        "romaji": "tenki",
+        "spanish": "clima",
+        "subtype": "Sustantivo"
+      },
+      {
+        "japanese": "旅行",
+        "reading": "りょこう",
+        "romaji": "ryokou",
+        "spanish": "viaje",
+        "subtype": "Sustantivo"
+      },
+      {
+        "japanese": "電車",
+        "reading": "でんしゃ",
+        "romaji": "densha",
+        "spanish": "tren",
+        "subtype": "Sustantivo"
+      },
+      {
+        "japanese": "友達",
+        "reading": "ともだち",
+        "romaji": "tomodachi",
+        "spanish": "amigo/a",
+        "subtype": "Sustantivo"
+      }
+    ],
+    "adjectives": [
+      {
+        "japanese": "楽しい",
+        "reading": "たのしい",
+        "romaji": "tanoshii",
+        "spanish": "divertido",
+        "subtype": "Adjetivo い"
+      },
+      {
+        "japanese": "暑い",
+        "reading": "あつい",
+        "romaji": "atsui",
+        "spanish": "caluroso",
+        "subtype": "Adjetivo い"
+      },
+      {
+        "japanese": "寒い",
+        "reading": "さむい",
+        "romaji": "samui",
+        "spanish": "frío",
+        "subtype": "Adjetivo い"
+      },
+      {
+        "japanese": "面白い",
+        "reading": "おもしろい",
+        "romaji": "omoshiroi",
+        "spanish": "interesante",
+        "subtype": "Adjetivo い"
+      },
+      {
+        "japanese": "おいしい",
+        "reading": "おいしい",
+        "romaji": "oishii",
+        "spanish": "delicioso",
+        "subtype": "Adjetivo い"
+      },
+      {
+        "japanese": "静か",
+        "reading": "しずか",
+        "romaji": "shizuka",
+        "spanish": "tranquilo",
+        "subtype": "Adjetivo な"
+      },
+      {
+        "japanese": "綺麗",
+        "reading": "きれい",
+        "romaji": "kirei",
+        "spanish": "bonito / limpio",
+        "subtype": "Adjetivo な"
+      },
+      {
+        "japanese": "賑やか",
+        "reading": "にぎやか",
+        "romaji": "nigiyaka",
+        "spanish": "animado",
+        "subtype": "Adjetivo な"
+      },
+      {
+        "japanese": "便利",
+        "reading": "べんり",
+        "romaji": "benri",
+        "spanish": "conveniente",
+        "subtype": "Adjetivo な"
+      }
+    ]
+  },
+  "conjugations": [
+    {
+      "verb": "食べます",
+      "reading": "たべます",
+      "romaji": "tabemasu",
+      "spanish": "comer",
+      "forms": [
+        [
+          "Presente afirmativo",
+          "食べます",
+          "tabemasu",
+          "como / comeré"
+        ],
+        [
+          "Presente negativo",
+          "食べません",
+          "tabemasen",
+          "no como / no comeré"
+        ],
+        [
+          "Pasado afirmativo",
+          "食べました",
+          "tabemashita",
+          "comí"
+        ],
+        [
+          "Pasado negativo",
+          "食べませんでした",
+          "tabemasen deshita",
+          "no comí"
+        ]
+      ]
+    },
+    {
+      "verb": "行きます",
+      "reading": "いきます",
+      "romaji": "ikimasu",
+      "spanish": "ir",
+      "forms": [
+        [
+          "Presente afirmativo",
+          "行きます",
+          "ikimasu",
+          "voy / iré"
+        ],
+        [
+          "Presente negativo",
+          "行きません",
+          "ikimasen",
+          "no voy / no iré"
+        ],
+        [
+          "Pasado afirmativo",
+          "行きました",
+          "ikimashita",
+          "fui"
+        ],
+        [
+          "Pasado negativo",
+          "行きませんでした",
+          "ikimasen deshita",
+          "no fui"
+        ]
+      ]
+    },
+    {
+      "verb": "読みます",
+      "reading": "よみます",
+      "romaji": "yomimasu",
+      "spanish": "leer",
+      "forms": [
+        [
+          "Presente afirmativo",
+          "読みます",
+          "yomimasu",
+          "leo / leeré"
+        ],
+        [
+          "Presente negativo",
+          "読みません",
+          "yomimasen",
+          "no leo / no leeré"
+        ],
+        [
+          "Pasado afirmativo",
+          "読みました",
+          "yomimashita",
+          "leí"
+        ],
+        [
+          "Pasado negativo",
+          "読みませんでした",
+          "yomimasen deshita",
+          "no leí"
+        ]
+      ]
+    },
+    {
+      "verb": "します",
+      "reading": "します",
+      "romaji": "shimasu",
+      "spanish": "hacer",
+      "forms": [
+        [
+          "Presente afirmativo",
+          "します",
+          "shimasu",
+          "hago / haré"
+        ],
+        [
+          "Presente negativo",
+          "しません",
+          "shimasen",
+          "no hago / no haré"
+        ],
+        [
+          "Pasado afirmativo",
+          "しました",
+          "shimashita",
+          "hice"
+        ],
+        [
+          "Pasado negativo",
+          "しませんでした",
+          "shimasen deshita",
+          "no hice"
+        ]
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "prompt": "昨日、図書館で本を（　）。",
+      "romaji": "Kinou, toshokan de hon o (   ).",
+      "spanish": "Ayer leí un libro en la biblioteca.",
+      "options": [
+        "読みます",
+        "読みました",
+        "読みません"
+      ],
+      "answer": 1,
+      "explanation": "昨日 (kinou, ayer) exige pasado. La acción ocurrió, por eso se usa el pasado afirmativo 読みました (yomimashita)."
+    },
+    {
+      "prompt": "日曜日は仕事を（　）。",
+      "romaji": "Nichiyoubi wa shigoto o (   ).",
+      "spanish": "El domingo no trabajaré.",
+      "options": [
+        "します",
+        "しません",
+        "しました"
+      ],
+      "answer": 1,
+      "explanation": "La oración niega una acción presente o futura. La forma cortés negativa de します es しません (shimasen)."
+    },
+    {
+      "prompt": "先週、京都へ（　）。",
+      "romaji": "Senshuu, Kyouto e (   ).",
+      "spanish": "La semana pasada fui a Kioto.",
+      "options": [
+        "行きませんでした",
+        "行きます",
+        "行きました"
+      ],
+      "answer": 2,
+      "explanation": "先週 (senshuu, la semana pasada) y fui indican pasado afirmativo: 行きました (ikimashita)."
+    },
+    {
+      "prompt": "昨日は朝ご飯を（　）。",
+      "romaji": "Kinou wa asagohan o (   ).",
+      "spanish": "Ayer no desayuné.",
+      "options": [
+        "食べませんでした",
+        "食べました",
+        "食べません"
+      ],
+      "answer": 0,
+      "explanation": "Ayer sitúa la acción en el pasado y no desayuné la niega: 食べませんでした (tabemasen deshita)."
+    },
+    {
+      "prompt": "旅行はとても（　）。",
+      "romaji": "Ryokou wa totemo (   ).",
+      "spanish": "El viaje fue muy divertido.",
+      "options": [
+        "楽しいです",
+        "楽しかったです",
+        "楽しくないです"
+      ],
+      "answer": 1,
+      "explanation": "楽しい es adjetivo い. Para el pasado afirmativo se quita い y se añade かったです: 楽しかったです."
+    },
+    {
+      "prompt": "町は（　）。",
+      "romaji": "Machi wa (   ).",
+      "spanish": "La ciudad no era tranquila.",
+      "options": [
+        "静かでした",
+        "静かではありません",
+        "静かではありませんでした"
+      ],
+      "answer": 2,
+      "explanation": "静か es adjetivo な. Su pasado negativo cortés es 静かではありませんでした (shizuka dewa arimasen deshita)."
+    },
+    {
+      "prompt": "明日、映画を（　）か。",
+      "romaji": "Ashita, eiga o (   ) ka.",
+      "spanish": "¿Quieres ver una película mañana?",
+      "options": [
+        "見ました",
+        "見ません",
+        "見ませんでした"
+      ],
+      "answer": 1,
+      "explanation": "Vませんか funciona como invitación. Con 見ます se forma 見ませんか (mimasen ka)."
+    },
+    {
+      "prompt": "北海道へ（　）です。",
+      "romaji": "Hokkaidou e (   ) desu.",
+      "spanish": "Quiero ir a Hokkaidō.",
+      "options": [
+        "行きたい",
+        "行きました",
+        "行きません"
+      ],
+      "answer": 0,
+      "explanation": "Para expresar una acción deseada se usa la raíz de ます + たい: 行きます → 行きたいです (ikitai desu)."
+    }
+  ]
+}

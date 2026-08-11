@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#18453b">
-  <meta name="description" content="Aplicación local de estudio de japonés con contenido trazable.">
+  <meta name="description" content="Aplicación de estudio de japonés con kana, kanji, vocabulario, gramática, escucha y práctica oral.">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="apple-touch-icon" href="./icons/icon-192.png">
   <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
@@ -22,31 +22,34 @@
       <button class="icon-button" id="theme-toggle" type="button" aria-label="Cambiar tema" title="Cambiar tema">
         <i data-lucide="sun" aria-hidden="true"></i>
       </button>
-      <button class="icon-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#more-menu" aria-controls="more-menu" aria-label="Abrir más opciones" title="Más opciones">
+      <button class="icon-button" id="menu-toggle" type="button" aria-controls="more-menu" aria-label="Abrir más opciones" title="Más opciones">
         <i data-lucide="menu" aria-hidden="true"></i>
       </button>
     </div>
   </header>
 
-  <aside class="offcanvas offcanvas-end" tabindex="-1" id="more-menu" aria-labelledby="more-menu-title">
-    <div class="offcanvas-header">
-      <h2 class="offcanvas-title" id="more-menu-title">Más opciones</h2>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+  <dialog class="more-menu" id="more-menu" aria-labelledby="more-menu-title">
+    <div class="menu-header">
+      <h2 id="more-menu-title">Más opciones</h2>
+      <button type="button" class="icon-button" id="menu-close" aria-label="Cerrar menú" title="Cerrar">
+        <i data-lucide="x" aria-hidden="true"></i>
+      </button>
     </div>
     <nav class="offcanvas-body secondary-nav" aria-label="Navegación secundaria">
-      <a href="#/flashcards" data-bs-dismiss="offcanvas"><i data-lucide="gallery-horizontal-end" aria-hidden="true"></i>Flashcards</a>
-      <a href="#/kana" data-bs-dismiss="offcanvas"><i data-lucide="languages" aria-hidden="true"></i>Kana</a>
-      <a href="#/kanji" data-bs-dismiss="offcanvas"><i data-lucide="square-kanban" aria-hidden="true"></i>Kanji</a>
-      <a href="#/grammar" data-bs-dismiss="offcanvas"><i data-lucide="braces" aria-hidden="true"></i>Gramática</a>
-      <a href="#/quiz" data-bs-dismiss="offcanvas"><i data-lucide="circle-help" aria-hidden="true"></i>Quiz</a>
-      <a href="#/errors" data-bs-dismiss="offcanvas"><i data-lucide="scan-search" aria-hidden="true"></i>Errores</a>
-      <a href="#/import" data-bs-dismiss="offcanvas"><i data-lucide="file-up" aria-hidden="true"></i>Importar contenido</a>
-      <a href="#/settings" data-bs-dismiss="offcanvas"><i data-lucide="settings" aria-hidden="true"></i>Configuración</a>
+      <a href="#/flashcards"><i data-lucide="gallery-horizontal-end" aria-hidden="true"></i>Flashcards</a>
+      <a href="#/kana"><i data-lucide="languages" aria-hidden="true"></i>Kana</a>
+      <a href="#/kanji"><i data-lucide="square-kanban" aria-hidden="true"></i>Kanji</a>
+      <a href="#/vocabulary"><i data-lucide="book-a" aria-hidden="true"></i>Vocabulario</a>
+      <a href="#/grammar"><i data-lucide="braces" aria-hidden="true"></i>Gramática</a>
+      <a href="#/listening"><i data-lucide="headphones" aria-hidden="true"></i>Escucha</a>
+      <a href="#/quiz"><i data-lucide="circle-help" aria-hidden="true"></i>Quiz</a>
+      <a href="#/errors"><i data-lucide="scan-search" aria-hidden="true"></i>Errores</a>
+      <a href="#/settings"><i data-lucide="settings" aria-hidden="true"></i>Configuración</a>
     </nav>
-  </aside>
+  </dialog>
 
   <main id="app-content" class="app-content" tabindex="-1">
-    <div class="loading-state" role="status">Cargando contenido validado…</div>
+    <div class="loading-state" role="status">Preparando tu sesión de estudio…</div>
   </main>
 
   <nav class="bottom-nav" aria-label="Navegación principal">
@@ -59,6 +62,6 @@
 
   <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="./vendor/lucide/lucide.min.js"></script>
-  <script type="module" src="./app.js?v=1.0.1"></script>
+  <script type="module" src="./app.js?v=1.4.0"></script>
 </body>
 </html>

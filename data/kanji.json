@@ -1,4 +1,4039 @@
 {
   "schemaVersion": "1.0.0",
-  "kanji": []
+  "kanji": [
+    {
+      "id": "KANJI-N1-001",
+      "level": "Nivel 1",
+      "lesson": 1,
+      "lessonTitle": "どうぞよろしく！(Nice to meet you!)",
+      "character": "私",
+      "meaning": "Yo (I / Me)",
+      "onyomi": [
+        {
+          "reading": "シ",
+          "romaji": "shi"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "わたし",
+          "romaji": "watashi"
+        },
+        {
+          "reading": "わたくし",
+          "romaji": "watakushi"
+        }
+      ],
+      "romaji": [
+        "watashi",
+        "shi"
+      ],
+      "words": [
+        {
+          "palabra": "私",
+          "lectura": "わたし",
+          "romaji": "watashi",
+          "significado": "I/me"
+        },
+        {
+          "palabra": "私立",
+          "lectura": "しりつ",
+          "romaji": "shiritsu",
+          "significado": "private (institution) / privado"
+        }
+      ],
+      "example": {
+        "japanese": "私は学生です。",
+        "romaji": "Watashi wa gakusei desu.",
+        "translation": "I am a student. / Soy estudiante."
+      },
+      "strokeCount": 7,
+      "mnemonic": "El radical de grano (禾) + privado. Lo que es privado/propio = YO.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-002",
+      "level": "Nivel 1",
+      "lesson": 1,
+      "lessonTitle": "どうぞよろしく！(Nice to meet you!)",
+      "character": "人",
+      "meaning": "Persona (Person)",
+      "onyomi": [
+        {
+          "reading": "ジン",
+          "romaji": "jin"
+        },
+        {
+          "reading": "ニン",
+          "romaji": "nin"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "ひと",
+          "romaji": "hito"
+        }
+      ],
+      "romaji": [
+        "hito",
+        "jin",
+        "nin"
+      ],
+      "words": [
+        {
+          "palabra": "日本人",
+          "lectura": "にほんじん",
+          "romaji": "nihonjin",
+          "significado": "Japanese person / persona japonesa"
+        },
+        {
+          "palabra": "3人",
+          "lectura": "さんにん",
+          "romaji": "sannin",
+          "significado": "3 people / 3 personas"
+        },
+        {
+          "palabra": "人",
+          "lectura": "ひと",
+          "romaji": "hito",
+          "significado": "person / persona"
+        }
+      ],
+      "example": {
+        "japanese": "あの人は日本人です。",
+        "romaji": "Ano hito wa nihonjin desu.",
+        "translation": "That person is Japanese. / Esa persona es japonesa."
+      },
+      "strokeCount": 2,
+      "mnemonic": "Dos trazos que se apoyan = una persona de pie.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-003",
+      "level": "Nivel 1",
+      "lesson": 1,
+      "lessonTitle": "どうぞよろしく！(Nice to meet you!)",
+      "character": "才",
+      "meaning": "Edad (Age)",
+      "onyomi": [
+        {
+          "reading": "サイ",
+          "romaji": "sai"
+        }
+      ],
+      "kunyomi": [],
+      "romaji": [
+        "sai"
+      ],
+      "words": [
+        {
+          "palabra": "25才",
+          "lectura": "にじゅうごさい",
+          "romaji": "nijuugo sai",
+          "significado": "25 years old / 25 años"
+        }
+      ],
+      "example": {
+        "japanese": "私は25才です。",
+        "romaji": "Watashi wa nijuugo sai desu.",
+        "translation": "I am 25 years old. / Tengo 25 años."
+      },
+      "strokeCount": 3,
+      "mnemonic": "Forma simplificada de 歳. Se usa para contar la edad.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-004",
+      "level": "Nivel 1",
+      "lesson": 1,
+      "lessonTitle": "どうぞよろしく！(Nice to meet you!)",
+      "character": "学",
+      "meaning": "Estudio (Study)",
+      "onyomi": [
+        {
+          "reading": "ガク",
+          "romaji": "gaku"
+        },
+        {
+          "reading": "ガッ",
+          "romaji": "gak-"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "まなぶ",
+          "romaji": "manabu"
+        }
+      ],
+      "romaji": [
+        "gaku",
+        "manabu"
+      ],
+      "words": [
+        {
+          "palabra": "学生",
+          "lectura": "がくせい",
+          "romaji": "gakusei",
+          "significado": "student / estudiante"
+        },
+        {
+          "palabra": "学校",
+          "lectura": "がっこう",
+          "romaji": "gakkō",
+          "significado": "school / escuela"
+        },
+        {
+          "palabra": "大学",
+          "lectura": "だいがく",
+          "romaji": "daigaku",
+          "significado": "university / universidad"
+        },
+        {
+          "palabra": "留学生",
+          "lectura": "りゅうがくせい",
+          "romaji": "ryuugakusei",
+          "significado": "exchange student / estudiante de intercambio"
+        },
+        {
+          "palabra": "学ぶ",
+          "lectura": "まなぶ",
+          "romaji": "manabu",
+          "significado": "to learn / aprender"
+        }
+      ],
+      "example": {
+        "japanese": "大学で日本語を学びます。",
+        "romaji": "Daigaku de nihongo wo manabimasu.",
+        "translation": "I study Japanese at university. / Estudio japonés en la universidad."
+      },
+      "strokeCount": 8,
+      "mnemonic": "Un niño (子) bajo un techo aprendiendo = estudio.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-005",
+      "level": "Nivel 1",
+      "lesson": 1,
+      "lessonTitle": "どうぞよろしく！(Nice to meet you!)",
+      "character": "生",
+      "meaning": "Vida / Nacer (Life / Birth)",
+      "onyomi": [
+        {
+          "reading": "セイ",
+          "romaji": "sei"
+        },
+        {
+          "reading": "ショウ",
+          "romaji": "shou"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "いきる",
+          "romaji": "ikiru"
+        },
+        {
+          "reading": "うまれる",
+          "romaji": "umareru"
+        },
+        {
+          "reading": "なま",
+          "romaji": "nama"
+        }
+      ],
+      "romaji": [
+        "sei",
+        "shou",
+        "ikiru",
+        "umareru",
+        "nama"
+      ],
+      "words": [
+        {
+          "palabra": "学生",
+          "lectura": "がくせい",
+          "romaji": "gakusei",
+          "significado": "student / estudiante"
+        },
+        {
+          "palabra": "先生",
+          "lectura": "せんせい",
+          "romaji": "sensei",
+          "significado": "teacher / maestro"
+        },
+        {
+          "palabra": "生きる",
+          "lectura": "いきる",
+          "romaji": "ikiru",
+          "significado": "to live / vivir"
+        },
+        {
+          "palabra": "生まれる",
+          "lectura": "うまれる",
+          "romaji": "umareru",
+          "significado": "to be born / nacer"
+        }
+      ],
+      "example": {
+        "japanese": "田中先生は日本語の先生です。",
+        "romaji": "Tanaka-sensei wa nihongo no sensei desu.",
+        "translation": "Tanaka-sensei is a Japanese teacher. / Tanaka-sensei es maestro de japonés."
+      },
+      "strokeCount": 5,
+      "mnemonic": "Una planta que brota de la tierra = vida/nacer.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-006",
+      "level": "Nivel 1",
+      "lesson": 1,
+      "lessonTitle": "どうぞよろしく！(Nice to meet you!)",
+      "character": "校",
+      "meaning": "Escuela (School)",
+      "onyomi": [
+        {
+          "reading": "コウ",
+          "romaji": "kou"
+        }
+      ],
+      "kunyomi": [],
+      "romaji": [
+        "kou"
+      ],
+      "words": [
+        {
+          "palabra": "学校",
+          "lectura": "がっこう",
+          "romaji": "gakkō",
+          "significado": "school / escuela"
+        },
+        {
+          "palabra": "高校",
+          "lectura": "こうこう",
+          "romaji": "kōkō",
+          "significado": "high school / preparatoria"
+        },
+        {
+          "palabra": "校長",
+          "lectura": "こうちょう",
+          "romaji": "kōchō",
+          "significado": "principal / director"
+        }
+      ],
+      "example": {
+        "japanese": "学校は9時からです。",
+        "romaji": "Gakkō wa kuji kara desu.",
+        "translation": "School starts at 9. / La escuela empieza a las 9."
+      },
+      "strokeCount": 10,
+      "mnemonic": "Madera (木) + cruzar. Donde se cruzan las maderas del conocimiento.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-007",
+      "level": "Nivel 1",
+      "lesson": 1,
+      "lessonTitle": "どうぞよろしく！(Nice to meet you!)",
+      "character": "日",
+      "meaning": "Día / Sol (Day / Sun)",
+      "onyomi": [
+        {
+          "reading": "ニチ",
+          "romaji": "nichi"
+        },
+        {
+          "reading": "ジツ",
+          "romaji": "jitsu"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "ひ",
+          "romaji": "hi"
+        },
+        {
+          "reading": "か",
+          "romaji": "ka"
+        }
+      ],
+      "romaji": [
+        "nichi",
+        "jitsu",
+        "hi",
+        "ka"
+      ],
+      "words": [
+        {
+          "palabra": "日本",
+          "lectura": "にほん",
+          "romaji": "nihon",
+          "significado": "Japan / Japón"
+        },
+        {
+          "palabra": "15日",
+          "lectura": "じゅうごにち",
+          "romaji": "juugonichi",
+          "significado": "15th day / día 15"
+        },
+        {
+          "palabra": "日",
+          "lectura": "ひ",
+          "romaji": "hi",
+          "significado": "day/sun / día/sol"
+        },
+        {
+          "palabra": "誕生日",
+          "lectura": "たんじょうび",
+          "romaji": "tanjōbi",
+          "significado": "birthday / cumpleaños"
+        },
+        {
+          "palabra": "3日",
+          "lectura": "みっか",
+          "romaji": "mikka",
+          "significado": "3rd day / día 3"
+        },
+        {
+          "palabra": "休日",
+          "lectura": "きゅうじつ",
+          "romaji": "kyūjitsu",
+          "significado": "holiday / día festivo"
+        }
+      ],
+      "example": {
+        "japanese": "今日はいい日です。",
+        "romaji": "Kyō wa ii hi desu.",
+        "translation": "Today is a good day. / Hoy es un buen día."
+      },
+      "strokeCount": 4,
+      "mnemonic": "Un rectángulo con una línea = el sol brillando.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-008",
+      "level": "Nivel 1",
+      "lesson": 1,
+      "lessonTitle": "どうぞよろしく！(Nice to meet you!)",
+      "character": "本",
+      "meaning": "Libro / Origen (Book / Origin)",
+      "onyomi": [
+        {
+          "reading": "ホン",
+          "romaji": "hon"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "もと",
+          "romaji": "moto"
+        }
+      ],
+      "romaji": [
+        "hon",
+        "moto"
+      ],
+      "words": [
+        {
+          "palabra": "日本",
+          "lectura": "にほん",
+          "romaji": "nihon",
+          "significado": "Japan / Japón"
+        },
+        {
+          "palabra": "本",
+          "lectura": "ほん",
+          "romaji": "hon",
+          "significado": "book / libro"
+        },
+        {
+          "palabra": "本当",
+          "lectura": "ほんとう",
+          "romaji": "hontō",
+          "significado": "really/true / de verdad"
+        }
+      ],
+      "example": {
+        "japanese": "この本はおもしろいです。",
+        "romaji": "Kono hon wa omoshiroi desu.",
+        "translation": "This book is interesting. / Este libro es interesante."
+      },
+      "strokeCount": 5,
+      "mnemonic": "Un árbol (木) con raíces marcadas = origen/libro.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-009",
+      "level": "Nivel 1",
+      "lesson": 1,
+      "lessonTitle": "どうぞよろしく！(Nice to meet you!)",
+      "character": "語",
+      "meaning": "Idioma (Language)",
+      "onyomi": [
+        {
+          "reading": "ゴ",
+          "romaji": "go"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "かたる",
+          "romaji": "kataru"
+        },
+        {
+          "reading": "かたらう",
+          "romaji": "katarau"
+        }
+      ],
+      "romaji": [
+        "go",
+        "kataru"
+      ],
+      "words": [
+        {
+          "palabra": "日本語",
+          "lectura": "にほんご",
+          "romaji": "nihongo",
+          "significado": "Japanese / japonés"
+        },
+        {
+          "palabra": "英語",
+          "lectura": "えいご",
+          "romaji": "eigo",
+          "significado": "English / inglés"
+        },
+        {
+          "palabra": "～語",
+          "lectura": "～ご",
+          "romaji": "~go",
+          "significado": "~language / ~idioma"
+        }
+      ],
+      "example": {
+        "japanese": "日本語を勉強しています。",
+        "romaji": "Nihongo wo benkyō shite imasu.",
+        "translation": "I am studying Japanese. / Estoy estudiando japonés."
+      },
+      "strokeCount": 14,
+      "mnemonic": "Palabras (言) + yo (吾) = el idioma que yo hablo.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-010",
+      "level": "Nivel 1",
+      "lesson": 2,
+      "lessonTitle": "買い物 (Shopping)",
+      "character": "一",
+      "meaning": "Uno (One)",
+      "onyomi": [
+        {
+          "reading": "イチ",
+          "romaji": "ichi"
+        },
+        {
+          "reading": "イツ",
+          "romaji": "itsu"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "ひと",
+          "romaji": "hito"
+        },
+        {
+          "reading": "ひとつ",
+          "romaji": "hitotsu"
+        }
+      ],
+      "romaji": [
+        "ichi",
+        "itsu",
+        "hitotsu"
+      ],
+      "words": [
+        {
+          "palabra": "一",
+          "lectura": "いち",
+          "romaji": "ichi",
+          "significado": "one / uno"
+        },
+        {
+          "palabra": "一月",
+          "lectura": "いちがつ",
+          "romaji": "ichigatsu",
+          "significado": "January / enero"
+        },
+        {
+          "palabra": "一つ",
+          "lectura": "ひとつ",
+          "romaji": "hitotsu",
+          "significado": "one thing / una cosa"
+        },
+        {
+          "palabra": "一人",
+          "lectura": "ひとり",
+          "romaji": "hitori",
+          "significado": "one person / una persona"
+        },
+        {
+          "palabra": "一日",
+          "lectura": "ついたち",
+          "romaji": "tsuitachi",
+          "significado": "1st day / primer día"
+        }
+      ],
+      "example": {
+        "japanese": "りんごを一つください。",
+        "romaji": "Ringo wo hitotsu kudasai.",
+        "translation": "One apple, please. / Una manzana, por favor."
+      },
+      "strokeCount": 1,
+      "mnemonic": "Un solo trazo horizontal = 1.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-011",
+      "level": "Nivel 1",
+      "lesson": 2,
+      "lessonTitle": "買い物 (Shopping)",
+      "character": "二",
+      "meaning": "Dos (Two)",
+      "onyomi": [
+        {
+          "reading": "ニ",
+          "romaji": "ni"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "ふた",
+          "romaji": "futa"
+        },
+        {
+          "reading": "ふたつ",
+          "romaji": "futatsu"
+        }
+      ],
+      "romaji": [
+        "ni",
+        "futatsu"
+      ],
+      "words": [
+        {
+          "palabra": "二",
+          "lectura": "に",
+          "romaji": "ni",
+          "significado": "two / dos"
+        },
+        {
+          "palabra": "二月",
+          "lectura": "にがつ",
+          "romaji": "nigatsu",
+          "significado": "February / febrero"
+        },
+        {
+          "palabra": "二人",
+          "lectura": "ふたり",
+          "romaji": "futari",
+          "significado": "two people / dos personas"
+        },
+        {
+          "palabra": "二日",
+          "lectura": "ふつか",
+          "romaji": "futsuka",
+          "significado": "2nd day / día 2"
+        }
+      ],
+      "example": {
+        "japanese": "二人で行きましょう。",
+        "romaji": "Futari de ikimashō.",
+        "translation": "Let us go together. / Vamos juntos."
+      },
+      "strokeCount": 2,
+      "mnemonic": "Dos trazos horizontales = 2.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-012",
+      "level": "Nivel 1",
+      "lesson": 2,
+      "lessonTitle": "買い物 (Shopping)",
+      "character": "三",
+      "meaning": "Tres (Three)",
+      "onyomi": [
+        {
+          "reading": "サン",
+          "romaji": "san"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "み",
+          "romaji": "mi"
+        },
+        {
+          "reading": "みっつ",
+          "romaji": "mittsu"
+        }
+      ],
+      "romaji": [
+        "san",
+        "mittsu"
+      ],
+      "words": [
+        {
+          "palabra": "三",
+          "lectura": "さん",
+          "romaji": "san",
+          "significado": "three / tres"
+        },
+        {
+          "palabra": "三月",
+          "lectura": "さんがつ",
+          "romaji": "sangatsu",
+          "significado": "March / marzo"
+        },
+        {
+          "palabra": "三日",
+          "lectura": "みっか",
+          "romaji": "mikka",
+          "significado": "3rd day / día 3"
+        },
+        {
+          "palabra": "三つ",
+          "lectura": "みっつ",
+          "romaji": "mittsu",
+          "significado": "three things / tres cosas"
+        }
+      ],
+      "example": {
+        "japanese": "三月は暖かいです。",
+        "romaji": "Sangatsu wa atatakai desu.",
+        "translation": "March is warm. / Marzo es cálido."
+      },
+      "strokeCount": 3,
+      "mnemonic": "Tres trazos horizontales = 3.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-013",
+      "level": "Nivel 1",
+      "lesson": 2,
+      "lessonTitle": "買い物 (Shopping)",
+      "character": "四",
+      "meaning": "Cuatro (Four)",
+      "onyomi": [
+        {
+          "reading": "シ",
+          "romaji": "shi"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "よん",
+          "romaji": "yon"
+        },
+        {
+          "reading": "よ",
+          "romaji": "yo"
+        },
+        {
+          "reading": "よっつ",
+          "romaji": "yottsu"
+        }
+      ],
+      "romaji": [
+        "shi",
+        "yon",
+        "yottsu"
+      ],
+      "words": [
+        {
+          "palabra": "四",
+          "lectura": "よん",
+          "romaji": "yon",
+          "significado": "four / cuatro"
+        },
+        {
+          "palabra": "四月",
+          "lectura": "しがつ",
+          "romaji": "shigatsu",
+          "significado": "April / abril"
+        },
+        {
+          "palabra": "四時",
+          "lectura": "よじ",
+          "romaji": "yoji",
+          "significado": "4 o'clock / 4 en punto"
+        },
+        {
+          "palabra": "四日",
+          "lectura": "よっか",
+          "romaji": "yokka",
+          "significado": "4th day / día 4"
+        },
+        {
+          "palabra": "四つ",
+          "lectura": "よっつ",
+          "romaji": "yottsu",
+          "significado": "four things / cuatro cosas"
+        }
+      ],
+      "example": {
+        "japanese": "四月から学校が始まります。",
+        "romaji": "Shigatsu kara gakkō ga hajimarimasu.",
+        "translation": "School starts in April. / La escuela empieza en abril."
+      },
+      "strokeCount": 5,
+      "mnemonic": "Un cuadro con divisiones internas = cuatro partes.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-014",
+      "level": "Nivel 1",
+      "lesson": 2,
+      "lessonTitle": "買い物 (Shopping)",
+      "character": "五",
+      "meaning": "Cinco (Five)",
+      "onyomi": [
+        {
+          "reading": "ゴ",
+          "romaji": "go"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "いつ",
+          "romaji": "itsu"
+        },
+        {
+          "reading": "いつつ",
+          "romaji": "itsutsu"
+        }
+      ],
+      "romaji": [
+        "go",
+        "itsutsu"
+      ],
+      "words": [
+        {
+          "palabra": "五",
+          "lectura": "ご",
+          "romaji": "go",
+          "significado": "five / cinco"
+        },
+        {
+          "palabra": "五月",
+          "lectura": "ごがつ",
+          "romaji": "gogatsu",
+          "significado": "May / mayo"
+        },
+        {
+          "palabra": "五日",
+          "lectura": "いつか",
+          "romaji": "itsuka",
+          "significado": "5th day / día 5"
+        },
+        {
+          "palabra": "五つ",
+          "lectura": "いつつ",
+          "romaji": "itsutsu",
+          "significado": "five things / cinco cosas"
+        }
+      ],
+      "example": {
+        "japanese": "五月は休みが多いです。",
+        "romaji": "Gogatsu wa yasumi ga ooi desu.",
+        "translation": "There are many holidays in May. / Hay muchos días libres en mayo."
+      },
+      "strokeCount": 4,
+      "mnemonic": "Cinco trazos cruzados formando una X entre líneas.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-015",
+      "level": "Nivel 1",
+      "lesson": 2,
+      "lessonTitle": "買い物 (Shopping)",
+      "character": "六",
+      "meaning": "Seis (Six)",
+      "onyomi": [
+        {
+          "reading": "ロク",
+          "romaji": "roku"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "む",
+          "romaji": "mu"
+        },
+        {
+          "reading": "むい",
+          "romaji": "mui"
+        },
+        {
+          "reading": "むっつ",
+          "romaji": "muttsu"
+        }
+      ],
+      "romaji": [
+        "roku",
+        "muttsu"
+      ],
+      "words": [
+        {
+          "palabra": "六",
+          "lectura": "ろく",
+          "romaji": "roku",
+          "significado": "six / seis"
+        },
+        {
+          "palabra": "六月",
+          "lectura": "ろくがつ",
+          "romaji": "rokugatsu",
+          "significado": "June / junio"
+        },
+        {
+          "palabra": "六日",
+          "lectura": "むいか",
+          "romaji": "muika",
+          "significado": "6th day / día 6"
+        },
+        {
+          "palabra": "六つ",
+          "lectura": "むっつ",
+          "romaji": "muttsu",
+          "significado": "six things / seis cosas"
+        }
+      ],
+      "example": {
+        "japanese": "六月は雨が多いです。",
+        "romaji": "Rokugatsu wa ame ga ooi desu.",
+        "translation": "There is a lot of rain in June. / Hay mucha lluvia en junio."
+      },
+      "strokeCount": 4,
+      "mnemonic": "Un techo con piernas = seis ángulos.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-016",
+      "level": "Nivel 1",
+      "lesson": 2,
+      "lessonTitle": "買い物 (Shopping)",
+      "character": "七",
+      "meaning": "Siete (Seven)",
+      "onyomi": [
+        {
+          "reading": "シチ",
+          "romaji": "shichi"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "なな",
+          "romaji": "nana"
+        },
+        {
+          "reading": "ななつ",
+          "romaji": "nanatsu"
+        },
+        {
+          "reading": "なの",
+          "romaji": "nano"
+        }
+      ],
+      "romaji": [
+        "shichi",
+        "nana",
+        "nanatsu"
+      ],
+      "words": [
+        {
+          "palabra": "七",
+          "lectura": "なな",
+          "romaji": "nana",
+          "significado": "seven / siete"
+        },
+        {
+          "palabra": "七月",
+          "lectura": "しちがつ",
+          "romaji": "shichigatsu",
+          "significado": "July / julio"
+        },
+        {
+          "palabra": "七つ",
+          "lectura": "ななつ",
+          "romaji": "nanatsu",
+          "significado": "seven things / siete cosas"
+        },
+        {
+          "palabra": "七日",
+          "lectura": "なのか",
+          "romaji": "nanoka",
+          "significado": "7th day / día 7"
+        }
+      ],
+      "example": {
+        "japanese": "七月は暑いです。",
+        "romaji": "Shichigatsu wa atsui desu.",
+        "translation": "July is hot. / Julio es caluroso."
+      },
+      "strokeCount": 2,
+      "mnemonic": "Dos trazos cruzados como un 7 cortado.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-017",
+      "level": "Nivel 1",
+      "lesson": 2,
+      "lessonTitle": "買い物 (Shopping)",
+      "character": "八",
+      "meaning": "Ocho (Eight)",
+      "onyomi": [
+        {
+          "reading": "ハチ",
+          "romaji": "hachi"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "や",
+          "romaji": "ya"
+        },
+        {
+          "reading": "やっつ",
+          "romaji": "yattsu"
+        },
+        {
+          "reading": "よう",
+          "romaji": "you"
+        }
+      ],
+      "romaji": [
+        "hachi",
+        "yattsu"
+      ],
+      "words": [
+        {
+          "palabra": "八",
+          "lectura": "はち",
+          "romaji": "hachi",
+          "significado": "eight / ocho"
+        },
+        {
+          "palabra": "八月",
+          "lectura": "はちがつ",
+          "romaji": "hachigatsu",
+          "significado": "August / agosto"
+        },
+        {
+          "palabra": "八つ",
+          "lectura": "やっつ",
+          "romaji": "yattsu",
+          "significado": "eight things / ocho cosas"
+        },
+        {
+          "palabra": "八日",
+          "lectura": "ようか",
+          "romaji": "yōka",
+          "significado": "8th day / día 8"
+        }
+      ],
+      "example": {
+        "japanese": "八百円です。",
+        "romaji": "Happyaku en desu.",
+        "translation": "It is 800 yen. / Son 800 yenes."
+      },
+      "strokeCount": 2,
+      "mnemonic": "Dos trazos que se abren = 8 dividido.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-018",
+      "level": "Nivel 1",
+      "lesson": 2,
+      "lessonTitle": "買い物 (Shopping)",
+      "character": "九",
+      "meaning": "Nueve (Nine)",
+      "onyomi": [
+        {
+          "reading": "キュウ",
+          "romaji": "kyuu"
+        },
+        {
+          "reading": "ク",
+          "romaji": "ku"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "ここの",
+          "romaji": "kokono"
+        },
+        {
+          "reading": "ここのつ",
+          "romaji": "kokonotsu"
+        }
+      ],
+      "romaji": [
+        "kyuu",
+        "ku",
+        "kokonotsu"
+      ],
+      "words": [
+        {
+          "palabra": "九",
+          "lectura": "きゅう",
+          "romaji": "kyuu",
+          "significado": "nine / nueve"
+        },
+        {
+          "palabra": "九月",
+          "lectura": "くがつ",
+          "romaji": "kugatsu",
+          "significado": "September / septiembre"
+        },
+        {
+          "palabra": "九日",
+          "lectura": "ここのか",
+          "romaji": "kokonoka",
+          "significado": "9th day / día 9"
+        },
+        {
+          "palabra": "九つ",
+          "lectura": "ここのつ",
+          "romaji": "kokonotsu",
+          "significado": "nine things / nueve cosas"
+        }
+      ],
+      "example": {
+        "japanese": "九月から学校です。",
+        "romaji": "Kugatsu kara gakkō desu.",
+        "translation": "School starts in September. / La escuela empieza en septiembre."
+      },
+      "strokeCount": 2,
+      "mnemonic": "Un trazo curvo hacia abajo = casi llegar a 10.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-019",
+      "level": "Nivel 1",
+      "lesson": 2,
+      "lessonTitle": "買い物 (Shopping)",
+      "character": "十",
+      "meaning": "Diez (Ten)",
+      "onyomi": [
+        {
+          "reading": "ジュウ",
+          "romaji": "juu"
+        },
+        {
+          "reading": "ジッ",
+          "romaji": "ji"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "と",
+          "romaji": "to"
+        },
+        {
+          "reading": "とお",
+          "romaji": "too"
+        }
+      ],
+      "romaji": [
+        "juu",
+        "too"
+      ],
+      "words": [
+        {
+          "palabra": "十",
+          "lectura": "じゅう",
+          "romaji": "juu",
+          "significado": "ten / diez"
+        },
+        {
+          "palabra": "十月",
+          "lectura": "じゅうがつ",
+          "romaji": "juugatsu",
+          "significado": "October / octubre"
+        },
+        {
+          "palabra": "十歳",
+          "lectura": "じゅっさい",
+          "romaji": "jussai",
+          "significado": "10 years old / 10 años"
+        },
+        {
+          "palabra": "十日",
+          "lectura": "とおか",
+          "romaji": "tōka",
+          "significado": "10th day / día 10"
+        }
+      ],
+      "example": {
+        "japanese": "十月は涼しいです。",
+        "romaji": "Juugatsu wa suzushii desu.",
+        "translation": "October is cool. / Octubre es fresco."
+      },
+      "strokeCount": 2,
+      "mnemonic": "Una cruz = 10 (completo).",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-020",
+      "level": "Nivel 1",
+      "lesson": 2,
+      "lessonTitle": "買い物 (Shopping)",
+      "character": "百",
+      "meaning": "Cien (Hundred)",
+      "onyomi": [
+        {
+          "reading": "ヒャク",
+          "romaji": "hyaku"
+        },
+        {
+          "reading": "ビャク",
+          "romaji": "byaku"
+        },
+        {
+          "reading": "ピャク",
+          "romaji": "pyaku"
+        }
+      ],
+      "kunyomi": [],
+      "romaji": [
+        "hyaku"
+      ],
+      "words": [
+        {
+          "palabra": "百",
+          "lectura": "ひゃく",
+          "romaji": "hyaku",
+          "significado": "100 / cien"
+        },
+        {
+          "palabra": "三百円",
+          "lectura": "さんびゃくえん",
+          "romaji": "sanbyaku en",
+          "significado": "300 yen / 300 yenes"
+        },
+        {
+          "palabra": "六百",
+          "lectura": "ろっぴゃく",
+          "romaji": "roppyaku",
+          "significado": "600 / seiscientos"
+        }
+      ],
+      "example": {
+        "japanese": "百円ショップで買いました。",
+        "romaji": "Hyaku en shoppu de kaimashita.",
+        "translation": "I bought it at a 100-yen shop. / Lo compré en una tienda de 100 yenes."
+      },
+      "strokeCount": 6,
+      "mnemonic": "Uno (一) sobre blanco (白) = cien.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-021",
+      "level": "Nivel 1",
+      "lesson": 2,
+      "lessonTitle": "買い物 (Shopping)",
+      "character": "千",
+      "meaning": "Mil (Thousand)",
+      "onyomi": [
+        {
+          "reading": "セン",
+          "romaji": "sen"
+        },
+        {
+          "reading": "ゼン",
+          "romaji": "zen"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "ち",
+          "romaji": "chi"
+        }
+      ],
+      "romaji": [
+        "sen"
+      ],
+      "words": [
+        {
+          "palabra": "千",
+          "lectura": "せん",
+          "romaji": "sen",
+          "significado": "1,000 / mil"
+        },
+        {
+          "palabra": "三千円",
+          "lectura": "さんぜんえん",
+          "romaji": "sanzen en",
+          "significado": "3,000 yen / 3,000 yenes"
+        },
+        {
+          "palabra": "千葉",
+          "lectura": "ちば",
+          "romaji": "Chiba",
+          "significado": "Chiba"
+        }
+      ],
+      "example": {
+        "japanese": "この本は千円です。",
+        "romaji": "Kono hon wa sen en desu.",
+        "translation": "This book is 1,000 yen. / Este libro cuesta 1,000 yenes."
+      },
+      "strokeCount": 3,
+      "mnemonic": "Como un hombre con los brazos extendidos = mil.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-022",
+      "level": "Nivel 1",
+      "lesson": 2,
+      "lessonTitle": "買い物 (Shopping)",
+      "character": "万",
+      "meaning": "Diez mil (Ten Thousand)",
+      "onyomi": [
+        {
+          "reading": "マン",
+          "romaji": "man"
+        },
+        {
+          "reading": "バン",
+          "romaji": "ban"
+        }
+      ],
+      "kunyomi": [],
+      "romaji": [
+        "man",
+        "ban"
+      ],
+      "words": [
+        {
+          "palabra": "一万円",
+          "lectura": "いちまんえん",
+          "romaji": "ichiman en",
+          "significado": "10,000 yen"
+        },
+        {
+          "palabra": "百万",
+          "lectura": "ひゃくまん",
+          "romaji": "hyakuman",
+          "significado": "1 million / un millón"
+        },
+        {
+          "palabra": "一千万",
+          "lectura": "いっせんまん",
+          "romaji": "issenman",
+          "significado": "10 million / diez millones"
+        }
+      ],
+      "example": {
+        "japanese": "このパソコンは十万円です。",
+        "romaji": "Kono pasokon wa juuman en desu.",
+        "translation": "This computer is 100,000 yen. / Esta computadora cuesta 100,000 yenes."
+      },
+      "strokeCount": 3,
+      "mnemonic": "Un trazo que se extiende = diez mil.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-023",
+      "level": "Nivel 1",
+      "lesson": 2,
+      "lessonTitle": "買い物 (Shopping)",
+      "character": "円",
+      "meaning": "Yen / Círculo (Yen / Circle)",
+      "onyomi": [
+        {
+          "reading": "エン",
+          "romaji": "en"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "まるい",
+          "romaji": "marui"
+        }
+      ],
+      "romaji": [
+        "en",
+        "marui"
+      ],
+      "words": [
+        {
+          "palabra": "百円",
+          "lectura": "ひゃくえん",
+          "romaji": "hyaku en",
+          "significado": "100 yen"
+        },
+        {
+          "palabra": "千円",
+          "lectura": "せんえん",
+          "romaji": "sen en",
+          "significado": "1,000 yen"
+        },
+        {
+          "palabra": "円い",
+          "lectura": "まるい",
+          "romaji": "marui",
+          "significado": "round / redondo"
+        }
+      ],
+      "example": {
+        "japanese": "いくらですか。五百円です。",
+        "romaji": "Ikura desu ka. Gohyaku en desu.",
+        "translation": "How much? 500 yen. / ¿Cuánto? 500 yenes."
+      },
+      "strokeCount": 4,
+      "mnemonic": "Forma de una moneda = yen/círculo.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-024",
+      "level": "Nivel 1",
+      "lesson": 3,
+      "lessonTitle": "いつ、どこで？(When, Where?)",
+      "character": "月",
+      "meaning": "Luna / Mes (Moon / Month)",
+      "onyomi": [
+        {
+          "reading": "ガツ",
+          "romaji": "gatsu"
+        },
+        {
+          "reading": "ゲツ",
+          "romaji": "getsu"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "つき",
+          "romaji": "tsuki"
+        }
+      ],
+      "romaji": [
+        "gatsu",
+        "getsu",
+        "tsuki"
+      ],
+      "words": [
+        {
+          "palabra": "月曜日",
+          "lectura": "げつようび",
+          "romaji": "getsuyōbi",
+          "significado": "Monday / lunes"
+        },
+        {
+          "palabra": "一月",
+          "lectura": "いちがつ",
+          "romaji": "ichigatsu",
+          "significado": "January / enero"
+        },
+        {
+          "palabra": "月",
+          "lectura": "つき",
+          "romaji": "tsuki",
+          "significado": "moon / luna"
+        },
+        {
+          "palabra": "今月",
+          "lectura": "こんげつ",
+          "romaji": "kongetsu",
+          "significado": "this month / este mes"
+        }
+      ],
+      "example": {
+        "japanese": "月曜日は忙しいです。",
+        "romaji": "Getsuyōbi wa isogashii desu.",
+        "translation": "Monday is busy. / El lunes estoy ocupado/a."
+      },
+      "strokeCount": 4,
+      "mnemonic": "Forma de una luna creciente.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-025",
+      "level": "Nivel 1",
+      "lesson": 3,
+      "lessonTitle": "いつ、どこで？(When, Where?)",
+      "character": "火",
+      "meaning": "Fuego (Fire)",
+      "onyomi": [
+        {
+          "reading": "カ",
+          "romaji": "ka"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "ひ",
+          "romaji": "hi"
+        },
+        {
+          "reading": "ほ",
+          "romaji": "ho"
+        }
+      ],
+      "romaji": [
+        "ka",
+        "hi"
+      ],
+      "words": [
+        {
+          "palabra": "火曜日",
+          "lectura": "かようび",
+          "romaji": "kayōbi",
+          "significado": "Tuesday / martes"
+        },
+        {
+          "palabra": "火",
+          "lectura": "ひ",
+          "romaji": "hi",
+          "significado": "fire / fuego"
+        },
+        {
+          "palabra": "火事",
+          "lectura": "かじ",
+          "romaji": "kaji",
+          "significado": "fire disaster / incendio"
+        }
+      ],
+      "example": {
+        "japanese": "火曜日にテストがあります。",
+        "romaji": "Kayōbi ni tesuto ga arimasu.",
+        "translation": "There is a test on Tuesday. / Hay un examen el martes."
+      },
+      "strokeCount": 4,
+      "mnemonic": "Llamas que suben = fuego.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-026",
+      "level": "Nivel 1",
+      "lesson": 3,
+      "lessonTitle": "いつ、どこで？(When, Where?)",
+      "character": "水",
+      "meaning": "Agua (Water)",
+      "onyomi": [
+        {
+          "reading": "スイ",
+          "romaji": "sui"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "みず",
+          "romaji": "mizu"
+        }
+      ],
+      "romaji": [
+        "sui",
+        "mizu"
+      ],
+      "words": [
+        {
+          "palabra": "水曜日",
+          "lectura": "すいようび",
+          "romaji": "suiyōbi",
+          "significado": "Wednesday / miércoles"
+        },
+        {
+          "palabra": "水",
+          "lectura": "みず",
+          "romaji": "mizu",
+          "significado": "water / agua"
+        }
+      ],
+      "example": {
+        "japanese": "水を飲みます。",
+        "romaji": "Mizu wo nomimasu.",
+        "translation": "I drink water. / Bebo agua."
+      },
+      "strokeCount": 4,
+      "mnemonic": "Gotas de agua fluyendo.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-027",
+      "level": "Nivel 1",
+      "lesson": 3,
+      "lessonTitle": "いつ、どこで？(When, Where?)",
+      "character": "木",
+      "meaning": "Árbol / Madera (Tree / Wood)",
+      "onyomi": [
+        {
+          "reading": "モク",
+          "romaji": "moku"
+        },
+        {
+          "reading": "ボク",
+          "romaji": "boku"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "き",
+          "romaji": "ki"
+        },
+        {
+          "reading": "こ",
+          "romaji": "ko"
+        }
+      ],
+      "romaji": [
+        "moku",
+        "boku",
+        "ki"
+      ],
+      "words": [
+        {
+          "palabra": "木曜日",
+          "lectura": "もくようび",
+          "romaji": "mokuyōbi",
+          "significado": "Thursday / jueves"
+        },
+        {
+          "palabra": "木",
+          "lectura": "き",
+          "romaji": "ki",
+          "significado": "tree / árbol"
+        }
+      ],
+      "example": {
+        "japanese": "公園に大きい木があります。",
+        "romaji": "Kōen ni ōkii ki ga arimasu.",
+        "translation": "There is a big tree in the park. / Hay un árbol grande en el parque."
+      },
+      "strokeCount": 4,
+      "mnemonic": "Un tronco con ramas = árbol.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-028",
+      "level": "Nivel 1",
+      "lesson": 3,
+      "lessonTitle": "いつ、どこで？(When, Where?)",
+      "character": "金",
+      "meaning": "Metal / Dinero (Metal / Money)",
+      "onyomi": [
+        {
+          "reading": "キン",
+          "romaji": "kin"
+        },
+        {
+          "reading": "コン",
+          "romaji": "kon"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "かね",
+          "romaji": "kane"
+        },
+        {
+          "reading": "かな",
+          "romaji": "kana"
+        }
+      ],
+      "romaji": [
+        "kin",
+        "kon",
+        "kane"
+      ],
+      "words": [
+        {
+          "palabra": "金曜日",
+          "lectura": "きんようび",
+          "romaji": "kinyōbi",
+          "significado": "Friday / viernes"
+        },
+        {
+          "palabra": "お金",
+          "lectura": "おかね",
+          "romaji": "okane",
+          "significado": "money / dinero"
+        }
+      ],
+      "example": {
+        "japanese": "金曜日は映画を見ます。",
+        "romaji": "Kinyōbi wa eiga wo mimasu.",
+        "translation": "I watch movies on Friday. / Veo películas el viernes."
+      },
+      "strokeCount": 8,
+      "mnemonic": "Pepitas de oro bajo tierra = metal/dinero.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-029",
+      "level": "Nivel 1",
+      "lesson": 3,
+      "lessonTitle": "いつ、どこで？(When, Where?)",
+      "character": "土",
+      "meaning": "Tierra (Earth / Soil)",
+      "onyomi": [
+        {
+          "reading": "ド",
+          "romaji": "do"
+        },
+        {
+          "reading": "ト",
+          "romaji": "to"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "つち",
+          "romaji": "tsuchi"
+        }
+      ],
+      "romaji": [
+        "do",
+        "to",
+        "tsuchi"
+      ],
+      "words": [
+        {
+          "palabra": "土曜日",
+          "lectura": "どようび",
+          "romaji": "doyōbi",
+          "significado": "Saturday / sábado"
+        },
+        {
+          "palabra": "土",
+          "lectura": "つち",
+          "romaji": "tsuchi",
+          "significado": "soil/earth / tierra"
+        },
+        {
+          "palabra": "土地",
+          "lectura": "とち",
+          "romaji": "tochi",
+          "significado": "land / terreno"
+        }
+      ],
+      "example": {
+        "japanese": "土曜日に買い物をします。",
+        "romaji": "Doyōbi ni kaimono wo shimasu.",
+        "translation": "I go shopping on Saturday. / Hago compras el sábado."
+      },
+      "strokeCount": 3,
+      "mnemonic": "Una planta sobre la línea de tierra.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-030",
+      "level": "Nivel 1",
+      "lesson": 3,
+      "lessonTitle": "いつ、どこで？(When, Where?)",
+      "character": "曜",
+      "meaning": "Día de la semana (Day of the week)",
+      "onyomi": [
+        {
+          "reading": "ヨウ",
+          "romaji": "you"
+        }
+      ],
+      "kunyomi": [],
+      "romaji": [
+        "you"
+      ],
+      "words": [
+        {
+          "palabra": "日曜日",
+          "lectura": "にちようび",
+          "romaji": "nichiyōbi",
+          "significado": "Sunday / domingo"
+        },
+        {
+          "palabra": "～曜日",
+          "lectura": "～ようび",
+          "romaji": "~yōbi",
+          "significado": "day of week / día de la semana"
+        },
+        {
+          "palabra": "何曜日",
+          "lectura": "なんようび",
+          "romaji": "nanyōbi",
+          "significado": "what day? / ¿qué día?"
+        }
+      ],
+      "example": {
+        "japanese": "今日は何曜日ですか。",
+        "romaji": "Kyō wa nanyōbi desu ka.",
+        "translation": "What day is it? / ¿Qué día es hoy?"
+      },
+      "strokeCount": 18,
+      "mnemonic": "Sol (日) + plumas = brillo de cada día.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-031",
+      "level": "Nivel 1",
+      "lesson": 3,
+      "lessonTitle": "いつ、どこで？(When, Where?)",
+      "character": "何",
+      "meaning": "Qué (What?)",
+      "onyomi": [],
+      "kunyomi": [
+        {
+          "reading": "なに",
+          "romaji": "nani"
+        },
+        {
+          "reading": "なん",
+          "romaji": "nan"
+        }
+      ],
+      "romaji": [
+        "nani",
+        "nan"
+      ],
+      "words": [
+        {
+          "palabra": "何",
+          "lectura": "なに/なん",
+          "romaji": "nani/nan",
+          "significado": "what / qué"
+        },
+        {
+          "palabra": "何曜日",
+          "lectura": "なんようび",
+          "romaji": "nanyōbi",
+          "significado": "what day / qué día"
+        },
+        {
+          "palabra": "何時",
+          "lectura": "なんじ",
+          "romaji": "nanji",
+          "significado": "what time / qué hora"
+        },
+        {
+          "palabra": "何人",
+          "lectura": "なんにん",
+          "romaji": "nannin",
+          "significado": "how many people / cuántas personas"
+        }
+      ],
+      "example": {
+        "japanese": "それは何ですか。",
+        "romaji": "Sore wa nan desu ka.",
+        "translation": "What is that? / ¿Qué es eso?"
+      },
+      "strokeCount": 7,
+      "mnemonic": "Persona (亻) + puede (可) = ¿qué puede ser?",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-032",
+      "level": "Nivel 1",
+      "lesson": 3,
+      "lessonTitle": "いつ、どこで？(When, Where?)",
+      "character": "年",
+      "meaning": "Año (Year)",
+      "onyomi": [
+        {
+          "reading": "ネン",
+          "romaji": "nen"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "とし",
+          "romaji": "toshi"
+        }
+      ],
+      "romaji": [
+        "nen",
+        "toshi"
+      ],
+      "words": [
+        {
+          "palabra": "1年",
+          "lectura": "いちねん",
+          "romaji": "ichinen",
+          "significado": "one year / un año"
+        },
+        {
+          "palabra": "年",
+          "lectura": "とし",
+          "romaji": "toshi",
+          "significado": "year/age / año"
+        },
+        {
+          "palabra": "今年",
+          "lectura": "ことし",
+          "romaji": "kotoshi",
+          "significado": "this year / este año"
+        },
+        {
+          "palabra": "去年",
+          "lectura": "きょねん",
+          "romaji": "kyonen",
+          "significado": "last year / el año pasado"
+        },
+        {
+          "palabra": "来年",
+          "lectura": "らいねん",
+          "romaji": "rainen",
+          "significado": "next year / próximo año"
+        }
+      ],
+      "example": {
+        "japanese": "今年は2026年です。",
+        "romaji": "Kotoshi wa nisen nijuuroku nen desu.",
+        "translation": "This year is 2026. / Este año es 2026."
+      },
+      "strokeCount": 6,
+      "mnemonic": "Cosechas que pasan = un año.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-033",
+      "level": "Nivel 1",
+      "lesson": 3,
+      "lessonTitle": "いつ、どこで？(When, Where?)",
+      "character": "時",
+      "meaning": "Hora / Tiempo (Time / Hour)",
+      "onyomi": [
+        {
+          "reading": "ジ",
+          "romaji": "ji"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "とき",
+          "romaji": "toki"
+        }
+      ],
+      "romaji": [
+        "ji",
+        "toki"
+      ],
+      "words": [
+        {
+          "palabra": "1時",
+          "lectura": "いちじ",
+          "romaji": "ichiji",
+          "significado": "1 o'clock / 1 en punto"
+        },
+        {
+          "palabra": "1時間",
+          "lectura": "いちじかん",
+          "romaji": "ichijikan",
+          "significado": "1 hour / 1 hora"
+        },
+        {
+          "palabra": "時",
+          "lectura": "とき",
+          "romaji": "toki",
+          "significado": "time/when / tiempo"
+        },
+        {
+          "palabra": "時計",
+          "lectura": "とけい",
+          "romaji": "tokei",
+          "significado": "clock/watch / reloj"
+        }
+      ],
+      "example": {
+        "japanese": "アルバイトは6時からです。",
+        "romaji": "Arubaito wa rokuji kara desu.",
+        "translation": "Part-time job starts at 6. / El trabajo empieza a las 6."
+      },
+      "strokeCount": 10,
+      "mnemonic": "Sol (日) + templo (寺) = las horas del templo.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-034",
+      "level": "Nivel 1",
+      "lesson": 3,
+      "lessonTitle": "いつ、どこで？(When, Where?)",
+      "character": "間",
+      "meaning": "Intervalo / Entre (Between / Interval)",
+      "onyomi": [
+        {
+          "reading": "カン",
+          "romaji": "kan"
+        },
+        {
+          "reading": "ケン",
+          "romaji": "ken"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "あいだ",
+          "romaji": "aida"
+        },
+        {
+          "reading": "ま",
+          "romaji": "ma"
+        }
+      ],
+      "romaji": [
+        "kan",
+        "ken",
+        "aida",
+        "ma"
+      ],
+      "words": [
+        {
+          "palabra": "時間",
+          "lectura": "じかん",
+          "romaji": "jikan",
+          "significado": "time / tiempo"
+        },
+        {
+          "palabra": "AとBの間",
+          "lectura": "あいだ",
+          "romaji": "aida",
+          "significado": "between A and B / entre A y B"
+        },
+        {
+          "palabra": "間に合います",
+          "lectura": "まにあいます",
+          "romaji": "ma ni aimasu",
+          "significado": "to be on time / llegar a tiempo"
+        }
+      ],
+      "example": {
+        "japanese": "花屋は本屋と銀行の間にあります。",
+        "romaji": "Hanaya wa honya to ginkō no aida ni arimasu.",
+        "translation": "The flower shop is between the bookstore and the bank. / La floristería está entre la librería y el banco."
+      },
+      "strokeCount": 12,
+      "mnemonic": "Sol (日) entre puertas (門) = el espacio entre.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N1-035",
+      "level": "Nivel 1",
+      "lesson": 3,
+      "lessonTitle": "いつ、どこで？(When, Where?)",
+      "character": "分",
+      "meaning": "Minutos / Parte (Minutes / Part)",
+      "onyomi": [
+        {
+          "reading": "フン",
+          "romaji": "fun"
+        },
+        {
+          "reading": "プン",
+          "romaji": "pun"
+        },
+        {
+          "reading": "ブン",
+          "romaji": "bun"
+        },
+        {
+          "reading": "ブ",
+          "romaji": "bu"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "わかる",
+          "romaji": "wakaru"
+        },
+        {
+          "reading": "わける",
+          "romaji": "wakeru"
+        }
+      ],
+      "romaji": [
+        "fun",
+        "pun",
+        "bun",
+        "wakaru"
+      ],
+      "words": [
+        {
+          "palabra": "5分",
+          "lectura": "ごふん",
+          "romaji": "gofun",
+          "significado": "5 min / 5 minutos"
+        },
+        {
+          "palabra": "10分",
+          "lectura": "じゅっぷん",
+          "romaji": "juppun",
+          "significado": "10 min / 10 minutos"
+        },
+        {
+          "palabra": "分かります",
+          "lectura": "わかります",
+          "romaji": "wakarimasu",
+          "significado": "to understand / entender"
+        },
+        {
+          "palabra": "十分",
+          "lectura": "じゅうぶん",
+          "romaji": "juubun",
+          "significado": "enough / suficiente"
+        }
+      ],
+      "example": {
+        "japanese": "昼休みは12時15分から1時10分までです。",
+        "romaji": "Hiruyasumi wa juuniji juugofun kara ichiji juppun made desu.",
+        "translation": "Lunch break is from 12:15 to 1:10. / El descanso es de 12:15 a 1:10."
+      },
+      "strokeCount": 4,
+      "mnemonic": "Cuchillo (刀) + ocho (八) = dividir en partes.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-036",
+      "level": "Nivel 2",
+      "lesson": 4,
+      "lessonTitle": "新しい町で (In a New Town)",
+      "character": "東",
+      "meaning": "Este (East)",
+      "onyomi": [
+        {
+          "reading": "トウ",
+          "romaji": "tou"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "ひがし",
+          "romaji": "higashi"
+        }
+      ],
+      "romaji": [
+        "tou",
+        "higashi"
+      ],
+      "words": [
+        {
+          "palabra": "東京",
+          "lectura": "とうきょう",
+          "romaji": "Tōkyō",
+          "significado": "Tokyo / Tokio"
+        },
+        {
+          "palabra": "東",
+          "lectura": "ひがし",
+          "romaji": "higashi",
+          "significado": "east / este"
+        },
+        {
+          "palabra": "東アジア",
+          "lectura": "ひがしアジア",
+          "romaji": "higashi Ajia",
+          "significado": "East Asia / Asia Oriental"
+        }
+      ],
+      "example": {
+        "japanese": "日本は東アジアの国です。",
+        "romaji": "Nihon wa higashi Ajia no kuni desu.",
+        "translation": "Japan is an East Asian country. / Japón es un país de Asia Oriental."
+      },
+      "strokeCount": 8,
+      "mnemonic": "Sol (日) detrás de un árbol (木) = este.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-037",
+      "level": "Nivel 2",
+      "lesson": 4,
+      "lessonTitle": "新しい町で (In a New Town)",
+      "character": "京",
+      "meaning": "Capital",
+      "onyomi": [
+        {
+          "reading": "キョウ",
+          "romaji": "kyou"
+        },
+        {
+          "reading": "ケイ",
+          "romaji": "kei"
+        }
+      ],
+      "kunyomi": [],
+      "romaji": [
+        "kyou",
+        "kei"
+      ],
+      "words": [
+        {
+          "palabra": "東京",
+          "lectura": "とうきょう",
+          "romaji": "Tōkyō",
+          "significado": "Tokyo / Tokio"
+        },
+        {
+          "palabra": "京都",
+          "lectura": "きょうと",
+          "romaji": "Kyōto",
+          "significado": "Kyoto / Kioto"
+        }
+      ],
+      "example": {
+        "japanese": "東京は人が多いです。",
+        "romaji": "Tōkyō wa hito ga ooi desu.",
+        "translation": "Tokyo has many people. / Tokio tiene mucha gente."
+      },
+      "strokeCount": 8,
+      "mnemonic": "Un edificio alto = la capital.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-038",
+      "level": "Nivel 2",
+      "lesson": 4,
+      "lessonTitle": "新しい町で (In a New Town)",
+      "character": "名",
+      "meaning": "Nombre / Fama (Name / Fame)",
+      "onyomi": [
+        {
+          "reading": "メイ",
+          "romaji": "mei"
+        },
+        {
+          "reading": "ミョウ",
+          "romaji": "myou"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "な",
+          "romaji": "na"
+        }
+      ],
+      "romaji": [
+        "mei",
+        "myou",
+        "na"
+      ],
+      "words": [
+        {
+          "palabra": "名前",
+          "lectura": "なまえ",
+          "romaji": "namae",
+          "significado": "name / nombre"
+        },
+        {
+          "palabra": "有名",
+          "lectura": "ゆうめい",
+          "romaji": "yūmei",
+          "significado": "famous / famoso"
+        },
+        {
+          "palabra": "名古屋",
+          "lectura": "なごや",
+          "romaji": "Nagoya",
+          "significado": "Nagoya"
+        }
+      ],
+      "example": {
+        "japanese": "名前を書いてください。",
+        "romaji": "Namae wo kaite kudasai.",
+        "translation": "Please write your name. / Escriba su nombre, por favor."
+      },
+      "strokeCount": 6,
+      "mnemonic": "Boca (口) que habla de noche (夕) = darse a conocer.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-039",
+      "level": "Nivel 2",
+      "lesson": 4,
+      "lessonTitle": "新しい町で (In a New Town)",
+      "character": "前",
+      "meaning": "Antes / Delante (Before / Front)",
+      "onyomi": [
+        {
+          "reading": "ゼン",
+          "romaji": "zen"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "まえ",
+          "romaji": "mae"
+        }
+      ],
+      "romaji": [
+        "zen",
+        "mae"
+      ],
+      "words": [
+        {
+          "palabra": "名前",
+          "lectura": "なまえ",
+          "romaji": "namae",
+          "significado": "name / nombre"
+        },
+        {
+          "palabra": "前",
+          "lectura": "まえ",
+          "romaji": "mae",
+          "significado": "front/before / delante"
+        },
+        {
+          "palabra": "午前",
+          "lectura": "ごぜん",
+          "romaji": "gozen",
+          "significado": "morning (AM) / mañana"
+        }
+      ],
+      "example": {
+        "japanese": "私の名前はアンです。",
+        "romaji": "Watashi no namae wa An desu.",
+        "translation": "My name is Ann. / Mi nombre es Ann."
+      },
+      "strokeCount": 9,
+      "mnemonic": "Pasos con un cuchillo cortando el camino por delante.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-040",
+      "level": "Nivel 2",
+      "lesson": 4,
+      "lessonTitle": "新しい町で (In a New Town)",
+      "character": "国",
+      "meaning": "País (Country)",
+      "onyomi": [
+        {
+          "reading": "コク",
+          "romaji": "koku"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "くに",
+          "romaji": "kuni"
+        }
+      ],
+      "romaji": [
+        "koku",
+        "kuni"
+      ],
+      "words": [
+        {
+          "palabra": "国",
+          "lectura": "くに",
+          "romaji": "kuni",
+          "significado": "country / país"
+        },
+        {
+          "palabra": "外国",
+          "lectura": "がいこく",
+          "romaji": "gaikoku",
+          "significado": "foreign country / país extranjero"
+        },
+        {
+          "palabra": "韓国",
+          "lectura": "かんこく",
+          "romaji": "kankoku",
+          "significado": "Korea / Corea"
+        },
+        {
+          "palabra": "中国",
+          "lectura": "ちゅうごく",
+          "romaji": "chūgoku",
+          "significado": "China"
+        }
+      ],
+      "example": {
+        "japanese": "私の国はアメリカです。",
+        "romaji": "Watashi no kuni wa Amerika desu.",
+        "translation": "My country is America. / Mi país es Estados Unidos."
+      },
+      "strokeCount": 8,
+      "mnemonic": "Joya (玉) dentro de fronteras (囗) = un país.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-041",
+      "level": "Nivel 2",
+      "lesson": 4,
+      "lessonTitle": "新しい町で (In a New Town)",
+      "character": "男",
+      "meaning": "Hombre / Masculino (Man / Male)",
+      "onyomi": [
+        {
+          "reading": "ダン",
+          "romaji": "dan"
+        },
+        {
+          "reading": "ナン",
+          "romaji": "nan"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "おとこ",
+          "romaji": "otoko"
+        }
+      ],
+      "romaji": [
+        "dan",
+        "nan",
+        "otoko"
+      ],
+      "words": [
+        {
+          "palabra": "男の人",
+          "lectura": "おとこのひと",
+          "romaji": "otoko no hito",
+          "significado": "man / hombre"
+        },
+        {
+          "palabra": "男性",
+          "lectura": "だんせい",
+          "romaji": "dansei",
+          "significado": "male / masculino"
+        }
+      ],
+      "example": {
+        "japanese": "あの男の人は誰ですか。",
+        "romaji": "Ano otoko no hito wa dare desu ka.",
+        "translation": "Who is that man? / ¿Quién es ese hombre?"
+      },
+      "strokeCount": 7,
+      "mnemonic": "Campo (田) + fuerza (力) = hombre que trabaja la tierra.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-042",
+      "level": "Nivel 2",
+      "lesson": 4,
+      "lessonTitle": "新しい町で (In a New Town)",
+      "character": "女",
+      "meaning": "Mujer / Femenino (Woman / Female)",
+      "onyomi": [
+        {
+          "reading": "ジョ",
+          "romaji": "jo"
+        },
+        {
+          "reading": "ニョ",
+          "romaji": "nyo"
+        },
+        {
+          "reading": "ニョウ",
+          "romaji": "nyou"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "おんな",
+          "romaji": "onna"
+        },
+        {
+          "reading": "め",
+          "romaji": "me"
+        }
+      ],
+      "romaji": [
+        "jo",
+        "nyo",
+        "onna"
+      ],
+      "words": [
+        {
+          "palabra": "女の人",
+          "lectura": "おんなのひと",
+          "romaji": "onna no hito",
+          "significado": "woman / mujer"
+        },
+        {
+          "palabra": "女性",
+          "lectura": "じょせい",
+          "romaji": "josei",
+          "significado": "female / femenino"
+        }
+      ],
+      "example": {
+        "japanese": "あの女の人は私の先生です。",
+        "romaji": "Ano onna no hito wa watashi no sensei desu.",
+        "translation": "That woman is my teacher. / Esa mujer es mi maestra."
+      },
+      "strokeCount": 3,
+      "mnemonic": "Forma de una persona arrodillada con gracia = mujer.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-043",
+      "level": "Nivel 2",
+      "lesson": 4,
+      "lessonTitle": "新しい町で (In a New Town)",
+      "character": "区",
+      "meaning": "Distrito (Ward / District)",
+      "onyomi": [
+        {
+          "reading": "ク",
+          "romaji": "ku"
+        }
+      ],
+      "kunyomi": [],
+      "romaji": [
+        "ku"
+      ],
+      "words": [
+        {
+          "palabra": "～区",
+          "lectura": "～く",
+          "romaji": "~ku",
+          "significado": "~ward / ~distrito"
+        },
+        {
+          "palabra": "区役所",
+          "lectura": "くやくしょ",
+          "romaji": "kuyakusho",
+          "significado": "ward office / oficina del distrito"
+        }
+      ],
+      "example": {
+        "japanese": "中野区に住んでいます。",
+        "romaji": "Nakano-ku ni sunde imasu.",
+        "translation": "I live in Nakano Ward. / Vivo en el distrito de Nakano."
+      },
+      "strokeCount": 4,
+      "mnemonic": "Un área dividida dentro de fronteras.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-044",
+      "level": "Nivel 2",
+      "lesson": 4,
+      "lessonTitle": "新しい町で (In a New Town)",
+      "character": "市",
+      "meaning": "Ciudad (City)",
+      "onyomi": [
+        {
+          "reading": "シ",
+          "romaji": "shi"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "いち",
+          "romaji": "ichi"
+        }
+      ],
+      "romaji": [
+        "shi",
+        "ichi"
+      ],
+      "words": [
+        {
+          "palabra": "～市",
+          "lectura": "～し",
+          "romaji": "~shi",
+          "significado": "~city / ~ciudad"
+        },
+        {
+          "palabra": "市役所",
+          "lectura": "しやくしょ",
+          "romaji": "shiyakusho",
+          "significado": "city hall / ayuntamiento"
+        },
+        {
+          "palabra": "市場",
+          "lectura": "いちば",
+          "romaji": "ichiba",
+          "significado": "market / mercado"
+        }
+      ],
+      "example": {
+        "japanese": "住所は北山市中川1-2-3です。",
+        "romaji": "Juusho wa Kitayama-shi Nakagawa 1-2-3 desu.",
+        "translation": "The address is Kitayama-shi Nakagawa 1-2-3."
+      },
+      "strokeCount": 5,
+      "mnemonic": "Un mercado con un techo = ciudad.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-045",
+      "level": "Nivel 2",
+      "lesson": 5,
+      "lessonTitle": "楽しい週末 (Fun Weekend)",
+      "character": "先",
+      "meaning": "Antes / Anterior (Before / Previous)",
+      "onyomi": [
+        {
+          "reading": "セン",
+          "romaji": "sen"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "さき",
+          "romaji": "saki"
+        }
+      ],
+      "romaji": [
+        "sen",
+        "saki"
+      ],
+      "words": [
+        {
+          "palabra": "先生",
+          "lectura": "せんせい",
+          "romaji": "sensei",
+          "significado": "teacher / maestro"
+        },
+        {
+          "palabra": "先月",
+          "lectura": "せんげつ",
+          "romaji": "sengetsu",
+          "significado": "last month / mes pasado"
+        },
+        {
+          "palabra": "先",
+          "lectura": "さき",
+          "romaji": "saki",
+          "significado": "ahead / adelante"
+        },
+        {
+          "palabra": "先週",
+          "lectura": "せんしゅう",
+          "romaji": "senshū",
+          "significado": "last week / semana pasada"
+        }
+      ],
+      "example": {
+        "japanese": "先月、日本へ来ました。",
+        "romaji": "Sengetsu, Nihon e kimashita.",
+        "translation": "I came to Japan last month. / Vine a Japón el mes pasado."
+      },
+      "strokeCount": 6,
+      "mnemonic": "Piernas que van adelante = antes/primero.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-046",
+      "level": "Nivel 2",
+      "lesson": 5,
+      "lessonTitle": "楽しい週末 (Fun Weekend)",
+      "character": "週",
+      "meaning": "Semana (Week)",
+      "onyomi": [
+        {
+          "reading": "シュウ",
+          "romaji": "shuu"
+        }
+      ],
+      "kunyomi": [],
+      "romaji": [
+        "shuu"
+      ],
+      "words": [
+        {
+          "palabra": "先週",
+          "lectura": "せんしゅう",
+          "romaji": "senshū",
+          "significado": "last week / semana pasada"
+        },
+        {
+          "palabra": "1週間",
+          "lectura": "いっしゅうかん",
+          "romaji": "isshūkan",
+          "significado": "one week / una semana"
+        },
+        {
+          "palabra": "今週",
+          "lectura": "こんしゅう",
+          "romaji": "konshū",
+          "significado": "this week / esta semana"
+        },
+        {
+          "palabra": "来週",
+          "lectura": "らいしゅう",
+          "romaji": "raishū",
+          "significado": "next week / próxima semana"
+        },
+        {
+          "palabra": "毎週",
+          "lectura": "まいしゅう",
+          "romaji": "maishū",
+          "significado": "every week / cada semana"
+        }
+      ],
+      "example": {
+        "japanese": "先週の土曜日、どこへ行きましたか。",
+        "romaji": "Senshū no doyōbi, doko e ikimashita ka.",
+        "translation": "Where did you go last Saturday? / ¿A dónde fuiste el sábado pasado?"
+      },
+      "strokeCount": 11,
+      "mnemonic": "Un ciclo (周) con camino (辶) = semana que pasa.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-047",
+      "level": "Nivel 2",
+      "lesson": 5,
+      "lessonTitle": "楽しい週末 (Fun Weekend)",
+      "character": "毎",
+      "meaning": "Cada / Todos los... (Every)",
+      "onyomi": [
+        {
+          "reading": "マイ",
+          "romaji": "mai"
+        }
+      ],
+      "kunyomi": [],
+      "romaji": [
+        "mai"
+      ],
+      "words": [
+        {
+          "palabra": "毎日",
+          "lectura": "まいにち",
+          "romaji": "mainichi",
+          "significado": "every day / cada día"
+        },
+        {
+          "palabra": "毎週",
+          "lectura": "まいしゅう",
+          "romaji": "maishū",
+          "significado": "every week / cada semana"
+        },
+        {
+          "palabra": "毎月",
+          "lectura": "まいつき",
+          "romaji": "maitsuki",
+          "significado": "every month / cada mes"
+        },
+        {
+          "palabra": "毎年",
+          "lectura": "まいとし",
+          "romaji": "maitoshi",
+          "significado": "every year / cada año"
+        }
+      ],
+      "example": {
+        "japanese": "毎週水曜日はレディースデイです。",
+        "romaji": "Maishū suiyōbi wa rediisu dei desu.",
+        "translation": "Every Wednesday is Ladies' Day. / Cada miércoles es día de damas."
+      },
+      "strokeCount": 6,
+      "mnemonic": "Madre (母) con sombrero = cada vez que mamá repite algo.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-048",
+      "level": "Nivel 2",
+      "lesson": 5,
+      "lessonTitle": "楽しい週末 (Fun Weekend)",
+      "character": "午",
+      "meaning": "Mediodía (Noon)",
+      "onyomi": [
+        {
+          "reading": "ゴ",
+          "romaji": "go"
+        }
+      ],
+      "kunyomi": [],
+      "romaji": [
+        "go"
+      ],
+      "words": [
+        {
+          "palabra": "午前",
+          "lectura": "ごぜん",
+          "romaji": "gozen",
+          "significado": "morning (AM) / mañana"
+        },
+        {
+          "palabra": "午後",
+          "lectura": "ごご",
+          "romaji": "gogo",
+          "significado": "afternoon (PM) / tarde"
+        }
+      ],
+      "example": {
+        "japanese": "今、ロンドンは午前0時です。",
+        "romaji": "Ima, Rondon wa gozen reiji desu.",
+        "translation": "Right now, it is midnight in London. / Ahora es medianoche en Londres."
+      },
+      "strokeCount": 4,
+      "mnemonic": "El sol en su punto más alto = mediodía.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-049",
+      "level": "Nivel 2",
+      "lesson": 5,
+      "lessonTitle": "楽しい週末 (Fun Weekend)",
+      "character": "後",
+      "meaning": "Después / Posterior (After / Behind)",
+      "onyomi": [
+        {
+          "reading": "ゴ",
+          "romaji": "go"
+        },
+        {
+          "reading": "コウ",
+          "romaji": "kou"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "うしろ",
+          "romaji": "ushiro"
+        },
+        {
+          "reading": "あと",
+          "romaji": "ato"
+        },
+        {
+          "reading": "おくれる",
+          "romaji": "okureru"
+        },
+        {
+          "reading": "のち",
+          "romaji": "nochi"
+        }
+      ],
+      "romaji": [
+        "go",
+        "kou",
+        "ushiro",
+        "ato"
+      ],
+      "words": [
+        {
+          "palabra": "午後",
+          "lectura": "ごご",
+          "romaji": "gogo",
+          "significado": "afternoon (PM) / tarde"
+        },
+        {
+          "palabra": "後ろ",
+          "lectura": "うしろ",
+          "romaji": "ushiro",
+          "significado": "behind / detrás"
+        },
+        {
+          "palabra": "後半",
+          "lectura": "こうはん",
+          "romaji": "kōhan",
+          "significado": "second half / segunda mitad"
+        },
+        {
+          "palabra": "後",
+          "lectura": "あと",
+          "romaji": "ato",
+          "significado": "after/later / después"
+        }
+      ],
+      "example": {
+        "japanese": "午後から図書館で勉強します。",
+        "romaji": "Gogo kara toshokan de benkyō shimasu.",
+        "translation": "I will study at the library from the afternoon. / Estudiaré en la biblioteca por la tarde."
+      },
+      "strokeCount": 9,
+      "mnemonic": "Piernas (彳) que van despacio = quedarse atrás/después.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-050",
+      "level": "Nivel 2",
+      "lesson": 5,
+      "lessonTitle": "楽しい週末 (Fun Weekend)",
+      "character": "見",
+      "meaning": "Ver / Mirar",
+      "onyomi": [
+        {
+          "reading": "ケン"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "み(る)"
+        }
+      ],
+      "romaji": [
+        "ken",
+        "mi(ru)"
+      ],
+      "words": [
+        {
+          "palabra": "見る",
+          "lectura": "みる",
+          "significado": "Ver/Mirar"
+        },
+        {
+          "palabra": "花見",
+          "lectura": "はなみ",
+          "significado": "Ver flores de cerezo"
+        },
+        {
+          "palabra": "意見",
+          "lectura": "いけん",
+          "significado": "Opinión"
+        }
+      ],
+      "example": {
+        "japanese": "",
+        "romaji": "",
+        "translation": ""
+      },
+      "strokeCount": 7,
+      "mnemonic": "Un ojo 👁️ grande con piernas: caminas para VER.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-051",
+      "level": "Nivel 2",
+      "lesson": 5,
+      "lessonTitle": "楽しい週末 (Fun Weekend)",
+      "character": "食",
+      "meaning": "Comer / Comida",
+      "onyomi": [
+        {
+          "reading": "ショク"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "た(べる)"
+        }
+      ],
+      "romaji": [
+        "shoku",
+        "ta(beru)"
+      ],
+      "words": [
+        {
+          "palabra": "食べる",
+          "lectura": "たべる",
+          "significado": "Comer"
+        },
+        {
+          "palabra": "食事",
+          "lectura": "しょくじ",
+          "significado": "Comida/Meal"
+        },
+        {
+          "palabra": "食堂",
+          "lectura": "しょくどう",
+          "significado": "Comedor/Cafetería"
+        }
+      ],
+      "example": {
+        "japanese": "",
+        "romaji": "",
+        "translation": ""
+      },
+      "strokeCount": 9,
+      "mnemonic": "Un techo protege la comida en un plato: hora de comer 🍽️.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-052",
+      "level": "Nivel 2",
+      "lesson": 5,
+      "lessonTitle": "楽しい週末 (Fun Weekend)",
+      "character": "飲",
+      "meaning": "Beber",
+      "onyomi": [
+        {
+          "reading": "イン"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "の(む)"
+        }
+      ],
+      "romaji": [
+        "in",
+        "no(mu)"
+      ],
+      "words": [
+        {
+          "palabra": "飲む",
+          "lectura": "のむ",
+          "significado": "Beber"
+        },
+        {
+          "palabra": "飲み物",
+          "lectura": "のみもの",
+          "significado": "Bebida"
+        }
+      ],
+      "example": {
+        "japanese": "",
+        "romaji": "",
+        "translation": ""
+      },
+      "strokeCount": 12,
+      "mnemonic": "食 (comer) + 欠 (bostezar/abrir boca): abrir la boca para beber 🥤.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-053",
+      "level": "Nivel 2",
+      "lesson": 5,
+      "lessonTitle": "楽しい週末 (Fun Weekend)",
+      "character": "買",
+      "meaning": "Comprar",
+      "onyomi": [
+        {
+          "reading": "バイ"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "か(う)"
+        }
+      ],
+      "romaji": [
+        "bai",
+        "ka(u)"
+      ],
+      "words": [
+        {
+          "palabra": "買う",
+          "lectura": "かう",
+          "significado": "Comprar"
+        },
+        {
+          "palabra": "買い物",
+          "lectura": "かいもの",
+          "significado": "Compras"
+        }
+      ],
+      "example": {
+        "japanese": "",
+        "romaji": "",
+        "translation": ""
+      },
+      "strokeCount": 12,
+      "mnemonic": "Una red (罒) para atrapar cosas + 貝 (concha/dinero) = COMPRAR 🛒.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-054",
+      "level": "Nivel 2",
+      "lesson": 5,
+      "lessonTitle": "楽しい週末 (Fun Weekend)",
+      "character": "物",
+      "meaning": "Cosa / Objeto (Thing / Object)",
+      "onyomi": [
+        {
+          "reading": "ブツ",
+          "romaji": "butsu"
+        },
+        {
+          "reading": "モツ",
+          "romaji": "motsu"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "もの",
+          "romaji": "mono"
+        }
+      ],
+      "romaji": [
+        "mono",
+        "butsu",
+        "motsu"
+      ],
+      "words": [
+        {
+          "palabra": "買い物",
+          "lectura": "かいもの",
+          "romaji": "kaimono",
+          "significado": "shopping / compras"
+        },
+        {
+          "palabra": "物",
+          "lectura": "もの",
+          "romaji": "mono",
+          "significado": "thing / cosa"
+        },
+        {
+          "palabra": "動物",
+          "lectura": "どうぶつ",
+          "romaji": "dōbutsu",
+          "significado": "animal"
+        },
+        {
+          "palabra": "荷物",
+          "lectura": "にもつ",
+          "romaji": "nimotsu",
+          "significado": "luggage / equipaje"
+        }
+      ],
+      "example": {
+        "japanese": "一緒に買い物に行きませんか。",
+        "romaji": "Issho ni kaimono ni ikimasen ka.",
+        "translation": "Shall we go shopping together? / ¿Vamos de compras juntos?"
+      },
+      "strokeCount": 8,
+      "mnemonic": "Buey (牛) + no (勿) = las cosas materiales.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-055",
+      "level": "Nivel 2",
+      "lesson": 5,
+      "lessonTitle": "楽しい週末 (Fun Weekend)",
+      "character": "行",
+      "meaning": "Ir",
+      "onyomi": [
+        {
+          "reading": "コウ"
+        },
+        {
+          "reading": "ギョウ"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "い(く)"
+        },
+        {
+          "reading": "ゆ(く)"
+        },
+        {
+          "reading": "おこな(う)"
+        }
+      ],
+      "romaji": [
+        "kou",
+        "i(ku)",
+        "yu(ku)"
+      ],
+      "words": [
+        {
+          "palabra": "行く",
+          "lectura": "いく",
+          "significado": "Ir"
+        },
+        {
+          "palabra": "銀行",
+          "lectura": "ぎんこう",
+          "significado": "Banco"
+        },
+        {
+          "palabra": "旅行",
+          "lectura": "りょこう",
+          "significado": "Viaje"
+        }
+      ],
+      "example": {
+        "japanese": "",
+        "romaji": "",
+        "translation": ""
+      },
+      "strokeCount": 6,
+      "mnemonic": "Una encrucijada de caminos: ¿a dónde vas? 🛤️",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-056",
+      "level": "Nivel 2",
+      "lesson": 5,
+      "lessonTitle": "楽しい週末 (Fun Weekend)",
+      "character": "休",
+      "meaning": "Descansar",
+      "onyomi": [
+        {
+          "reading": "キュウ"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "やす(む)"
+        }
+      ],
+      "romaji": [
+        "kyuu",
+        "yasu(mu)"
+      ],
+      "words": [
+        {
+          "palabra": "休む",
+          "lectura": "やすむ",
+          "significado": "Descansar"
+        },
+        {
+          "palabra": "休日",
+          "lectura": "きゅうじつ",
+          "significado": "Día libre"
+        }
+      ],
+      "example": {
+        "japanese": "",
+        "romaji": "",
+        "translation": ""
+      },
+      "strokeCount": 6,
+      "mnemonic": "Una persona (亻) descansa bajo un árbol (木) 🌳.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-057",
+      "level": "Nivel 2",
+      "lesson": 6,
+      "lessonTitle": "一緒に！(Together!)",
+      "character": "今",
+      "meaning": "Ahora / Actual",
+      "onyomi": [
+        {
+          "reading": "コン"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "いま"
+        }
+      ],
+      "romaji": [
+        "ima",
+        "kon"
+      ],
+      "words": [
+        {
+          "palabra": "今",
+          "lectura": "いま",
+          "significado": "Ahora"
+        },
+        {
+          "palabra": "今日",
+          "lectura": "きょう",
+          "significado": "Hoy"
+        },
+        {
+          "palabra": "今月",
+          "lectura": "こんげつ",
+          "significado": "Este mes"
+        }
+      ],
+      "example": {
+        "japanese": "",
+        "romaji": "",
+        "translation": ""
+      },
+      "strokeCount": 4,
+      "mnemonic": "Un techo que cubre el momento presente.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-058",
+      "level": "Nivel 2",
+      "lesson": 6,
+      "lessonTitle": "一緒に！(Together!)",
+      "character": "来",
+      "meaning": "Venir / Próximo",
+      "onyomi": [
+        {
+          "reading": "ライ"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "く(る)"
+        },
+        {
+          "reading": "き(ます)"
+        }
+      ],
+      "romaji": [
+        "rai",
+        "ku(ru)",
+        "ki(masu)"
+      ],
+      "words": [
+        {
+          "palabra": "来週",
+          "lectura": "らいしゅう",
+          "significado": "La próxima semana"
+        },
+        {
+          "palabra": "来月",
+          "lectura": "らいげつ",
+          "significado": "El próximo mes"
+        },
+        {
+          "palabra": "来年",
+          "lectura": "らいねん",
+          "significado": "El próximo año"
+        }
+      ],
+      "example": {
+        "japanese": "",
+        "romaji": "",
+        "translation": ""
+      },
+      "strokeCount": 7,
+      "mnemonic": "Un árbol del futuro que viene hacia ti.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-059",
+      "level": "Nivel 2",
+      "lesson": 6,
+      "lessonTitle": "一緒に！(Together!)",
+      "character": "帰",
+      "meaning": "Regresar / Volver",
+      "onyomi": [
+        {
+          "reading": "キ"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "かえ(る)"
+        }
+      ],
+      "romaji": [
+        "ki",
+        "kae(ru)"
+      ],
+      "words": [
+        {
+          "palabra": "帰る",
+          "lectura": "かえる",
+          "significado": "Regresar/Volver"
+        },
+        {
+          "palabra": "帰国",
+          "lectura": "きこく",
+          "significado": "Regresar al país"
+        }
+      ],
+      "example": {
+        "japanese": "",
+        "romaji": "",
+        "translation": ""
+      },
+      "strokeCount": 10,
+      "mnemonic": "Seguir el camino de vuelta a casa 🏠.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-060",
+      "level": "Nivel 2",
+      "lesson": 6,
+      "lessonTitle": "一緒に！(Together!)",
+      "character": "会",
+      "meaning": "Encontrarse / Reunión",
+      "onyomi": [
+        {
+          "reading": "カイ"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "あ(う)"
+        }
+      ],
+      "romaji": [
+        "kai",
+        "a(u)"
+      ],
+      "words": [
+        {
+          "palabra": "会う",
+          "lectura": "あう",
+          "significado": "Encontrarse"
+        },
+        {
+          "palabra": "会社",
+          "lectura": "かいしゃ",
+          "significado": "Empresa"
+        },
+        {
+          "palabra": "会議",
+          "lectura": "かいぎ",
+          "significado": "Reunión"
+        }
+      ],
+      "example": {
+        "japanese": "",
+        "romaji": "",
+        "translation": ""
+      },
+      "strokeCount": 6,
+      "mnemonic": "Un techo bajo el cual personas se reúnen 🤝.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-061",
+      "level": "Nivel 2",
+      "lesson": 6,
+      "lessonTitle": "一緒に！(Together!)",
+      "character": "社",
+      "meaning": "Compañía / Santuario (Company / Shrine)",
+      "onyomi": [
+        {
+          "reading": "シャ",
+          "romaji": "sha"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "やしろ",
+          "romaji": "yashiro"
+        }
+      ],
+      "romaji": [
+        "sha",
+        "yashiro"
+      ],
+      "words": [
+        {
+          "palabra": "会社",
+          "lectura": "かいしゃ",
+          "romaji": "kaisha",
+          "significado": "company / empresa"
+        },
+        {
+          "palabra": "社会",
+          "lectura": "しゃかい",
+          "romaji": "shakai",
+          "significado": "society / sociedad"
+        }
+      ],
+      "example": {
+        "japanese": "毎日9時に会社へ行きます。",
+        "romaji": "Mainichi kuji ni kaisha e ikimasu.",
+        "translation": "I go to the company at 9 every day. / Voy a la empresa a las 9 todos los días."
+      },
+      "strokeCount": 7,
+      "mnemonic": "Altar (示) + tierra (土) = lugar sagrado/empresa.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-062",
+      "level": "Nivel 2",
+      "lesson": 6,
+      "lessonTitle": "一緒に！(Together!)",
+      "character": "聞",
+      "meaning": "Escuchar / Preguntar",
+      "onyomi": [
+        {
+          "reading": "ブン"
+        },
+        {
+          "reading": "モン"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "き(く)"
+        }
+      ],
+      "romaji": [
+        "bun",
+        "mon",
+        "ki(ku)"
+      ],
+      "words": [
+        {
+          "palabra": "聞く",
+          "lectura": "きく",
+          "significado": "Escuchar/Preguntar"
+        },
+        {
+          "palabra": "新聞",
+          "lectura": "しんぶん",
+          "significado": "Periódico"
+        }
+      ],
+      "example": {
+        "japanese": "",
+        "romaji": "",
+        "translation": ""
+      },
+      "strokeCount": 14,
+      "mnemonic": "Una oreja (耳) en una puerta (門): escuchas a través de la puerta 👂.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-063",
+      "level": "Nivel 2",
+      "lesson": 6,
+      "lessonTitle": "一緒に！(Together!)",
+      "character": "読",
+      "meaning": "Leer",
+      "onyomi": [
+        {
+          "reading": "ドク"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "よ(む)"
+        }
+      ],
+      "romaji": [
+        "doku",
+        "yo(mu)"
+      ],
+      "words": [
+        {
+          "palabra": "読む",
+          "lectura": "よむ",
+          "significado": "Leer"
+        },
+        {
+          "palabra": "読書",
+          "lectura": "どくしょ",
+          "significado": "Lectura (actividad)"
+        }
+      ],
+      "example": {
+        "japanese": "",
+        "romaji": "",
+        "translation": ""
+      },
+      "strokeCount": 14,
+      "mnemonic": "言 (palabras) + 売 (vender): vender palabras = LEER 📖.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-064",
+      "level": "Nivel 2",
+      "lesson": 6,
+      "lessonTitle": "一緒に！(Together!)",
+      "character": "書",
+      "meaning": "Escribir",
+      "onyomi": [
+        {
+          "reading": "ショ"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "か(く)"
+        }
+      ],
+      "romaji": [
+        "sho",
+        "ka(ku)"
+      ],
+      "words": [
+        {
+          "palabra": "書く",
+          "lectura": "かく",
+          "significado": "Escribir"
+        },
+        {
+          "palabra": "辞書",
+          "lectura": "じしょ",
+          "significado": "Diccionario"
+        },
+        {
+          "palabra": "読書",
+          "lectura": "どくしょ",
+          "significado": "Lectura"
+        }
+      ],
+      "example": {
+        "japanese": "",
+        "romaji": "",
+        "translation": ""
+      },
+      "strokeCount": 10,
+      "mnemonic": "Un pincel que escribe con tinta: 書く ✍️.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-065",
+      "level": "Nivel 2",
+      "lesson": 6,
+      "lessonTitle": "一緒に！(Together!)",
+      "character": "話",
+      "meaning": "Hablar / Conversación",
+      "onyomi": [
+        {
+          "reading": "ワ"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "はな(す)"
+        },
+        {
+          "reading": "はなし"
+        }
+      ],
+      "romaji": [
+        "wa",
+        "hana(su)",
+        "hanashi"
+      ],
+      "words": [
+        {
+          "palabra": "話す",
+          "lectura": "はなす",
+          "significado": "Hablar"
+        },
+        {
+          "palabra": "電話",
+          "lectura": "でんわ",
+          "significado": "Teléfono"
+        }
+      ],
+      "example": {
+        "japanese": "",
+        "romaji": "",
+        "translation": ""
+      },
+      "strokeCount": 13,
+      "mnemonic": "言 (palabras) + 舌 (lengua): mover la lengua para HABLAR 🗣️.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-067",
+      "level": "Nivel 2",
+      "lesson": 7,
+      "lessonTitle": "漢字のパーツ (Kanji Parts)",
+      "character": "言",
+      "meaning": "Decir / Palabra (Say / Word)",
+      "onyomi": [
+        {
+          "reading": "ゲン",
+          "romaji": "gen"
+        },
+        {
+          "reading": "ゴン",
+          "romaji": "gon"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "いう",
+          "romaji": "iu"
+        },
+        {
+          "reading": "こと",
+          "romaji": "koto"
+        }
+      ],
+      "romaji": [
+        "iu",
+        "koto",
+        "gen",
+        "gon"
+      ],
+      "words": [
+        {
+          "palabra": "言います",
+          "lectura": "いいます",
+          "romaji": "iimasu",
+          "significado": "to say / decir"
+        },
+        {
+          "palabra": "言葉",
+          "lectura": "ことば",
+          "romaji": "kotoba",
+          "significado": "word / palabra"
+        }
+      ],
+      "example": {
+        "japanese": "もう一度言ってください。",
+        "romaji": "Mō ichido itte kudasai.",
+        "translation": "Please say it again. / Por favor dígalo otra vez."
+      },
+      "strokeCount": 7,
+      "mnemonic": "Boca con líneas = palabras que salen.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-068",
+      "level": "Nivel 2",
+      "lesson": 7,
+      "lessonTitle": "漢字のパーツ (Kanji Parts)",
+      "character": "貝",
+      "meaning": "Concha / Marisco (Shell)",
+      "onyomi": [],
+      "kunyomi": [
+        {
+          "reading": "かい",
+          "romaji": "kai"
+        }
+      ],
+      "romaji": [
+        "kai"
+      ],
+      "words": [
+        {
+          "palabra": "貝",
+          "lectura": "かい",
+          "romaji": "kai",
+          "significado": "shell / concha"
+        }
+      ],
+      "example": {
+        "japanese": "海で貝を拾いました。",
+        "romaji": "Umi de kai wo hiroimashita.",
+        "translation": "I picked up shells at the sea. / Recogí conchas en el mar."
+      },
+      "strokeCount": 7,
+      "mnemonic": "Forma de una concha con patas = cauri (moneda antigua).",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-069",
+      "level": "Nivel 2",
+      "lesson": 7,
+      "lessonTitle": "漢字のパーツ (Kanji Parts)",
+      "character": "田",
+      "meaning": "Campo de arroz (Rice field)",
+      "onyomi": [
+        {
+          "reading": "デン",
+          "romaji": "den"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "た",
+          "romaji": "ta"
+        }
+      ],
+      "romaji": [
+        "ta",
+        "den"
+      ],
+      "words": [
+        {
+          "palabra": "田んぼ",
+          "lectura": "たんぼ",
+          "romaji": "tanbo",
+          "significado": "rice paddy / arrozal"
+        },
+        {
+          "palabra": "田中さん",
+          "lectura": "たなかさん",
+          "romaji": "Tanaka-san",
+          "significado": "Mr./Ms. Tanaka"
+        },
+        {
+          "palabra": "山田さん",
+          "lectura": "やまださん",
+          "romaji": "Yamada-san",
+          "significado": "Mr./Ms. Yamada"
+        }
+      ],
+      "example": {
+        "japanese": "お米は田んぼで作ります。",
+        "romaji": "Okome wa tanbo de tsukurimasu.",
+        "translation": "Rice is made in rice paddies. / El arroz se cultiva en arrozales."
+      },
+      "strokeCount": 5,
+      "mnemonic": "Parcelas divididas de un campo de arroz.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-070",
+      "level": "Nivel 2",
+      "lesson": 7,
+      "lessonTitle": "漢字のパーツ (Kanji Parts)",
+      "character": "力",
+      "meaning": "Fuerza / Poder (Power / Force)",
+      "onyomi": [
+        {
+          "reading": "リキ",
+          "romaji": "riki"
+        },
+        {
+          "reading": "リョク",
+          "romaji": "ryoku"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "ちから",
+          "romaji": "chikara"
+        }
+      ],
+      "romaji": [
+        "chikara",
+        "riki",
+        "ryoku"
+      ],
+      "words": [
+        {
+          "palabra": "力",
+          "lectura": "ちから",
+          "romaji": "chikara",
+          "significado": "power / fuerza"
+        }
+      ],
+      "example": {
+        "japanese": "彼は力があります。",
+        "romaji": "Kare wa chikara ga arimasu.",
+        "translation": "He has strength. / Él tiene fuerza."
+      },
+      "strokeCount": 2,
+      "mnemonic": "Un brazo flexionado mostrando fuerza.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANJI-N2-071",
+      "level": "Nivel 2",
+      "lesson": 7,
+      "lessonTitle": "漢字のパーツ (Kanji Parts)",
+      "character": "門",
+      "meaning": "Puerta / Portón (Gate)",
+      "onyomi": [
+        {
+          "reading": "モン",
+          "romaji": "mon"
+        }
+      ],
+      "kunyomi": [
+        {
+          "reading": "かど",
+          "romaji": "kado"
+        }
+      ],
+      "romaji": [
+        "mon",
+        "kado"
+      ],
+      "words": [
+        {
+          "palabra": "門",
+          "lectura": "もん",
+          "romaji": "mon",
+          "significado": "gate / puerta"
+        },
+        {
+          "palabra": "専門学校",
+          "lectura": "せんもんがっこう",
+          "romaji": "senmon gakkō",
+          "significado": "vocational school / escuela vocacional"
+        }
+      ],
+      "example": {
+        "japanese": "大学の門の前で写真を撮りました。",
+        "romaji": "Daigaku no mon no mae de shashin wo torimashita.",
+        "translation": "I took a photo in front of the university gate. / Tomé una foto frente a la puerta de la universidad."
+      },
+      "strokeCount": 8,
+      "mnemonic": "Dos hojas de puerta = portón.",
+      "sourceIds": [
+        "SRC-0270"
+      ],
+      "validationStatus": "verified"
+    }
+  ]
 }

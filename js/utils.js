@@ -13,7 +13,3 @@ export function element(tag, options = {}) {
 export function icon(name) {
   return element("i", { attributes: { "data-lucide": name, "aria-hidden": "true" } });
 }
-
-export function formatStatus(status) {
-  return ({ verified: "Validado", "needs-review": "Requiere revisión", incomplete: "Incompleto" })[status] ?? status;
-}

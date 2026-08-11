@@ -1,4 +1,2617 @@
 {
   "schemaVersion": "1.0.0",
-  "kana": []
+  "kana": [
+    {
+      "id": "KANA-H-BASIC-01",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "あ",
+      "romaji": "a",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-01",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ア",
+      "romaji": "a",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-02",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "い",
+      "romaji": "i",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-02",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "イ",
+      "romaji": "i",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-03",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "う",
+      "romaji": "u",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-03",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ウ",
+      "romaji": "u",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-04",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "え",
+      "romaji": "e",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-04",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "エ",
+      "romaji": "e",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-05",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "お",
+      "romaji": "o",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-05",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "オ",
+      "romaji": "o",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-06",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "か",
+      "romaji": "ka",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-06",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "カ",
+      "romaji": "ka",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-07",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "き",
+      "romaji": "ki",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-07",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "キ",
+      "romaji": "ki",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-08",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "く",
+      "romaji": "ku",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-08",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ク",
+      "romaji": "ku",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-09",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "け",
+      "romaji": "ke",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-09",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ケ",
+      "romaji": "ke",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-10",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "こ",
+      "romaji": "ko",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-10",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "コ",
+      "romaji": "ko",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-11",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "さ",
+      "romaji": "sa",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-11",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "サ",
+      "romaji": "sa",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-12",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "し",
+      "romaji": "shi",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-12",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "シ",
+      "romaji": "shi",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-13",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "す",
+      "romaji": "su",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-13",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ス",
+      "romaji": "su",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-14",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "せ",
+      "romaji": "se",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-14",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "セ",
+      "romaji": "se",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-15",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "そ",
+      "romaji": "so",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-15",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ソ",
+      "romaji": "so",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-16",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "た",
+      "romaji": "ta",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-16",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "タ",
+      "romaji": "ta",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-17",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "ち",
+      "romaji": "chi",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-17",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "チ",
+      "romaji": "chi",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-18",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "つ",
+      "romaji": "tsu",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-18",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ツ",
+      "romaji": "tsu",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-19",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "て",
+      "romaji": "te",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-19",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "テ",
+      "romaji": "te",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-20",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "と",
+      "romaji": "to",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-20",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ト",
+      "romaji": "to",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-21",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "な",
+      "romaji": "na",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-21",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ナ",
+      "romaji": "na",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-22",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "に",
+      "romaji": "ni",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-22",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ニ",
+      "romaji": "ni",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-23",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "ぬ",
+      "romaji": "nu",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-23",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ヌ",
+      "romaji": "nu",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-24",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "ね",
+      "romaji": "ne",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-24",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ネ",
+      "romaji": "ne",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-25",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "の",
+      "romaji": "no",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-25",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ノ",
+      "romaji": "no",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-26",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "は",
+      "romaji": "ha",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-26",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ハ",
+      "romaji": "ha",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-27",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "ひ",
+      "romaji": "hi",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-27",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ヒ",
+      "romaji": "hi",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-28",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "ふ",
+      "romaji": "fu",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-28",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "フ",
+      "romaji": "fu",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-29",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "へ",
+      "romaji": "he",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-29",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ヘ",
+      "romaji": "he",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-30",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "ほ",
+      "romaji": "ho",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-30",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ホ",
+      "romaji": "ho",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-31",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "ま",
+      "romaji": "ma",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-31",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "マ",
+      "romaji": "ma",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-32",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "み",
+      "romaji": "mi",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-32",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ミ",
+      "romaji": "mi",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-33",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "む",
+      "romaji": "mu",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-33",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ム",
+      "romaji": "mu",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-34",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "め",
+      "romaji": "me",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-34",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "メ",
+      "romaji": "me",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-35",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "も",
+      "romaji": "mo",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-35",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "モ",
+      "romaji": "mo",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-36",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "や",
+      "romaji": "ya",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-36",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ヤ",
+      "romaji": "ya",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-37",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "ゆ",
+      "romaji": "yu",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-37",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ユ",
+      "romaji": "yu",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-38",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "よ",
+      "romaji": "yo",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-38",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ヨ",
+      "romaji": "yo",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-39",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "ら",
+      "romaji": "ra",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-39",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ラ",
+      "romaji": "ra",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-40",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "り",
+      "romaji": "ri",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-40",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "リ",
+      "romaji": "ri",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-41",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "る",
+      "romaji": "ru",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-41",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ル",
+      "romaji": "ru",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-42",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "れ",
+      "romaji": "re",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-42",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "レ",
+      "romaji": "re",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-43",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "ろ",
+      "romaji": "ro",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-43",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ロ",
+      "romaji": "ro",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-44",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "わ",
+      "romaji": "wa",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-44",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ワ",
+      "romaji": "wa",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-45",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "を",
+      "romaji": "wo",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-45",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ヲ",
+      "romaji": "wo",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-BASIC-46",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "basic",
+      "character": "ん",
+      "romaji": "n",
+      "sourceIds": [
+        "SRC-0604"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-BASIC-46",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "basic",
+      "character": "ン",
+      "romaji": "n",
+      "sourceIds": [
+        "SRC-0605"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-01",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "が",
+      "romaji": "ga",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-01",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ガ",
+      "romaji": "ga",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-02",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ぎ",
+      "romaji": "gi",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-02",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ギ",
+      "romaji": "gi",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-03",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ぐ",
+      "romaji": "gu",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-03",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "グ",
+      "romaji": "gu",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-04",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "げ",
+      "romaji": "ge",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-04",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ゲ",
+      "romaji": "ge",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-05",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ご",
+      "romaji": "go",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-05",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ゴ",
+      "romaji": "go",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-06",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ざ",
+      "romaji": "za",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-06",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ザ",
+      "romaji": "za",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-07",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "じ",
+      "romaji": "ji",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-07",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ジ",
+      "romaji": "ji",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-08",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ず",
+      "romaji": "zu",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-08",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ズ",
+      "romaji": "zu",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-09",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ぜ",
+      "romaji": "ze",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-09",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ゼ",
+      "romaji": "ze",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-10",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ぞ",
+      "romaji": "zo",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-10",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ゾ",
+      "romaji": "zo",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-11",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "だ",
+      "romaji": "da",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-11",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ダ",
+      "romaji": "da",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-12",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ぢ",
+      "romaji": "ji",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-12",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ヂ",
+      "romaji": "ji",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-13",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "づ",
+      "romaji": "zu",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-13",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ヅ",
+      "romaji": "zu",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-14",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "で",
+      "romaji": "de",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-14",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "デ",
+      "romaji": "de",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-15",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ど",
+      "romaji": "do",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-15",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ド",
+      "romaji": "do",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-16",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ば",
+      "romaji": "ba",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-16",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "バ",
+      "romaji": "ba",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-17",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "び",
+      "romaji": "bi",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-17",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ビ",
+      "romaji": "bi",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-18",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ぶ",
+      "romaji": "bu",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-18",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ブ",
+      "romaji": "bu",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-19",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "べ",
+      "romaji": "be",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-19",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ベ",
+      "romaji": "be",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-20",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ぼ",
+      "romaji": "bo",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-20",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ボ",
+      "romaji": "bo",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-21",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ぱ",
+      "romaji": "pa",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-21",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "パ",
+      "romaji": "pa",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-22",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ぴ",
+      "romaji": "pi",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-22",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ピ",
+      "romaji": "pi",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-23",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ぷ",
+      "romaji": "pu",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-23",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "プ",
+      "romaji": "pu",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-24",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ぺ",
+      "romaji": "pe",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-24",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ペ",
+      "romaji": "pe",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-VOICED-25",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "voiced",
+      "character": "ぽ",
+      "romaji": "po",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-VOICED-25",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "voiced",
+      "character": "ポ",
+      "romaji": "po",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0555"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-01",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "きゃ",
+      "romaji": "kya",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-01",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "キャ",
+      "romaji": "kya",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-02",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "きゅ",
+      "romaji": "kyu",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-02",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "キュ",
+      "romaji": "kyu",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-03",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "きょ",
+      "romaji": "kyo",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-03",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "キョ",
+      "romaji": "kyo",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-04",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "しゃ",
+      "romaji": "sha",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-04",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "シャ",
+      "romaji": "sha",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-05",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "しゅ",
+      "romaji": "shu",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-05",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "シュ",
+      "romaji": "shu",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-06",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "しょ",
+      "romaji": "sho",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-06",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ショ",
+      "romaji": "sho",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-07",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "ちゃ",
+      "romaji": "cha",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-07",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "チャ",
+      "romaji": "cha",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-08",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "ちゅ",
+      "romaji": "chu",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-08",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "チュ",
+      "romaji": "chu",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-09",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "ちょ",
+      "romaji": "cho",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-09",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "チョ",
+      "romaji": "cho",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-10",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "にゃ",
+      "romaji": "nya",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-10",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ニャ",
+      "romaji": "nya",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-11",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "にゅ",
+      "romaji": "nyu",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-11",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ニュ",
+      "romaji": "nyu",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-12",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "にょ",
+      "romaji": "nyo",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-12",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ニョ",
+      "romaji": "nyo",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-13",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "ひゃ",
+      "romaji": "hya",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-13",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ヒャ",
+      "romaji": "hya",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-14",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "ひゅ",
+      "romaji": "hyu",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-14",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ヒュ",
+      "romaji": "hyu",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-15",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "ひょ",
+      "romaji": "hyo",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-15",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ヒョ",
+      "romaji": "hyo",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-16",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "みゃ",
+      "romaji": "mya",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-16",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ミャ",
+      "romaji": "mya",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-17",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "みゅ",
+      "romaji": "myu",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-17",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ミュ",
+      "romaji": "myu",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-18",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "みょ",
+      "romaji": "myo",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-18",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ミョ",
+      "romaji": "myo",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-19",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "りゃ",
+      "romaji": "rya",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-19",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "リャ",
+      "romaji": "rya",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-20",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "りゅ",
+      "romaji": "ryu",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-20",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "リュ",
+      "romaji": "ryu",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-21",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "りょ",
+      "romaji": "ryo",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-21",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "リョ",
+      "romaji": "ryo",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-22",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "ぎゃ",
+      "romaji": "gya",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-22",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ギャ",
+      "romaji": "gya",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-23",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "ぎゅ",
+      "romaji": "gyu",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-23",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ギュ",
+      "romaji": "gyu",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-24",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "ぎょ",
+      "romaji": "gyo",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-24",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ギョ",
+      "romaji": "gyo",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-25",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "じゃ",
+      "romaji": "ja",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-25",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ジャ",
+      "romaji": "ja",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-26",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "じゅ",
+      "romaji": "ju",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-26",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ジュ",
+      "romaji": "ju",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-27",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "じょ",
+      "romaji": "jo",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-27",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ジョ",
+      "romaji": "jo",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-28",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "びゃ",
+      "romaji": "bya",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-28",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ビャ",
+      "romaji": "bya",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-29",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "びゅ",
+      "romaji": "byu",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-29",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ビュ",
+      "romaji": "byu",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-30",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "びょ",
+      "romaji": "byo",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-30",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ビョ",
+      "romaji": "byo",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-31",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "ぴゃ",
+      "romaji": "pya",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-31",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ピャ",
+      "romaji": "pya",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-32",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "ぴゅ",
+      "romaji": "pyu",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-32",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ピュ",
+      "romaji": "pyu",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-H-COMBINATIONS-33",
+      "level": "Nivel introductorio",
+      "script": "hiragana",
+      "group": "combinations",
+      "character": "ぴょ",
+      "romaji": "pyo",
+      "sourceIds": [
+        "SRC-0604",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    },
+    {
+      "id": "KANA-K-COMBINATIONS-33",
+      "level": "Nivel introductorio",
+      "script": "katakana",
+      "group": "combinations",
+      "character": "ピョ",
+      "romaji": "pyo",
+      "sourceIds": [
+        "SRC-0605",
+        "SRC-0516"
+      ],
+      "validationStatus": "verified"
+    }
+  ]
 }

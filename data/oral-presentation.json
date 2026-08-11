@@ -1,0 +1,246 @@
+{
+  "schemaVersion": "1.0.0",
+  "presentation": {
+    "id": "ORAL-N2-LA-GUACIMA",
+    "level": "Nivel 2",
+    "title": "Presentación modelo: La Guácima",
+    "purpose": "Usa este modelo para organizar tus ideas. Practica cada bloque por separado y luego presenta el contenido con tus propias palabras.",
+    "sections": [
+      {
+        "number": "①",
+        "title": "Saludo e introducción",
+        "guide": "Di tu nombre y anuncia con una frase breve el lugar que vas a presentar.",
+        "lines": [
+          {
+            "japanese": "こんにちは。ディアナです。",
+            "romaji": "Konnichiwa. Diana desu.",
+            "spanish": "Hola. Soy Diana."
+          },
+          {
+            "japanese": "私の町を紹介します。",
+            "romaji": "Watashi no machi o shoukai shimasu.",
+            "spanish": "Voy a presentarles mi pueblo o ciudad."
+          }
+        ]
+      },
+      {
+        "number": "②",
+        "title": "Primera parte: presentar La Guácima",
+        "guide": "Resume dónde vives, cómo es el lugar, su clima, sitios importantes y por qué recomiendas visitarlo.",
+        "checklist": [
+          "Dónde vives",
+          "Cómo es el lugar",
+          "Clima",
+          "Lugares importantes",
+          "Recomendación"
+        ],
+        "lines": [
+          {
+            "japanese": "私の町はアラフエラのラ・グアシマです。",
+            "romaji": "Watashi no machi wa Arafuera no Ra Guashima desu.",
+            "spanish": "Mi pueblo es La Guácima, en Alajuela."
+          },
+          {
+            "japanese": "ラ・グアシマは静かで、緑が多いです。",
+            "romaji": "Ra Guashima wa shizuka de, midori ga ooi desu.",
+            "spanish": "La Guácima es tranquila y tiene mucha vegetación."
+          },
+          {
+            "japanese": "一年中、とても暑いです。",
+            "romaji": "Ichinenjuu, totemo atsui desu.",
+            "spanish": "Hace mucho calor durante todo el año."
+          },
+          {
+            "japanese": "ラ・グアシマにラ・アルボレダがあります。",
+            "romaji": "Ra Guashima ni Ra Aruboreda ga arimasu.",
+            "spanish": "En La Guácima está La Arboleda."
+          },
+          {
+            "japanese": "ラ・アルボレダはきれいなところです。",
+            "romaji": "Ra Aruboreda wa kirei na tokoro desu.",
+            "spanish": "La Arboleda es un lugar bonito."
+          },
+          {
+            "japanese": "私の町にモルフォ・アスールもあります。",
+            "romaji": "Watashi no machi ni Morufo Asuuru mo arimasu.",
+            "spanish": "En mi pueblo también está Morpho Azul."
+          },
+          {
+            "japanese": "ラ・グアシマはいいところです。",
+            "romaji": "Ra Guashima wa ii tokoro desu.",
+            "spanish": "La Guácima es un buen lugar."
+          },
+          {
+            "japanese": "ぜひ来てください。",
+            "romaji": "Zehi kite kudasai.",
+            "spanish": "Por favor, vengan a visitarla."
+          }
+        ]
+      },
+      {
+        "number": "③",
+        "title": "Segunda parte: contar algo que hiciste",
+        "guide": "Cambia claramente al pasado. Cuenta adónde fuiste, con quién, qué hiciste, cómo fue la experiencia y qué quieres repetir.",
+        "checklist": [
+          "Compañía y destino",
+          "Clima o razón",
+          "Acciones en pasado",
+          "Opinión de la experiencia",
+          "Deseo futuro"
+        ],
+        "lines": [
+          {
+            "japanese": "ラ・グアシマで友達とラ・アルボレダへ行きました。",
+            "romaji": "Ra Guashima de tomodachi to Ra Aruboreda e ikimashita.",
+            "spanish": "En La Guácima fui a La Arboleda con un amigo."
+          },
+          {
+            "japanese": "天気がよかったですから、とても楽しかったです。",
+            "romaji": "Tenki ga yokatta desu kara, totemo tanoshikatta desu.",
+            "spanish": "Como hizo buen tiempo, fue muy divertido."
+          },
+          {
+            "japanese": "ラ・アルボレダで景色を見ました。",
+            "romaji": "Ra Aruboreda de keshiki o mimashita.",
+            "spanish": "Vi el paisaje en La Arboleda."
+          },
+          {
+            "japanese": "それから、モルフォ・アスールへ行きました。",
+            "romaji": "Sorekara, Morufo Asuuru e ikimashita.",
+            "spanish": "Después fui a Morpho Azul."
+          },
+          {
+            "japanese": "昼ご飯にピザを食べました。",
+            "romaji": "Hirugohan ni piza o tabemashita.",
+            "spanish": "Almorcé pizza."
+          },
+          {
+            "japanese": "おいしかったです。",
+            "romaji": "Oishikatta desu.",
+            "spanish": "Estaba deliciosa."
+          },
+          {
+            "japanese": "それから、うちへ帰りました。",
+            "romaji": "Sorekara, uchi e kaerimashita.",
+            "spanish": "Después regresé a casa."
+          },
+          {
+            "japanese": "また友達とラ・アルボレダへ行きたいです。",
+            "romaji": "Mata tomodachi to Ra Aruboreda e ikitai desu.",
+            "spanish": "Quiero volver a ir a La Arboleda con un amigo."
+          }
+        ]
+      },
+      {
+        "number": "④",
+        "title": "Cierre",
+        "guide": "Cierra de forma breve para indicar que terminaste y agradecer a quienes te escucharon.",
+        "lines": [
+          {
+            "japanese": "以上です。ありがとうございました。",
+            "romaji": "Ijou desu. Arigatou gozaimashita.",
+            "spanish": "Eso es todo. Muchas gracias."
+          }
+        ]
+      }
+    ],
+    "practiceSteps": [
+      "Lee una sección escuchando tu propia pronunciación.",
+      "Oculta el español e intenta explicar la idea en japonés.",
+      "Reduce cada sección a palabras clave; no memorices párrafos completos.",
+      "Grábate y comprueba contenido, gramática, vocabulario, pronunciación y fluidez."
+    ],
+    "conversationLabs": [
+      {
+        "id": "invite",
+        "title": "Invitar a alguien y acordar un plan",
+        "goal": "Practica una invitación completa: proponer una actividad, responder, acordar día, hora y lugar.",
+        "situation": "Tienes dos entradas para una película y quieres invitar a una amistad.",
+        "opening": {
+          "speaker": "A",
+          "japanese": "アンナさん、今度の土曜日、一緒に映画を見に行きませんか。",
+          "romaji": "Anna-san, kondo no doyoubi, issho ni eiga o mi ni ikimasen ka.",
+          "spanish": "Anna, ¿quieres ir a ver una película conmigo este sábado?"
+        },
+        "turns": [
+          {
+            "speaker": "B",
+            "instruction": "Acepta la invitación con entusiasmo.",
+            "choices": [
+              { "japanese": "いいですね。ぜひ行きたいです。", "romaji": "Ii desu ne. Zehi ikitai desu.", "spanish": "Qué buena idea. Me encantaría ir.", "correct": true, "feedback": "いいですね acepta la propuesta y ぜひ行きたいです expresa un deseo claro y positivo." },
+              { "japanese": "映画を見ました。", "romaji": "Eiga o mimashita.", "spanish": "Vi una película.", "correct": false, "feedback": "Esta frase habla del pasado; no responde a la invitación actual." },
+              { "japanese": "映画はどこですか。", "romaji": "Eiga wa doko desu ka.", "spanish": "¿Dónde está la película?", "correct": false, "feedback": "Puedes preguntar detalles después, pero primero conviene aceptar o rechazar la invitación." }
+            ]
+          },
+          {
+            "speaker": "A",
+            "instruction": "Pregunta a qué hora se encontrarán.",
+            "choices": [
+              { "japanese": "何時に会いますか。", "romaji": "Nanji ni aimasu ka.", "spanish": "¿A qué hora nos encontramos?", "correct": true, "feedback": "何時 pregunta la hora y に marca el momento exacto del encuentro." },
+              { "japanese": "何を食べましたか。", "romaji": "Nani o tabemashita ka.", "spanish": "¿Qué comiste?", "correct": false, "feedback": "La pregunta está bien formada, pero cambia el tema a una comida pasada." },
+              { "japanese": "どんな映画でしたか。", "romaji": "Donna eiga deshita ka.", "spanish": "¿Cómo fue la película?", "correct": false, "feedback": "Usa pasado para una película ya vista; todavía están organizando el plan." }
+            ]
+          },
+          {
+            "speaker": "B",
+            "instruction": "Propón hora y lugar.",
+            "choices": [
+              { "japanese": "二時にさくら駅で会いましょう。", "romaji": "Niji ni Sakura-eki de aimashou.", "spanish": "Encontrémonos a las dos en la estación Sakura.", "correct": true, "feedback": "に marca la hora, で el lugar y 会いましょう convierte la idea en una propuesta conjunta." },
+              { "japanese": "二時から映画です。", "romaji": "Niji kara eiga desu.", "spanish": "La película es desde las dos.", "correct": false, "feedback": "Indica un horario, pero no establece claramente dónde se encontrarán." },
+              { "japanese": "さくら駅へ行きました。", "romaji": "Sakura-eki e ikimashita.", "spanish": "Fui a la estación Sakura.", "correct": false, "feedback": "ました expresa pasado; para cerrar el plan necesitas una propuesta futura." }
+            ]
+          }
+        ],
+        "modelClosing": { "speaker": "A", "japanese": "分かりました。土曜日の二時にさくら駅ですね。楽しみです。", "romaji": "Wakarimashita. Doyoubi no niji ni Sakura-eki desu ne. Tanoshimi desu.", "spanish": "Entendido. El sábado a las dos en la estación Sakura, ¿verdad? Tengo muchas ganas." }
+      },
+      {
+        "id": "neighborhood",
+        "title": "Hablar de mi barrio",
+        "goal": "Describe dónde está tu barrio, cómo es, qué lugares tiene y qué recomiendas hacer allí.",
+        "situation": "Una amistad japonesa quiere conocer el lugar donde vives.",
+        "opening": {
+          "speaker": "A",
+          "japanese": "ディアナさんの町はどんなところですか。",
+          "romaji": "Diana-san no machi wa donna tokoro desu ka.",
+          "spanish": "Diana, ¿cómo es el lugar donde vives?"
+        },
+        "turns": [
+          {
+            "speaker": "B",
+            "instruction": "Describe el ambiente de tu barrio.",
+            "choices": [
+              { "japanese": "私の町は静かで、緑が多いです。", "romaji": "Watashi no machi wa shizuka de, midori ga ooi desu.", "spanish": "Mi barrio es tranquilo y tiene mucha vegetación.", "correct": true, "feedback": "静かで conecta una característica な con otra idea; 緑が多いです indica que hay mucha vegetación." },
+              { "japanese": "私の町へ行きました。", "romaji": "Watashi no machi e ikimashita.", "spanish": "Fui a mi barrio.", "correct": false, "feedback": "La frase cuenta un movimiento pasado, pero no describe cómo es el barrio." },
+              { "japanese": "私の町は何ですか。", "romaji": "Watashi no machi wa nan desu ka.", "spanish": "¿Qué es mi barrio?", "correct": false, "feedback": "Para pedir una descripción se usa どんなところ, no 何." }
+            ]
+          },
+          {
+            "speaker": "A",
+            "instruction": "Pregunta qué lugares hay.",
+            "choices": [
+              { "japanese": "町に何がありますか。", "romaji": "Machi ni nani ga arimasu ka.", "spanish": "¿Qué hay en el barrio?", "correct": true, "feedback": "Lugar に + cosa が + あります pregunta por cosas o lugares que existen allí." },
+              { "japanese": "町で何をしましたか。", "romaji": "Machi de nani o shimashita ka.", "spanish": "¿Qué hiciste en el barrio?", "correct": false, "feedback": "Esta pregunta pide una actividad pasada, no los lugares que existen." },
+              { "japanese": "町は何時ですか。", "romaji": "Machi wa nanji desu ka.", "spanish": "¿Qué hora es el barrio?", "correct": false, "feedback": "何時 solo sirve para preguntar la hora." }
+            ]
+          },
+          {
+            "speaker": "B",
+            "instruction": "Menciona un lugar y recomienda visitarlo.",
+            "choices": [
+              { "japanese": "大きい公園があります。きれいですから、ぜひ来てください。", "romaji": "Ookii kouen ga arimasu. Kirei desu kara, zehi kite kudasai.", "spanish": "Hay un parque grande. Como es bonito, ven a visitarlo, por favor.", "correct": true, "feedback": "あります presenta el lugar, から explica la razón y ぜひ来てください expresa una recomendación cordial." },
+              { "japanese": "公園は大きかったですか。", "romaji": "Kouen wa ookikatta desu ka.", "spanish": "¿El parque era grande?", "correct": false, "feedback": "Es una pregunta en pasado; aquí necesitas informar y recomendar." },
+              { "japanese": "公園を食べます。", "romaji": "Kouen o tabemasu.", "spanish": "Como el parque.", "correct": false, "feedback": "食べます se usa con comida. Para decir que hay un parque usa 公園があります." }
+            ]
+          }
+        ],
+        "modelClosing": { "speaker": "A", "japanese": "いいですね。今度、遊びに行きたいです。", "romaji": "Ii desu ne. Kondo, asobi ni ikitai desu.", "spanish": "Qué bien. La próxima vez me gustaría ir de visita." }
+      }
+    ],
+    "sourceIds": [
+      "SRC-0146",
+      "SRC-0676",
+      "SRC-0677"
+    ],
+    "validationStatus": "verified"
+  }
+}

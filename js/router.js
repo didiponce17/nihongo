@@ -1,6 +1,6 @@
 const validRoutes = new Set([
-  "home", "study", "review", "flashcards", "kana", "kanji", "grammar",
-  "writing", "quiz", "exam", "errors", "progress", "import", "settings",
+  "home", "study", "review", "flashcards", "kana", "kanji", "vocabulary", "grammar", "listening",
+  "writing", "quiz", "exam", "errors", "progress", "settings",
 ]);
 
 export function currentRoute() {
